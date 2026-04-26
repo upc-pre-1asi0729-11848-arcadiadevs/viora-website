@@ -1,0 +1,238 @@
+.solution-panel {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(5rem, 9vw, 7rem) 0 clamp(4rem, 7vw, 5rem);
+    background: #f7f7f4;
+    color: var(--color-ink);
+}
+
+.solution-panel__header {
+    width: min(100% - 2rem, 54rem);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.solution-panel__eyebrow {
+    margin: 0 0 1rem;
+    font-family: var(--font-family-primary);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: rgba(30, 39, 34, 0.9);
+}
+
+.solution-panel__title {
+    margin: 0;
+    font-family: var(--font-family-primary);
+    font-size: clamp(2.5rem, 4.6vw, 3rem);
+    font-weight: 500;
+    line-height: 1.12;
+    letter-spacing: -0.04em;
+    color: var(--color-ink);
+}
+
+.solution-panel__subtitle {
+    margin: 1.4rem 0 0;
+    font-family: var(--font-family-primary);
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.35;
+    color: rgba(30, 39, 34, 0.88);
+}
+
+.solution-panel__carousel {
+    --solution-card-width: clamp(13.5rem, 20vw, 15rem);
+
+    width: 100%;
+    margin-top: clamp(3.5rem, 7vw, 5rem);
+    overflow: hidden;
+    cursor: grab;
+    touch-action: pan-y;
+    user-select: none;
+}
+
+.solution-panel__carousel:active {
+    cursor: grabbing;
+}
+
+.solution-panel__track {
+    display: flex;
+    align-items: center;
+    gap: clamp(2rem, 5vw, 4rem);
+    width: max-content;
+    padding-inline: calc(50vw - (var(--solution-card-width) / 2));
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+}
+
+.solution-card {
+    flex: 0 0 var(--solution-card-width);
+    height: clamp(21.5rem, 36vw, 23rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 2.8rem 1.35rem 2rem;
+    border-radius: 0.45rem;
+
+    background: transparent;
+    color: rgba(30, 39, 34, 0.52);
+    text-align: center;
+
+    transform: scale(0.88);
+    opacity: 0.72;
+
+    transition:
+        transform 320ms ease,
+        opacity 320ms ease,
+        color 320ms ease,
+        background-color 320ms ease,
+        box-shadow 320ms ease;
+}
+
+.solution-card--active {
+    background: var(--color-primary);
+    color: var(--color-white);
+    opacity: 1;
+    transform: scale(1);
+    box-shadow:
+        0 24px 70px rgba(0, 0, 0, 0.16),
+        inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.solution-card__title {
+    min-height: 3.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+    font-family: var(--font-family-primary);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.12;
+    letter-spacing: -0.03em;
+    color: currentColor;
+}
+
+.solution-card__icon {
+    position: relative;
+    width: 6rem;
+    height: 4.5rem;
+    display: block;
+    margin: 1.6rem auto 3.5rem;
+}
+
+.solution-card__icon-img,
+.solution-card__icon-img--white {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 320ms ease;
+    transform: scale(var(--icon-scale, 2.5));
+    -webkit-user-drag: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+
+.solution-card:nth-child(1) { --icon-scale: 3; } /* Epidemiological Alerts */
+.solution-card:nth-child(2) { --icon-scale: 3.5; } /* Specialist Marketplace */
+.solution-card:nth-child(3) { --icon-scale: 2.5; } /* NDVI Monitoring */
+.solution-card:nth-child(4) { --icon-scale: 4.0; } /* Chill Portion Tracking */
+.solution-card:nth-child(5) { --icon-scale: 3; } /* Dynamic Nutrition Plans */
+.solution-card:nth-child(6) { --icon-scale: 7; } /* Climate Risk Outlook */
+
+.solution-card__icon-img {
+    opacity: 1;
+}
+
+.solution-card__icon-img--white {
+    opacity: 0;
+}
+
+.solution-card--active .solution-card__icon-img {
+    opacity: 0;
+}
+
+.solution-card--active .solution-card__icon-img--white {
+    opacity: 1;
+}
+
+.solution-card__description {
+    max-width: 14rem;
+    margin: auto 0 0;
+
+    font-family: var(--font-family-primary);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+    color: currentColor;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.solution-card--active .solution-card__description {
+    color: rgba(255, 255, 255, 0.85);
+    /* Reduce irradiation effect making text look too thick */
+}
+
+.solution-panel__controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2.9rem;
+}
+
+.solution-panel__control {
+    width: 2.65rem;
+    height: 2.65rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0;
+    border-radius: 999px;
+    background: rgba(30, 39, 34, 0.12);
+    color: var(--color-ink);
+
+    font-family: var(--font-family-primary);
+    font-size: 1.45rem;
+    font-weight: 500;
+    line-height: 1;
+    cursor: pointer;
+
+    transition:
+        background-color var(--transition-fast),
+        color var(--transition-fast),
+        transform var(--transition-fast);
+}
+
+.solution-panel__control:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+@media (max-width: 768px) {
+    .solution-panel {
+        padding-top: 4.5rem;
+    }
+
+    .solution-panel__title {
+        font-size: 2.25rem;
+    }
+
+    .solution-panel__carousel {
+        --solution-card-width: 13.5rem;
+    }
+
+    .solution-panel__track {
+        gap: 1.5rem;
+    }
+}
