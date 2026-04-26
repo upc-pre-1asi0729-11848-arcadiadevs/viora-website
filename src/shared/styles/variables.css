@@ -1,0 +1,32 @@
+:root {
+    --color-primary: #2E4A3A;
+    --color-primary-dark: #162F24;
+    --color-primary-soft: #5A7A6A;
+    --color-accent: #C15A2E;
+    --color-accent-light: #F0B16F;
+
+    --color-white: #FFFFFF;
+    --color-white-soft: rgba(255, 255, 255, 0.78);
+    --color-ink: #1E2722;
+
+    --font-family-primary: 'Caros', 'Segoe UI', Arial, sans-serif;
+
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 1rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.15rem;
+    --font-size-xl: 1.5rem;
+
+    --layout-max-width: 90rem;
+    --space-layout-x: clamp(1.25rem, 5vw, 4.5rem);
+
+    --transition-fast: 180ms ease;
+    --transition-normal: 260ms ease;
+
+    --z-index-header: 100;
+
+    --glass-bg: rgba(255, 255, 255, 0.08);
+    --glass-border: rgba(255, 255, 255, 0.15);
+    --glass-blur: blur(16px);
+    --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}

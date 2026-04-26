@@ -1,0 +1,35 @@
+@import url('../src/shared/styles/variables.css');
+@import url('../src/shared/styles/reset.css');
+@import url('../src/shared/styles/typography.css');
+@import url('../src/shared/styles/layout.css');
+@import url('../src/shared/styles/components.css');
+@import url('../src/shared/styles/liquid-glass.css');
+@import url('../src/shared/styles/animations.css');
+@import url('../src/shared/styles/responsive.css');
+@import url('../src/shared/styles/cursor.css');
+@import url('../src/shared/components/landing-button/landing-button.css');
+
+@import url('../src/presentation/pages/landing-page/landing-page.css');
+@import url('../src/presentation/components/landing-header/landing-header.css');
+@import url('../src/presentation/components/hero-section/hero-section.css');
+@import url('../src/presentation/components/about-intro-section/about-intro-section.css');
+@import url('../src/presentation/components/problem-solution-section/problem-solution-section.css');
+@import url('../src/presentation/components/problem-solution-section/problem-solution-section.css');
+@import url('../src/presentation/components/problem-solution-section/problem-panel/problem-panel.css');
+@import url('../src/presentation/components/problem-solution-section/solution-panel/solution-panel.css');
+@import url('../src/presentation/components/problem-solution-section/expected-outcomes-panel/expected-outcomes-panel.css');
+@import url('../src/presentation/components/role-benefits-section/role-benefits-section.css');
+@import url('../src/presentation/components/plans-trial-affiliates-section/plans-trial-affiliates-section.css');
+@import url('../src/presentation/components/plans-trial-affiliates-section/parallax-intro/parallax-intro.css');
+@import url('../src/presentation/components/plans-trial-affiliates-section/pricing-plans-panel/pricing-plans-panel.css');
+@import url('../src/presentation/components/plans-trial-affiliates-section/referrals-info/referrals-info.css');
+@import url('../src/presentation/components/about-section/about-section.css');
+@import url('../src/presentation/components/about-section/about-mission-panel/about-mission-panel.css');
+@import url('../src/presentation/components/about-section/team-members-panel/team-members-panel.css');
+@import url('../src/presentation/components/about-section/learning-from-best-panel/learning-from-best-panel.css');
+@import url('../src/presentation/components/testimonials-section/testimonials-section.css');
+@import url('../src/presentation/components/contact-section/contact-section.css');
+@import url('../src/presentation/components/footer-section/footer-section.css');
+
+
+@import url('../src/shared/styles/liquid-glass.css');

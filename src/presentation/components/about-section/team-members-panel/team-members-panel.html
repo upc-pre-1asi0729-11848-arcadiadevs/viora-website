@@ -1,0 +1,162 @@
+<section
+        class="team-members-panel"
+        data-team-members-panel
+        aria-labelledby="team-members-title"
+>
+    <div class="team-members-panel__container">
+
+        <!-- Left column: title + CTA -->
+        <div class="team-members-panel__left">
+            <h2
+                    class="team-members-panel__title"
+                    id="team-members-title"
+                    data-i18n="teamMembers.title"
+            >
+                Meet<br>our team
+            </h2>
+
+            <div class="team-members-panel__cta">
+                <span
+                        class="magnetic-target"
+                        data-magnetic
+                        data-magnetic-strength="1"
+                        data-magnetic-max="16"
+                >
+                    <a
+                            class="landing-button landing-button--green liquid-glass liquid-glass--green"
+                            href="#contact"
+                            data-liquid-glass
+                            data-hover-sound
+                            data-wave-fill="#5A7A6A"
+                    >
+                        <span data-i18n="teamMembers.cta">
+                            View more members
+                        </span>
+                    </a>
+                </span>
+
+                <span
+                        class="magnetic-target"
+                        data-magnetic
+                        data-magnetic-strength="1"
+                        data-magnetic-max="16"
+                >
+                    <a
+                            class="landing-button landing-button--icon landing-button--green liquid-glass liquid-glass--green"
+                            href="#contact"
+                            data-liquid-glass
+                            data-hover-sound
+                            aria-label="View more members"
+                    >
+                        <img
+                                class="landing-button__icon-img"
+                                src="./assets/icons/arrow-white.svg"
+                                alt=""
+                                aria-hidden="true"
+                        />
+                    </a>
+                </span>
+            </div>
+        </div>
+
+        <!-- Center: card stack -->
+        <div class="team-members-panel__center">
+            <div class="team-members-panel__stack" data-team-members-stack>
+                <!-- Cards injected by JS -->
+            </div>
+
+            <div class="team-members-panel__badge" data-team-members-badge>
+                <img
+                        src="./assets/logos/arcadia-dark-green.png"
+                        alt="Team badge"
+                        data-team-members-badge-img
+                />
+            </div>
+        </div>
+
+        <!-- Right column: controls + name -->
+        <div class="team-members-panel__right">
+            <div class="team-members-panel__controls">
+                <span
+                        class="magnetic-target"
+                        data-magnetic
+                        data-magnetic-strength="1"
+                        data-magnetic-max="25"
+                >
+                    <button
+                            class="team-members-panel__nav-btn liquid-glass liquid-glass--deep"
+                            type="button"
+                            data-team-members-prev
+                            data-liquid-glass
+                            data-hover-sound
+                            aria-label="Previous member"
+                    >
+                        <img
+                                class="team-members-panel__nav-icon team-members-panel__nav-icon--flip"
+                                src="./assets/icons/arrow-white.svg"
+                                alt=""
+                                aria-hidden="true"
+                        />
+                    </button>
+                </span>
+
+                <span
+                        class="magnetic-target"
+                        data-magnetic
+                        data-magnetic-strength="1"
+                        data-magnetic-max="25"
+                >
+                    <button
+                            class="team-members-panel__nav-btn liquid-glass liquid-glass--deep"
+                            type="button"
+                            data-team-members-next
+                            data-liquid-glass
+                            data-hover-sound
+                            aria-label="Next member"
+                    >
+                        <img
+                                class="team-members-panel__nav-icon"
+                                src="./assets/icons/arrow-white.svg"
+                                alt=""
+                                aria-hidden="true"
+                        />
+                    </button>
+                </span>
+            </div>
+
+            <!-- Mobile CTA (hidden on desktop) -->
+            <div class="team-members-panel__cta-mobile">
+                <span
+                        class="magnetic-target"
+                        data-magnetic
+                        data-magnetic-strength="1"
+                        data-magnetic-max="16"
+                >
+                    <a
+                            class="landing-button landing-button--green liquid-glass liquid-glass--green"
+                            href="#contact"
+                            data-liquid-glass
+                            data-hover-sound
+                            data-wave-fill="#5A7A6A"
+                    >
+                        <span data-i18n="teamMembers.cta">View more members</span>
+                    </a>
+                </span>
+            </div>
+
+            <div class="team-members-panel__info">
+                <div class="team-members-panel__name-wrapper">
+                    <h3 class="team-members-panel__member-name" data-team-members-name>
+                        <span class="team-members-panel__first-name"></span>
+                        <span class="team-members-panel__last-name"></span>
+                    </h3>
+                </div>
+
+                <div class="team-members-panel__role-wrapper">
+                    <p class="team-members-panel__member-role" data-team-members-role></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

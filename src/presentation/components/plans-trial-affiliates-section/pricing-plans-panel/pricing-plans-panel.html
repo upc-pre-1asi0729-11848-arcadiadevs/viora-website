@@ -1,0 +1,274 @@
+<section
+  class="pricing-plans-panel"
+  data-pricing-plans-panel
+  aria-labelledby="pricing-plans-title"
+>
+  <div class="pricing-plans-panel__container">
+    <div class="pricing-plans-panel__controls">
+      <span
+        class="magnetic-target"
+        data-magnetic
+        data-magnetic-strength="1"
+        data-magnetic-max="16"
+      >
+        <button
+          class="pricing-plans-panel__arrow"
+          type="button"
+          data-pricing-prev
+          data-hover-sound
+          aria-label="Previous pricing plan"
+        >
+          <img
+            src="./assets/icons/arrow-forward.svg"
+            alt=""
+            aria-hidden="true"
+          />
+        </button>
+      </span>
+
+      <span class="pricing-plans-panel__counter" data-pricing-counter>
+        1/2
+      </span>
+
+      <span
+        class="magnetic-target"
+        data-magnetic
+        data-magnetic-strength="1"
+        data-magnetic-max="16"
+      >
+        <button
+          class="pricing-plans-panel__arrow pricing-plans-panel__arrow--next"
+          type="button"
+          data-pricing-next
+          data-hover-sound
+          aria-label="Next pricing plan"
+        >
+          <img
+            src="./assets/icons/arrow-forward.svg"
+            alt=""
+            aria-hidden="true"
+          />
+        </button>
+      </span>
+    </div>
+
+    <div class="pricing-plans-panel__billing-toggle" data-billing-toggle>
+      <button
+        class="pricing-plans-panel__billing-option pricing-plans-panel__billing-option--active"
+        type="button"
+        data-billing-option="monthly"
+        data-hover-sound
+        data-i18n="pricingPlans.billing.monthly"
+      >
+        Monthly
+      </button>
+
+      <button
+        class="pricing-plans-panel__billing-option"
+        type="button"
+        data-billing-option="yearly"
+        data-hover-sound
+        data-i18n="pricingPlans.billing.yearly"
+      >
+        yearly
+      </button>
+    </div>
+
+    <div class="pricing-plans-panel__stage">
+      <article
+        class="pricing-plan pricing-plan--producer pricing-plan--active"
+        data-pricing-plan="producer"
+      >
+        <div class="pricing-plan__visual">
+          <img
+            class="pricing-plan__ticket"
+            src="./assets/images/pricing/grower-referral-ticket.png"
+            alt="Viora referral ticket for olive producers"
+          />
+        </div>
+
+        <div class="pricing-plan__content">
+          <h2
+            class="pricing-plan__title"
+            id="pricing-plans-title"
+            data-i18n="pricingPlans.producer.title"
+          >
+            For Olive Producers
+          </h2>
+
+          <div class="pricing-plan__access">
+            <span class="pricing-plan__access-icon" aria-hidden="true">
+              <img src="./assets/icons/star.svg" alt="" />
+            </span>
+            <span
+              class="pricing-plan__access-label"
+              data-i18n="pricingPlans.producer.planName"
+            >
+              Grower Access
+            </span>
+          </div>
+
+          <ul class="pricing-plan__details">
+            <li data-i18n="pricingPlans.producer.detail1">
+              NDVI monitoring and plot health visibility
+            </li>
+            <li data-i18n="pricingPlans.producer.detail2">
+              Chill portion tracking and phenological risk detection
+            </li>
+            <li data-i18n="pricingPlans.producer.detail3">
+              Automated epidemiological alerts
+            </li>
+            <li data-i18n="pricingPlans.producer.detail4">
+              Dynamic nutrition recommendations
+            </li>
+            <li data-i18n="pricingPlans.producer.detail5">
+              Access to crop protection specialists when risk rises
+            </li>
+          </ul>
+
+          <strong class="pricing-plan__price" data-pricing-price>
+            $149.00
+          </strong>
+
+          <div class="pricing-plan__actions">
+            <span
+              class="magnetic-target"
+              data-magnetic
+              data-magnetic-strength="1"
+              data-magnetic-max="16"
+            >
+              <a
+                class="landing-button landing-button--green liquid-glass liquid-glass--green"
+                href="#trial"
+                data-liquid-glass
+                data-hover-sound
+                data-wave-fill="#5A7A6A"
+              >
+                <span data-i18n="pricingPlans.producer.cta">
+                  Start Risk-Free Trial
+                </span>
+              </a>
+            </span>
+
+            <span
+              class="magnetic-target"
+              data-magnetic
+              data-magnetic-strength="1"
+              data-magnetic-max="16"
+            >
+              <a
+                class="landing-button landing-button--icon landing-button--green liquid-glass liquid-glass--green"
+                href="#trial"
+                data-liquid-glass
+                data-hover-sound
+                aria-label="Start risk-free trial"
+              >
+                <img
+                  class="landing-button__icon-img"
+                  src="./assets/icons/arrow-white.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <article
+        class="pricing-plan pricing-plan--specialist"
+        data-pricing-plan="specialist"
+      >
+        <div class="pricing-plan__visual">
+          <img
+            class="pricing-plan__ticket"
+            src="./assets/images/pricing/specialist-referral-ticket.png"
+            alt="Viora referral ticket for phytosanitary specialists"
+          />
+        </div>
+
+        <div class="pricing-plan__content">
+          <h2
+            class="pricing-plan__title"
+            data-i18n="pricingPlans.specialist.title"
+          >
+            Phytosanitary specialists
+          </h2>
+
+          <div class="pricing-plan__access pricing-plan__access--orange">
+            <span class="pricing-plan__access-icon" aria-hidden="true">
+              <img src="./assets/icons/rocket.svg" alt="" />
+            </span>
+            <span
+              class="pricing-plan__access-label"
+              data-i18n="pricingPlans.specialist.planName"
+            >
+              Specialist Access
+            </span>
+          </div>
+
+          <ul class="pricing-plan__details pricing-plan__details--orange">
+            <li data-i18n="pricingPlans.specialist.detail1">
+              Prospecting radar for new service opportunities
+            </li>
+            <li data-i18n="pricingPlans.specialist.detail2">
+              Digital prescriptions and field assessment tools
+            </li>
+            <li data-i18n="pricingPlans.specialist.detail3">
+              Visibility inside the Viora ecosystem
+            </li>
+            <li data-i18n="pricingPlans.specialist.detail4">
+              Access to field context and satellite-based risk indicators
+            </li>
+            <li data-i18n="pricingPlans.specialist.detail5">
+              Faster connection with producers who need intervention
+            </li>
+          </ul>
+
+          <div class="pricing-plan__actions">
+            <span
+              class="magnetic-target"
+              data-magnetic
+              data-magnetic-strength="1"
+              data-magnetic-max="16"
+            >
+              <a
+                class="landing-button landing-button--orange liquid-glass liquid-glass--orange"
+                href="#trial"
+                data-liquid-glass
+                data-hover-sound
+                data-wave-fill="#E8B08C"
+              >
+                <span data-i18n="pricingPlans.specialist.cta">
+                  Start Risk-Free Trial
+                </span>
+              </a>
+            </span>
+
+            <span
+              class="magnetic-target"
+              data-magnetic
+              data-magnetic-strength="1"
+              data-magnetic-max="16"
+            >
+              <a
+                class="landing-button landing-button--icon landing-button--orange liquid-glass liquid-glass--orange"
+                href="#trial"
+                data-liquid-glass
+                data-hover-sound
+                aria-label="Start risk-free trial"
+              >
+                <img
+                  class="landing-button__icon-img"
+                  src="./assets/icons/arrow-white.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
