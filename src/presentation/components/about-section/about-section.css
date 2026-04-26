@@ -1,0 +1,6 @@
+.about-section {
+    position: relative;
+    z-index: 8;
+    background: var(--color-primary-dark);
+    color: var(--color-white);
+}

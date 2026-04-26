@@ -1,0 +1,367 @@
+
+.team-members-panel {
+    position: relative;
+    background: var(--color-primary-dark);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: clamp(4rem, 8vw, 5rem) var(--space-layout-x);
+    overflow: hidden;
+    color: var(--color-white);
+}
+
+.team-members-panel__container {
+    display: grid;
+    grid-template-columns: 1.1fr auto 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "left   cards   ."
+        ".      cards   right";
+    width: min(100%, var(--layout-max-width));
+    min-height: 34rem;
+    column-gap: clamp(4rem, 8vw, 10rem);
+    row-gap: 2rem;
+    margin: 0 auto;
+}
+
+
+/* ─── Left Column ─── */
+
+.team-members-panel__left {
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    align-self: end;
+    justify-self: end;
+    gap: 2.5rem;
+    margin-bottom: -3rem;
+}
+
+.team-members-panel__title {
+    margin: 0;
+    font-family: var(--font-family-primary);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+    color: var(--color-white);
+    max-width: 25rem;
+}
+
+.team-members-panel__cta {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+
+/* ─── Center: Card Stack ─── */
+
+.team-members-panel__center {
+    grid-area: cards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.team-members-panel__stack {
+    position: relative;
+    width: clamp(18rem, 26vw, 25rem);
+    aspect-ratio: 4 / 5;
+}
+
+.team-members-panel__card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    background: rgba(30, 39, 34, 0.6);
+    will-change: transform, opacity;
+    transition:
+        transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1),
+        opacity 0.6s ease,
+        box-shadow 0.6s ease;
+}
+
+.team-members-panel__card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Badge */
+.team-members-panel__badge {
+    position: absolute;
+    top: calc(50% - 10rem);
+    right: -3.2rem;
+    width: 5.5rem;
+    height: 5.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    padding: 0.9rem;
+    border-radius: 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    z-index: 20;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-members-panel__badge img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* ─── Right Column ─── */
+
+.team-members-panel__right {
+    grid-area: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: start;
+    margin-top: -3rem;
+}
+
+.team-members-panel__controls {
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 2.5rem;
+}
+
+.team-members-panel__nav-btn {
+    width: 4rem;
+    height: 4rem;
+    display: grid;
+    place-items: center;
+    border: 1.5px solid rgba(255, 255, 255, 0.35);
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    color: var(--color-white);
+    transition: border-color var(--transition-normal);
+}
+
+.team-members-panel__nav-btn:hover {
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+.team-members-panel__nav-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    object-fit: contain;
+}
+
+.team-members-panel__nav-icon--flip {
+    transform: rotate(180deg);
+}
+
+/* Mobile CTA — hidden on desktop */
+.team-members-panel__cta-mobile {
+    display: none;
+}
+
+
+/* ─── Member Info ─── */
+
+.team-members-panel__info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.team-members-panel__name-wrapper {
+    position: relative;
+    min-height: 8.5rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.team-members-panel__member-name {
+    margin: 0;
+    font-family: var(--font-family-primary);
+    font-size: 4rem;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    color: var(--color-white);
+    max-width: 20rem;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.team-members-panel__first-name {
+    display: block;
+    font-weight: 400;
+}
+
+.team-members-panel__last-name {
+    display: block;
+    font-weight: 700;
+}
+
+.team-members-panel__role-wrapper {
+    position: relative;
+    min-height: 2rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.team-members-panel__member-role {
+    margin: 0.6rem 0 0;
+    font-family: var(--font-family-primary);
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.65);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+/* Fade-slide animation classes */
+.team-members-panel__fade-out {
+    opacity: 0;
+    transform: translateY(-1.5rem);
+}
+
+.team-members-panel__fade-in {
+    opacity: 0;
+    transform: translateY(1.5rem);
+}
+
+
+
+@media (max-width: 1024px) {
+    .team-members-panel__container {
+        column-gap: 4rem;
+    }
+
+    .team-members-panel__title {
+        font-size: 3rem;
+    }
+
+    .team-members-panel__stack {
+        width: clamp(16rem, 30vw, 20rem);
+    }
+
+    .team-members-panel__member-name {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-members-panel {
+        padding: 3.5rem 1.5rem 4rem;
+        align-items: flex-start;
+    }
+
+    .team-members-panel__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        min-height: auto;
+        width: 100%;
+    }
+
+    .team-members-panel__left {
+        order: 1;
+        align-items: center;
+        justify-self: auto;
+        margin-bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .team-members-panel__title {
+        font-size: 2.6rem;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .team-members-panel__cta {
+        display: none;
+    }
+
+    .team-members-panel__center {
+        order: 2;
+        width: 100%;
+        justify-content: center;
+        padding: 1.8rem;
+    }
+
+    .team-members-panel__stack {
+        width: min(80vw, 18rem);
+    }
+
+    .team-members-panel__badge {
+        top: 30%;
+        right: -1rem;
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    .team-members-panel__right {
+        order: 3;
+        align-items: center;
+        align-self: auto;
+        margin-top: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .team-members-panel__controls {
+        justify-content: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .team-members-panel__cta-mobile {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .team-members-panel__info {
+        align-items: center;
+    }
+
+    .team-members-panel__name-wrapper {
+        margin-top: 20px;
+        min-height: 4rem;
+        text-align: center;
+    }
+
+    .team-members-panel__member-name {
+        font-size: 2.25rem;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .team-members-panel__first-name,
+    .team-members-panel__last-name {
+        display: inline;
+    }
+
+    .team-members-panel__last-name::before {
+        content: " ";
+    }
+
+    .team-members-panel__role-wrapper {
+        text-align: center;
+    }
+
+    .team-members-panel__member-role {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
