@@ -1,5 +1,5 @@
 const DEFAULT_MAGNETIC_CONFIG = {
-  strength: 0.45,
+  strength: 1,
   max: 18,
   follow: 0.18,
   bounce: 1.25,
