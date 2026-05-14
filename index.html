@@ -126,9 +126,61 @@
                 </div>
             </aside>
         </header>
-    </main>
 
+        
+        <section class="hero-section" id="home" aria-labelledby="hero-title">
+            <div class="hero-section__background" data-hero-background></div>
+            <div class="hero-section__layer" aria-hidden="true"></div>
+
+            <div class="hero-section__content">
+                <h1 class="hero-section__title" id="hero-title" data-i18n="hero.title">
+                    Maximize Your Olive<br />
+                    Yields with Smart<br />
+                    Management.
+                </h1>
+
+                <p class="hero-section__subtitle" data-i18n="hero.subtitle">
+                    Empower the olive sector with climate and satellite-based insights,
+                    early phytosanitary alerts, and direct access to crop protection
+                    specialists. Built for olive growers and agronomic experts.
+                </p>
+
+                <div class="hero-section__actions" aria-label="Hero actions" data-i18n-aria="aria.heroActions">
+                    <landing-button variant="secondary" href="#pricing" i18n-key="hero.cta" liquid-glass-color="green">
+                        Get Started Now!
+                    </landing-button>
+                </div>
+            </div>
+
+            <div class="hero-section__meta">
+                <span class="hero-section__site-credit" data-i18n="hero.siteCredit">SITE BY @ARCADIADEVS</span>
+
+                <div class="hero-section__meta-actions">
+                    <span class="magnetic-target" data-magnetic data-magnetic-strength="0.3" data-magnetic-max="10">
+                        <button class="hero-section__sound-button" type="button" data-sound-toggle data-hover-sound
+                            data-i18n-aria-label="aria.soundToggle" aria-label="Toggle sound" aria-pressed="false">
+                            <svg class="hero-section__sound-icon" width="24" height="10" viewBox="0 0 24 10" overflow="hidden"
+                                fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                <g class="hero-section__animated-wave" data-sound-wave-animated hidden>
+                                    <path d="M0 5 Q 3 0 6 5 T 12 5 T 18 5 T 24 5 T 30 5 T 36 5" />
+                                </g>
+
+                                <g data-sound-wave-flat>
+                                    <path d="M0 5 L 24 5" />
+                                </g>
+                            </svg>
+
+                            <span data-i18n="hero.sound">SOUND</span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </section>
+        
+    </main>
     
+
+
 
     <script type="module" src="./js/main.js"></script>
 </body>
