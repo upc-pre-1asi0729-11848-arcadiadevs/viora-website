@@ -9,18 +9,127 @@
     <link rel="icon" type="image/png" href="./assets/logos/viora-icon-ico.ico" />
     <link rel="apple-touch-icon" href="./assets/logos/viora-icon-ico.ico" />
 
-    <meta
-            name="description"
-            content="Viora empowers olive growers and agronomic experts with climate intelligence, satellite insights and early phytosanitary alerts."
-    />
+    <meta name="description" content="Viora empowers olive growers and agronomic experts with climate intelligence, satellite insights and early phytosanitary alerts." />
 
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
 </head>
 
 <body>
-<div id="landing-root"></div>
+    <main class="landing-page">
+        <header class="landing-header" aria-label="Main navigation" data-i18n-aria="aria.mainNavigation">
+            <div class="landing-header__container">
+                <a class="landing-header__brand" href="#home" aria-label="Go to Viora home" data-i18n-aria="aria.goHome" data-hover-sound>
+                    <img class="landing-header__logo" src="./assets/logos/viora-isologotipo-white.png" alt="Viora logo" />
+                </a>
 
-<script src="https://cdn.jsdelivr.net/npm/matter-js@0.20.0/build/matter.min.js"></script>
-<script type="module" src="./src/main.js"></script>
+                <nav class="landing-header__nav liquid-glass liquid-glass--deep" aria-label="Landing page sections" data-i18n-aria="aria.landingSections">
+                    <a class="landing-header__nav-link landing-header__nav-link--active" href="#home" data-hover-sound>
+                        <img class="landing-header__nav-icon" src="./assets/icons/home-outline.svg" alt="" aria-hidden="true" />
+                        <span data-i18n="navbar.home">Home</span>
+                    </a>
+
+                    <a class="landing-header__nav-link" href="#features" data-hover-sound>
+                        <img class="landing-header__nav-icon" src="./assets/icons/diamond-outline.svg" alt="" aria-hidden="true" />
+                        <span data-i18n="navbar.features">Features</span>
+                    </a>
+
+                    <a class="landing-header__nav-link" href="#growers" data-hover-sound>
+                        <img class="landing-header__nav-icon" src="./assets/icons/disc-outline.svg" alt="" aria-hidden="true" />
+                        <span data-i18n="navbar.growers">Growers</span>
+                    </a>
+
+                    <a class="landing-header__nav-link" href="#specialists" data-hover-sound>
+                        <img class="landing-header__nav-icon" src="./assets/icons/disc-outline.svg" alt="" aria-hidden="true" />
+                        <span data-i18n="navbar.specialists">Specialists</span>
+                    </a>
+
+                    <a class="landing-header__nav-link" href="#pricing" data-hover-sound>
+                        <img class="landing-header__nav-icon" src="./assets/icons/ticket-outline.svg" alt="" aria-hidden="true" />
+                        <span data-i18n="navbar.pricing">Pricing</span>
+                    </a>
+
+                    <a class="landing-header__nav-link" href="#about" data-hover-sound>
+                        <img class="landing-header__nav-icon" src="./assets/icons/medical-outline.svg" alt="" aria-hidden="true" />
+                        <span data-i18n="navbar.aboutUs">About Us</span>
+                    </a>
+
+                    <a class="landing-header__nav-link" href="#contact" data-hover-sound>
+                        <img class="landing-header__nav-icon" src="./assets/icons/call-outline.svg" alt="" aria-hidden="true" />
+                        <span data-i18n="navbar.contact">Contact</span>
+                    </a>
+                </nav>
+
+                <div class="landing-header__actions">
+                    <button class="landing-header__language-button liquid-glass liquid-glass--deep" type="button" aria-label="Change language"
+                        data-i18n-aria="aria.languageToggle" data-hover-sound data-liquid-glass>
+                        <span class="landing-header__lang-option" data-lang-switch="en"><b>EN</b></span> | <span class="landing-header__lang-option" data-lang-switch="es">ES</span>
+                    </button>
+
+                    <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="14" data-hover-sound>
+                        <a class="landing-header__cta" href="#" data-i18n="navbar.getStarted">
+                            Get Started
+                        </a>
+                    </span>
+                </div>
+
+                <!-- Mobile: language toggle + hamburger -->
+                <div class="landing-header__mobile-actions">
+                    <button class="landing-header__language-button landing-header__language-button--mobile liquid-glass liquid-glass--deep" type="button" aria-label="Change language"
+                        data-i18n-aria="aria.languageToggle" data-hover-sound data-liquid-glass>
+                        <span class="landing-header__lang-option" data-lang-switch="en"><b>EN</b></span> | <span class="landing-header__lang-option" data-lang-switch="es">ES</span>
+                    </button>
+
+                    <span class="magnetic-target landing-header__hamburger-magnetic" data-magnetic data-magnetic-strength="1" data-magnetic-max="20">
+                        <button class="landing-header__hamburger liquid-glass liquid-glass--deep" type="button" aria-label="Open menu" aria-expanded="false" data-drawer-toggle data-liquid-glass data-hover-sound>
+                            <span class="landing-header__hamburger-bar"></span>
+                            <span class="landing-header__hamburger-bar"></span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Mobile Drawer (right → left) -->
+            <div class="landing-header__drawer-backdrop" data-drawer-backdrop></div>
+
+            <aside class="landing-header__drawer" data-drawer aria-label="Mobile navigation">
+                <!-- Close button -->
+                <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="18">
+                    <button class="landing-header__drawer-close liquid-glass liquid-glass--deep" type="button" aria-label="Close menu" data-drawer-close data-liquid-glass data-hover-sound>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                            <path d="M2 2L14 14M14 2L2 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </span>
+
+                <!-- Big links -->
+                <nav class="landing-header__drawer-big-links">
+                    <a href="#home" data-drawer-link data-hover-sound data-i18n="navbar.home">HOME</a>
+                    <a href="#features" data-drawer-link data-hover-sound data-i18n="navbar.features">FEATURES</a>
+                    <a href="#growers" data-drawer-link data-hover-sound data-i18n="navbar.growers">GROWERS</a>
+                    <a href="#specialists" data-drawer-link data-hover-sound data-i18n="navbar.specialists">SPECIALISTS</a>
+                    <a href="#pricing" data-drawer-link data-hover-sound data-i18n="navbar.pricing">PRICING</a>
+                </nav>
+
+                <!-- Small links -->
+                <nav class="landing-header__drawer-small-links">
+                    <a href="#about" data-drawer-link data-hover-sound data-i18n="navbar.aboutUs">About Us</a>
+                    <a href="#contact" data-drawer-link data-hover-sound data-i18n="navbar.contact">Contact</a>
+                </nav>
+
+                <!-- CTA -->
+                <div class="landing-header__drawer-cta">
+                    <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="14">
+                        <a class="landing-button landing-button--green liquid-glass liquid-glass--green" href="#" data-drawer-link data-liquid-glass data-hover-sound data-i18n="navbar.getStarted">
+                            Get Started
+                        </a>
+                    </span>
+                </div>
+            </aside>
+        </header>
+    </main>
+
+    
+
+    <script type="module" src="./js/main.js"></script>
 </body>
 </html>
