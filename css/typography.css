@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Caros';
+    src: url('../assets/fonts/cretype-caros-regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('../assets/fonts/cretype-caros-medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('../assets/fonts/cretype-caros-bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Caros';
+    src: url('../assets/fonts/cretype-caros-extrabold.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: var(--font-family-primary);
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+a {
+    color: inherit;
+}
