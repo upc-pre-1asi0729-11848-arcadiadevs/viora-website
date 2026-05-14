@@ -1,0 +1,17 @@
+body, body * {
+  cursor: url('../assets/cursors/cursor.svg') 2 2, auto !important;
+}
+
+
+a, a *, button, button *, span, span * [role="button"], [role="button"] *, input[type="button"], input[type="submit"] {
+  cursor: url('../assets/cursors/pointer.svg') 8 2, pointer !important;
+}
+
+
+p, p *, h1, h1 *, h2, h2 *, h3, h3 *, h4, h4 *, h5, h5 *, h6, h6 *, label, label *, input[type="text"], input[type="email"], input[type="search"], input[type="password"], textarea {
+  cursor: url('../assets/cursors/text.svg') 12 12, text !important;
+}
+
+button *, a * {
+  cursor: inherit !important;
+}
