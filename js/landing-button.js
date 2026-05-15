@@ -31,8 +31,12 @@ export class LandingButton extends HTMLElement {
         a.href = href;
         a.setAttribute('data-hover-sound', '');
         
-        if (i18nKey && !isIcon) {
-            a.setAttribute('data-i18n', i18nKey);
+        if (i18nKey) {
+            if (isIcon || iconSrc) {
+                a.setAttribute('data-i18n-aria-label', i18nKey);
+            } else {
+                a.setAttribute('data-i18n', i18nKey);
+            }
         }
 
         if (liquidGlassColor) {
@@ -42,7 +46,6 @@ export class LandingButton extends HTMLElement {
 
         if (iconSrc) {
             a.innerHTML = `<img src="${iconSrc}" class="landing-button__icon-img" alt="" aria-hidden="true" />`;
-            if (i18nKey) a.setAttribute('aria-label', i18nKey); 
         } else {
             a.innerHTML = content;
         }
