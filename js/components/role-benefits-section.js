@@ -59,6 +59,5 @@ export function initializeRoleBenefitsSection(root = document) {
     });
 
     setActiveSegment(section, 'producer');
-
     section.dataset.roleBenefitsInitialized = 'true';
 }
