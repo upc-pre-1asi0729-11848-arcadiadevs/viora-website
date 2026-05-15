@@ -2,7 +2,7 @@
 import { i18n } from '../i18n.js';
 const MEMBERS = [
     { id: 1, firstName: 'Victor', lastName: 'Paredes', roleKey: 'teamMembers.role', img: './assets/images/about/members/victor.png', badge: './assets/logos/arcadia-dark-green.png' },
-    { id: 2, firstName: 'Fabricio', lastName: 'Santi', roleKey: 'teamMembers.role', img: './assets/images/about/members/fabricio.png', badge: './assets/logos/arcadia-dark-green.png' },
+    { id: 2, firstName: 'Fabrizio', lastName: 'Santi', roleKey: 'teamMembers.role', img: './assets/images/about/members/fabricio.png', badge: './assets/logos/arcadia-dark-green.png' },
     { id: 3, firstName: 'Jahat', lastName: 'Trinidad', roleKey: 'teamMembers.role', img: './assets/images/about/members/jahat.png', badge: './assets/logos/arcadia-dark-green.png' },
     { id: 4, firstName: 'Diana', lastName: 'Li', roleKey: 'teamMembers.role', img: './assets/images/about/members/diana.png', badge: './assets/logos/arcadia-dark-green.png' },
     { id: 5, firstName: 'Piero', lastName: 'Espada', roleKey: 'teamMembers.role', img: './assets/images/about/members/piero.png', badge: './assets/logos/arcadia-dark-green.png' },
