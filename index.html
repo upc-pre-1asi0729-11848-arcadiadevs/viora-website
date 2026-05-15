@@ -654,9 +654,99 @@
             </section>
         </section>
 
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+            <div class="contact-section__container">
+                <div class="contact-section__row contact-section__row--header">
+                    <div class="contact-section__col contact-section__col--label">
+                        <span class="contact-section__bullet"></span>
+                        <span class="contact-section__label" data-i18n="contact.sectionLabel">Contact</span>
+                    </div>
+                    <div class="contact-section__col contact-section__col--title">
+                        <h2 class="contact-section__title" id="contact-title" data-i18n="contact.title">Talk to the team behind Viora</h2>
+                    </div>
+                    <div class="contact-section__col contact-section__col--logo">
+                        <img src="./assets/logos/viora-isologotipo-white.png" alt="Viora Logo" class="contact-section__logo" />
+                    </div>
+                </div>
+
+                <div class="contact-section__row">
+                    <div class="contact-section__col contact-section__col--label">
+                        <span class="contact-section__bullet"></span>
+                        <span class="contact-section__label" data-i18n="contact.getInTouch.label">Get In Touch</span>
+                    </div>
+                    <div class="contact-section__col contact-section__col--info">
+                        <span class="contact-section__info-label" data-i18n="contact.getInTouch.talkToUs">Talk to us</span>
+                        <a href="tel:+51933855712" class="contact-section__link" data-i18n="contact.getInTouch.phone">+51 933 855 712</a>
+                    </div>
+                    <div class="contact-section__col contact-section__col--info">
+                        <span class="contact-section__info-label" data-i18n="contact.getInTouch.writeUs">Write us</span>
+                        <a href="mailto:daroncameloftdev@gmail.com" class="contact-section__link" data-i18n="contact.getInTouch.email">daroncameloftdev@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-section__row">
+                    <div class="contact-section__col contact-section__col--label">
+                        <span class="contact-section__bullet"></span>
+                        <span class="contact-section__label" data-i18n="contact.address.label">Address</span>
+                    </div>
+                    <div class="contact-section__col contact-section__col--info">
+                        <span class="contact-section__info-value" data-i18n="contact.address.location">Av Alameda San Marcos 11,<br />Chorrillos 15067</span>
+                        <a href="#" class="contact-section__link contact-section__link--map" data-i18n="contact.address.googleMaps">Google Maps</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <footer class="footer-section" data-footer-section aria-labelledby="footer-title">
+        <div class="footer-section__matter" data-footer-matter></div>
 
+        <div class="footer-section__content">
+            <div class="footer-section__left">
+                <nav class="footer-section__big-links" aria-label="Footer main navigation">
+                    <a href="#features" data-hover-sound data-i18n="footer.bigLinks.features">FEATURES</a>
+                    <a href="#growers" data-hover-sound data-i18n="footer.bigLinks.growers">GROWERS</a>
+                    <a href="#specialists" data-hover-sound data-i18n="footer.bigLinks.specialists">SPECIALISTS</a>
+                    <a href="#pricing" data-hover-sound data-i18n="footer.bigLinks.pricing">PRICING</a>
+                </nav>
+
+                <a class="footer-section__credit" href="https://victor-paredes-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" data-hover-sound data-i18n="footer.credit">
+                    WEBSITE DESIGNED BY DARONCAMELOFT
+                </a>
+            </div>
+
+            <div class="footer-section__middle">
+                <nav class="footer-section__small-links" aria-label="Footer secondary navigation">
+                    <a href="#home" data-hover-sound data-i18n="footer.links.home">Home</a>
+                    <a href="#about" data-hover-sound data-i18n="footer.links.about">About Us</a>
+                    <a href="#contact" data-hover-sound data-i18n="footer.links.contact">Contact</a>
+                    <a href="#" data-hover-sound data-i18n="footer.links.terms">Terms of Service</a>
+                    <a href="#" data-hover-sound data-i18n="footer.links.privacy">Privacy Policy</a>
+                </nav>
+            </div>
+
+            <div class="footer-section__right">
+                <p class="footer-section__newsletter-text" data-i18n="footer.newsletterText">
+                    Get the latest updates on precision farming, new Viora features, and expert agronomist tips, straight to your inbox.
+                </p>
+
+                <form class="footer-section__newsletter-form" data-footer-newsletter-form>
+                    <label class="sr-only" for="footer-email" data-i18n="footer.emailLabel">Email address</label>
+                    <input class="footer-section__email-input" id="footer-email" type="email" name="email" placeholder="Email address" data-i18n-placeholder="footer.emailPlaceholder" autocomplete="email" />
+                    <button class="footer-section__subscribe-button liquid-glass liquid-glass--green" type="submit" data-liquid-glass data-hover-sound data-i18n="footer.subscribe">subscribe</button>
+                </form>
+
+                <div class="footer-section__social">
+                    <span data-i18n="footer.followUs">FOLLOW US:</span>
+                    <a href="#" aria-label="YouTube" data-hover-sound><img src="./assets/icons/youtube.svg" alt="" aria-hidden="true" /></a>
+                    <a href="#" aria-label="Facebook" data-hover-sound><img src="./assets/icons/facebook.svg" alt="" aria-hidden="true" /></a>
+                    <a href="#" aria-label="Twitter" data-hover-sound><img src="./assets/icons/twitter.svg" alt="" aria-hidden="true" /></a>
+                    <a href="#" aria-label="Instagram" data-hover-sound><img src="./assets/icons/instagram.svg" alt="" aria-hidden="true" /></a>
+                    <a href="#" aria-label="LinkedIn" data-hover-sound><img src="./assets/icons/linkedin.svg" alt="" aria-hidden="true" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script type="module" src="./js/main.js"></script>
 </body>

@@ -1,0 +1,271 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "features": "Funciones",
+    "growers": "Productores",
+    "specialists": "Especialistas",
+    "pricing": "Planes",
+    "aboutUs": "Nosotros",
+    "contact": "Contacto",
+    "getStarted": "Comenzar"
+  },
+  "hero": {
+    "title": "Máxima Rentabilidad para el Olivar,\nPrecisión Total para el Especialista.",
+    "subtitle": "Brindamos a los agricultores el control absoluto de su cosecha y a los expertos fitosanitarios herramientas de diagnóstico avanzadas. Una solución integral que transforma datos satelitales y climáticos en decisiones críticas.",
+    "cta": "¡Comienza hoy mismo!",
+    "seePlans": "Ver Planes",
+    "siteCredit": "SITIO POR @ARCADIADEVS",
+    "language": "EN | ES",
+    "sound": "SONIDO"
+  },
+  "aria": {
+    "mainNavigation": "Navegación principal",
+    "landingSections": "Secciones de la landing page",
+    "goHome": "Ir al inicio de Viora",
+    "getStarted": "Comenzar con Viora",
+    "heroActions": "Acciones principales del Hero",
+    "languageToggle": "Cambiar idioma",
+    "soundToggle": "Activar o desactivar sonido"
+  },
+  "aboutIntro": {
+    "eyebrow": "Creado para el ecosistema olivarero moderno",
+    "title": "Convierte los datos ambientales y de campo en inteligencia accionable. Monitorea la salud de tus parcelas, anticipa riesgos de plagas y actúa antes para proteger el rendimiento y la estabilidad productiva.",
+    "marquee": {
+      "satellite": "Inteligencia Satelital",
+      "farming": "Agricultura Inteligente",
+      "grow": "Crece Más"
+    }
+  },
+  "problemCards": {
+    "sectionLabel": "Funciones",
+    "tag": "EL DESAFÍO",
+    "title": "La olivicultura tradicional deja demasiado al azar",
+    "description": "Los registros dispersos de campo, la respuesta reactiva ante plagas y la incertidumbre climática hacen que la producción de aceitunas sea más difícil de predecir. El sector olivarero actual necesita señales tempranas, mayor visibilidad del riesgo y mejores decisiones.",
+    "cta": "Ver Cómo Viora Lo Resuelve",
+    "ctaAria": "Ir a la solución de Viora",
+    "cardsTitle": "Las Tarjetas del Problema",
+    "cards": {
+      "yields": {
+        "title": "Rendimientos Impredecibles",
+        "number": "01",
+        "description": "Los olivos alternan naturalmente entre años de alta y baja producción. Sin una gestión precisa del estrés y seguimiento de datos, la planificación de cosecha y la proyección financiera se vuelven muy difíciles."
+      },
+      "pests": {
+        "title": "Amenazas Epidemiológicas de Plagas",
+        "number": "02",
+        "description": "Plagas como la mosca del olivo pueden devastar cultivos rápidamente. Depender de tratamientos reactivos en vez de alertas tempranas genera pérdidas irreversibles, menor calidad del aceite y costos químicos excesivos."
+      },
+      "climate": {
+        "title": "Volatilidad Climática e Impacto ENOS",
+        "number": "03",
+        "description": "El fenómeno El Niño-Oscilación del Sur altera drásticamente la temperatura y la humedad. Estos cambios repentinos de microclima afectan directamente la floración, el cuajado del fruto y la salud general del olivar."
+      }
+    }
+  },
+  "problemSolution": {
+    "problemPanel": {
+      "introText": "La olivicultura se está volviendo más volátil. No reacciones solo ante el riesgo en campo: anticípalo. Viora te ayuda a avanzar con datos accionables, visibilidad temprana del riesgo de plagas y acceso directo al especialista adecuado en protección de cultivos.",
+      "expandedText": "Viora transforma la incertidumbre ambiental en inteligencia temprana y accionable para cada parcela de olivo."
+    }
+  },
+  "solutionPanel": {
+    "eyebrow": "LA SOLUCIÓN",
+    "title": "Convierte los datos del olivar en decisiones preventivas",
+    "subtitle": "Predice antes. Responde mejor.",
+    "cards": {
+      "alerts": {
+        "title": "Alertas Epidemiológicas",
+        "description": "Detecta señales tempranas de riesgo fitosanitario y recibe alertas oportunas antes de que los brotes escalen en tu parcela o campos cercanos."
+      },
+      "marketplace": {
+        "title": "Marketplace de Especialistas",
+        "description": "Conecta con especialistas en protección de cultivos de tu zona, compara perfiles y encuentra el experto adecuado cuando tu campo necesita soporte técnico rápido."
+      },
+      "ndvi": {
+        "title": "Monitoreo NDVI",
+        "description": "Monitorea el vigor del dosel de forma remota para detectar patrones tempranos de estrés y tomar decisiones de campo con visibilidad satelital."
+      },
+      "chill": {
+        "title": "Seguimiento de Porciones de Frío",
+        "description": "Rastrea la acumulación de frío durante la temporada para anticipar riesgos fenológicos, proteger la floración y reducir la incertidumbre de la alternancia productiva."
+      },
+      "nutrition": {
+        "title": "Planes de Nutrición Dinámica",
+        "description": "Recibe recomendaciones nutricionales basadas en datos que se adaptan a las condiciones del campo, ayudándote a responder antes al estrés y proteger el rendimiento."
+      },
+      "climate": {
+        "title": "Perspectiva de Riesgo Climático",
+        "description": "Sigue los cambios climáticos y anomalías térmicas para anticipar eventos de estrés, prepararte antes y tomar decisiones estacionales con mayor confianza."
+      }
+    }
+  },
+  "expectedOutcomes": {
+    "eyebrow": "Resultados Esperados",
+    "title": "TOMA DECISIONES OLIVARERAS MÁS INTELIGENTES Y REDUCE EL RIESGO ESTACIONAL.",
+    "metrics": {
+      "delivery": {
+        "value": "<10 min",
+        "label": "Meta de Entrega de Alertas"
+      },
+      "growers": {
+        "value": "150+",
+        "label": "Productores Olivareros en Adopción Temprana"
+      },
+      "specialists": {
+        "value": "30+",
+        "label": "Especialistas Objetivo en la Red"
+      },
+      "reduction": {
+        "value": "15%",
+        "label": "Reducción Hipotética en Gasto de Insumos"
+      }
+    },
+    "recommendation": {
+      "eyebrow": "Una Recomendación de Viora",
+      "title": "NUNCA ENFRENTES UN BROTE DE PLAGAS SOLO",
+      "description": "Cuando el riesgo aumenta, Viora te conecta con especialistas cercanos que pueden revisar los datos de tu campo, evaluar la situación y ayudarte a responder más rápido con acciones técnicas focalizadas.",
+      "cta": "Explorar el Marketplace",
+      "ctaAria": "Explorar el marketplace"
+    }
+  },
+  "roleBenefits": {
+    "sectionLabel": "Segmentos",
+    "growersTitle": "Productores",
+    "specialistsTitle": "Especialistas",
+    "title": "Una plataforma. Dos experiencias poderosas.",
+    "description": "Ya sea que gestiones producción olivarera o brindes servicios de protección de cultivos, Viora te ofrece herramientas y conexiones para actuar antes y decidir mejor.",
+    "producer": {
+      "tab": "Productores olivareros",
+      "title": "Para Productores Olivareros",
+      "pill1": "Monitoreo satelital, climático y de porciones de frío.",
+      "pill2": "Alertas epidemiológicas automatizadas ante plagas.",
+      "pill3": "Predicción de vecería y soporte de nutrición dinámica.",
+      "cta": "Ver Planes",
+      "note": "La volatilidad climática y los brotes repentinos de plagas hacen que la producción olivarera sea más difícil de predecir. Viora convierte datos de campo en información accionable para detectar riesgos antes, proteger el rendimiento y responder más rápido con el especialista adecuado."
+    },
+    "specialist": {
+      "tab": "Especialistas fitosanitarios",
+      "title": "Especialistas fitosanitarios",
+      "pill1": "Accede a nuevas oportunidades de servicio mediante el marketplace de especialistas.",
+      "pill2": "Revisa contexto de parcelas, patrones NDVI y señales de riesgo reportadas.",
+      "pill3": "Herramientas de prescripción digital y evaluación de campo.",
+      "cta": "Unirme al Marketplace",
+      "note": "Encontrar nuevos clientes y responder temprano ante riesgos de campo es difícil sin las señales adecuadas. Viora te ayuda a descubrir oportunidades de servicio, revisar contexto de campo con indicadores satelitales y entregar orientación técnica más rápida y estructurada."
+    }
+  },
+  "pricingIntro": {
+    "sectionLabel": "Planes de Precio",
+    "firstTitle": "Deja de pagar por una agricultura reactiva",
+    "firstSubtitle": "Esperar a que aparezcan plagas, señales de estrés o daños climáticos suele costar más que prevenirlos con inteligencia de campo en tiempo real.",
+    "secondTitle": "E invierte en un plan proactivo",
+    "secondSubtitle": "Selecciona una suscripción de Viora que se ajuste a las necesidades de tu olivar. Deja de esperar a que el daño ocurra y empieza a prevenirlo con datos en tiempo real."
+  },
+  "pricingPlans": {
+    "billing": {
+      "monthly": "Mensual",
+      "yearly": "Anual"
+    },
+    "producer": {
+      "title": "Para Productores Olivareros",
+      "planName": "Acceso Productor",
+      "detail1": "Monitoreo NDVI y visibilidad de salud de parcela",
+      "detail2": "Seguimiento de porciones de frío y riesgo fenológico",
+      "detail3": "Alertas epidemiológicas automatizadas",
+      "detail4": "Recomendaciones de nutrición dinámica",
+      "detail5": "Acceso a especialistas en protección de cultivos cuando el riesgo aumenta",
+      "cta": "Registrarse"
+    },
+    "specialist": {
+      "title": "Especialistas fitosanitarios",
+      "planName": "Acceso Especialista",
+      "detail1": "Radar de prospección para nuevas oportunidades de servicio",
+      "detail2": "Prescripciones digitales y herramientas de evaluación en campo",
+      "detail3": "Visibilidad dentro del ecosistema Viora",
+      "detail4": "Acceso al contexto de campo e indicadores de riesgo satelitales",
+      "detail5": "Conexión más rápida con productores que necesitan intervención",
+      "cta": "Registrarse"
+    }
+  },
+  "referralsInfo": {
+    "tag": "Referidos",
+    "title": "Invita a otros a Viora. Hagamos crecer el ecosistema juntos.",
+    "description": "Comparte tu enlace único de referido con productores olivareros y especialistas en protección de cultivos. Cuando los usuarios invitados se unan a Viora y completen su primera acción clave, desbloquearás recompensas predefinidas dentro del ecosistema.",
+    "cta": "Obtener Mi Enlace",
+    "ctaAria": "Obtener mi enlace de referido",
+    "cards": {
+      "share": {
+        "title": "Comparte Tu Enlace",
+        "description": "Genera un enlace único de referido e invita nuevos usuarios al ecosistema Viora."
+      },
+      "track": {
+        "title": "Rastrea Nuevos Registros",
+        "description": "Consulta cuándo productores o especialistas invitados se unen mediante tu referido."
+      },
+      "rewards": {
+        "title": "Desbloquea Recompensas",
+        "description": "Gana beneficios predefinidos cuando tus referidos completen su primera acción clave."
+      },
+      "grow": {
+        "title": "Crezcamos Juntos",
+        "description": "Ayuda a expandir un ecosistema olivarero más inteligente mientras aumentas el valor de tu cuenta."
+      }
+    }
+  },
+  "aboutMission": {
+    "sectionLabel": "Nosotros",
+    "tag": "EL EQUIPO",
+    "title": "Nuestra Misión",
+    "subtitle": "Con raíces en la agricultura, impulsados por la precisión.",
+    "builtBy": "Construido por ArcadiaDevs",
+    "focusedOn": "Enfocados en la Producción de Olivos",
+    "statement": "Ayudamos a los productores olivareros y especialistas en protección de cultivos a tomar decisiones más tempranas e inteligentes.",
+    "description": "Somos ArcadiaDevs, un equipo de software y diseño que construye Viora: una plataforma SaaS enfocada en la gestión inteligente de la producción olivarera. Combinamos datos ambientales, alertas fitosanitarias tempranas y conexión con especialistas para ayudar al sector olivarero a responder con mayor claridad y confianza.",
+    "cta": "Contáctanos",
+    "ctaAria": "Contáctanos"
+  },
+  "teamMembers": {
+    "title": "Conoce a<br>nuestro equipo",
+    "cta": "Ver más miembros",
+    "role": "Grupo ArcadiaDevs"
+  },
+  "learningFromBest": {
+    "title": "Aprendiendo de los mejores"
+  },
+  "contact": {
+    "sectionLabel": "Contacto",
+    "title": "Habla con el equipo detrás de Viora",
+    "getInTouch": {
+      "label": "Ponte en contacto",
+      "talkToUs": "Habla con nosotros",
+      "writeUs": "Escríbenos"
+    },
+    "address": {
+      "label": "Dirección",
+      "location": "Av Alameda San Marcos 11,<br />Chorrillos 15067",
+      "googleMaps": "Google Maps",
+      "openForm": "Abrir formulario",
+      "sendMessage": "Enviar un mensaje"
+    }
+  },
+  "footer": {
+    "bigLinks": {
+      "features": "FUNCIONES",
+      "growers": "PRODUCTORES",
+      "specialists": "ESPECIALISTAS",
+      "pricing": "PLANES"
+    },
+    "credit": "SITIO DISEÑADO POR DARONCAMELOFT",
+    "links": {
+      "home": "Inicio",
+      "about": "Nosotros",
+      "contact": "Contacto",
+      "terms": "Términos de Servicio",
+      "privacy": "Política de Privacidad"
+    },
+    "newsletterText": "Recibe las últimas novedades sobre agricultura de precisión, nuevas funciones de Viora y consejos de especialistas directamente en tu correo.",
+    "emailLabel": "Correo electrónico",
+    "emailPlaceholder": "Correo electrónico",
+    "subscribe": "suscribirse",
+    "followUs": "SÍGUENOS:"
+  }
+}
