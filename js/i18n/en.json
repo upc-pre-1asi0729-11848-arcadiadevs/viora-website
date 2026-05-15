@@ -1,0 +1,271 @@
+{
+  "navbar": {
+    "home": "Home",
+    "features": "Features",
+    "growers": "Growers",
+    "specialists": "Specialists",
+    "pricing": "Pricing",
+    "aboutUs": "About Us",
+    "contact": "Contact",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "title": "Maximum Yield for Growers,\nTotal Precision for Specialists.",
+    "subtitle": "Providing growers with absolute harvest control and phytosanitary experts with advanced diagnostic tools. An all-in-one solution that transforms satellite and climate data into critical decisions.",
+    "cta": "Get Started Now!",
+    "seePlans": "See Plans",
+    "siteCredit": "SITE BY @ARCADIADEVS",
+    "language": "EN | ES",
+    "sound": "SOUND"
+  },
+  "aria": {
+    "mainNavigation": "Main navigation",
+    "landingSections": "Landing page sections",
+    "goHome": "Go to Viora home",
+    "getStarted": "Get started with Viora",
+    "heroActions": "Hero actions",
+    "languageToggle": "Change language",
+    "soundToggle": "Toggle sound"
+  },
+  "aboutIntro": {
+    "eyebrow": "Built for the modern olive ecosystem",
+    "title": "Turn environmental and field data into actionable intelligence. Monitor plot health, anticipate pest risk, and act earlier to protect yield and production stability.",
+    "marquee": {
+      "satellite": "Satellite Intelligence",
+      "farming": "Smart Farming",
+      "grow": "Grow More"
+    }
+  },
+  "problemCards": {
+    "sectionLabel": "Features",
+    "tag": "THE CHALLENGE",
+    "title": "Traditional olive farming leaves too much to chance",
+    "description": "Scattered field records, reactive pest response, and climate uncertainty make olive production harder to predict. Today's olive sector needs earlier signals, clearer risk visibility, and better decisions.",
+    "cta": "See How Viora Solves This",
+    "ctaAria": "Go to Viora solution",
+    "cardsTitle": "The Problem Cards",
+    "cards": {
+      "yields": {
+        "title": "Unpredictable Yields",
+        "number": "01",
+        "description": "Olive trees naturally alternate between high and low production years. Without precise stress management and data tracking, financial forecasting and harvest planning become incredibly difficult."
+      },
+      "pests": {
+        "title": "Epidemiological Pest Threats",
+        "number": "02",
+        "description": "Pests like the Olive Fruit Fly can devastate crops rapidly. Relying on reactive treatments instead of early alerts leads to irreversible crop loss, lower oil quality, and excessive chemical costs."
+      },
+      "climate": {
+        "title": "Climate Volatility and ENSO Impact",
+        "number": "03",
+        "description": "The El Niño-Southern Oscillation drastically alters temperature and humidity. These sudden micro-climate shifts directly disrupt flowering, fruit set, and overall orchard health."
+      }
+    }
+  },
+  "problemSolution": {
+    "problemPanel": {
+      "introText": "Olive farming is becoming more volatile. Don't just react to field risk — anticipate it. Viora helps you move forward with actionable data, earlier pest-risk visibility, and direct access to the right crop protection specialist.",
+      "expandedText": "Viora transforms environmental uncertainty into early, actionable risk intelligence for every olive plot."
+    }
+  },
+  "solutionPanel": {
+    "eyebrow": "THE SOLUTION",
+    "title": "Turn olive field data into preventive decisions",
+    "subtitle": "Predict earlier. Respond smarter.",
+    "cards": {
+      "alerts": {
+        "title": "Epidemiological Alerts",
+        "description": "Detect early warning signs of phytosanitary risk and receive timely alerts before outbreaks escalate across your plot or nearby fields."
+      },
+      "marketplace": {
+        "title": "Specialist Marketplace",
+        "description": "Connect with crop protection specialists in your area, compare profiles, and reach the right expert when your field needs fast technical support."
+      },
+      "ndvi": {
+        "title": "NDVI Monitoring",
+        "description": "Monitor canopy vigor remotely to detect early stress patterns and support faster field decisions with satellite-based visibility."
+      },
+      "chill": {
+        "title": "Chill Portion Tracking",
+        "description": "Track chill accumulation across the season to anticipate phenological risk, protect flowering conditions, and reduce alternate bearing uncertainty."
+      },
+      "nutrition": {
+        "title": "Dynamic Nutrition Plans",
+        "description": "Receive data-driven nutrition recommendations that adapt to field conditions, helping you respond earlier to stress and protect crop performance."
+      },
+      "climate": {
+        "title": "Climate Risk Outlook",
+        "description": "Follow changing climate conditions and thermal anomalies to anticipate stress events, prepare earlier, and make more confident seasonal decisions."
+      }
+    }
+  },
+  "expectedOutcomes": {
+    "eyebrow": "Expected Outcomes",
+    "title": "MAKE SMARTER OLIVE DECISIONS AND REDUCE SEASONAL RISK.",
+    "metrics": {
+      "delivery": {
+        "value": "<10 min",
+        "label": "Alert Delivery Goal"
+      },
+      "growers": {
+        "value": "150+",
+        "label": "Target Olive Growers in Early Adoption"
+      },
+      "specialists": {
+        "value": "30+",
+        "label": "Target Specialists in the Network"
+      },
+      "reduction": {
+        "value": "15%",
+        "label": "Hypothesized Reduction in Input Spending"
+      }
+    },
+    "recommendation": {
+      "eyebrow": "A Viora's Recommendation",
+      "title": "NEVER FACE A PEST OUTBREAK ALONE",
+      "description": "When risk rises, Viora connects you with nearby specialists who can review your field data, assess the situation, and help you respond faster with targeted technical action.",
+      "cta": "Explore the Marketplace",
+      "ctaAria": "Explore the marketplace"
+    }
+  },
+  "roleBenefits": {
+    "sectionLabel": "Segments",
+    "growersTitle": "Growers",
+    "specialistsTitle": "Specialists",
+    "title": "One platform. Two powerful experiences.",
+    "description": "Whether you manage olive production or provide crop protection services, Viora gives you the tools and connections to act earlier and decide better.",
+    "producer": {
+      "tab": "Olive Producers",
+      "title": "For Olive Producers",
+      "pill1": "Satellite, climate, and chill portion monitoring.",
+      "pill2": "Automated epidemiological pest alerts.",
+      "pill3": "Alternate bearing prediction and dynamic nutrition support.",
+      "cta": "View Pricing Plans",
+      "note": "Climate volatility and sudden pest outbreaks make olive production harder to predict. Viora turns field data into actionable insights, helping you detect risk earlier, protect yield, and respond faster with the right specialist when needed."
+    },
+    "specialist": {
+      "tab": "Phytosanitary specialists",
+      "title": "Phytosanitary specialists",
+      "pill1": "Access new service opportunities through the specialist marketplace.",
+      "pill2": "Review plot context, NDVI patterns, and reported field risk signals.",
+      "pill3": "Digital prescriptions and field assessment tools.",
+      "cta": "Join the Marketplace",
+      "note": "Finding new clients and responding early to field risk is difficult without the right signals. Viora helps you discover service opportunities, review field context with satellite-based indicators, and deliver faster, more structured technical guidance."
+    }
+  },
+  "pricingIntro": {
+    "sectionLabel": "Pricing Plans",
+    "firstTitle": "Stop paying for reactive farming",
+    "firstSubtitle": "Waiting for pests, stress signals, or climate damage to appear often costs more than preventing them with real-time field intelligence.",
+    "secondTitle": "And invest in a proactive plan",
+    "secondSubtitle": "Select a Viora subscription that fits your orchard's needs. Stop waiting for pest damage to happen and start preventing it with real-time data."
+  },
+  "pricingPlans": {
+    "billing": {
+      "monthly": "Monthly",
+      "yearly": "yearly"
+    },
+    "producer": {
+      "title": "For Olive Producers",
+      "planName": "Grower Access",
+      "detail1": "NDVI monitoring and plot health visibility",
+      "detail2": "Chill portion tracking and phenological risk detection",
+      "detail3": "Automated epidemiological alerts",
+      "detail4": "Dynamic nutrition recommendations",
+      "detail5": "Access to crop protection specialists when risk rises",
+      "cta": "Sign Up"
+    },
+    "specialist": {
+      "title": "Phytosanitary specialists",
+      "planName": "Specialist Access",
+      "detail1": "Prospecting radar for new service opportunities",
+      "detail2": "Digital prescriptions and field assessment tools",
+      "detail3": "Visibility inside the Viora ecosystem",
+      "detail4": "Access to field context and satellite-based risk indicators",
+      "detail5": "Faster connection with producers who need intervention",
+      "cta": "Sign Up"
+    }
+  },
+  "referralsInfo": {
+    "tag": "Referrals",
+    "title": "Invite others to Viora. Grow the ecosystem together.",
+    "description": "Share your unique referral link with olive growers and crop protection specialists. When invited users join Viora and complete their first key action, you unlock predefined rewards inside the ecosystem.",
+    "cta": "Get My Referral Link",
+    "ctaAria": "Get my referral link",
+    "cards": {
+      "share": {
+        "title": "Share Your Link",
+        "description": "Generate a unique referral link and invite new users into the Viora ecosystem."
+      },
+      "track": {
+        "title": "Track New Sign-Ups",
+        "description": "See when invited growers or specialists join through your referral."
+      },
+      "rewards": {
+        "title": "Unlock Rewards",
+        "description": "Earn predefined benefits when your referrals complete their first key action."
+      },
+      "grow": {
+        "title": "Grow Together",
+        "description": "Help expand a smarter olive ecosystem while increasing the value of your own account."
+      }
+    }
+  },
+  "aboutMission": {
+    "sectionLabel": "About Us",
+    "tag": "THE TEAM",
+    "title": "Our Mission",
+    "subtitle": "Rooted in agriculture, driven by precision.",
+    "builtBy": "Built by ArcadiaDevs",
+    "focusedOn": "Focused on Olive Production",
+    "statement": "Helping olive growers and crop protection specialists make earlier, smarter decisions.",
+    "description": "We are ArcadiaDevs, a software and design team building Viora: a SaaS platform focused on the intelligent management of olive production. We combine environmental data, early phytosanitary alerts, and specialist connection to help the olive sector respond with greater clarity and confidence.",
+    "cta": "Contact Us",
+    "ctaAria": "Contact us"
+  },
+  "teamMembers": {
+    "title": "Meet<br>our team",
+    "cta": "View more members",
+    "role": "Group ArcadiaDevs"
+  },
+  "learningFromBest": {
+    "title": "Learning from the best"
+  },
+  "contact": {
+    "sectionLabel": "Contact",
+    "title": "Talk to the team behind Viora",
+    "getInTouch": {
+      "label": "Get In Touch",
+      "talkToUs": "Talk to us",
+      "writeUs": "Write us"
+    },
+    "address": {
+      "label": "Address",
+      "location": "Av Alameda San Marcos 11,<br />Chorrillos 15067",
+      "googleMaps": "Google Maps",
+      "openForm": "Open form",
+      "sendMessage": "Send a message"
+    }
+  },
+  "footer": {
+    "bigLinks": {
+      "features": "FEATURES",
+      "growers": "GROWERS",
+      "specialists": "SPECIALISTS",
+      "pricing": "PRICING"
+    },
+    "credit": "WEBSITE DESIGNED BY DARONCAMELOFT",
+    "links": {
+      "home": "Home",
+      "about": "About Us",
+      "contact": "Contact",
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy"
+    },
+    "newsletterText": "Get the latest updates on precision farming, new Viora features, and expert agronomist tips, straight to your inbox.",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "Email address",
+    "subscribe": "subscribe",
+    "followUs": "FOLLOW US:"
+  }
+}
