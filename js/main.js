@@ -19,7 +19,7 @@ import { initializeAboutMissionPanel } from './components/about-mission-panel.js
 import { initializeTeamMembersPanel } from './components/team-members-panel.js';
 import { initializeLearningFromBestPanel } from './components/learning-from-best-panel.js';
 
-import { initializeContactSection } from './components/contact-section.js';
+
 import { initializeFooterSection } from './components/footer-section.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         initializeLearningFromBestPanel();
 
 
-        initializeContactSection();
+
         initializeFooterSection();
 
 
