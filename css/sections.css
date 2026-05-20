@@ -1926,7 +1926,66 @@
     }
 }
 
-/* landing-header.css */
+.landing-header__language-switcher {
+    position: relative;
+    display: inline-flex;
+    padding: 4px;
+    border-radius: 24px;
+    gap: 4px;
+    align-items: center;
+    min-height: 3.5rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    clip-path: inset(0 round 24px);
+}
+
+.landing-header__language-btn {
+    border: none;
+    background: transparent;
+    padding: 0 1.25rem;
+    font-family: var(--font-family-primary);
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    border-radius: 20px;
+    min-height: calc(3.5rem - 8px);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.landing-header__language-btn:hover {
+    color: #FFFFFF;
+}
+
+.landing-header__language-btn--active {
+    color: var(--color-ink, #1E2722) !important;
+}
+
+/* Slider Pill */
+.landing-header__language-slider {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    width: calc(50% - 6px);
+    background: #FFFFFF;
+    border-radius: 20px;
+    z-index: 1;
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    pointer-events: none;
+}
+
+.landing-header__language-switcher--es .landing-header__language-slider {
+    transform: translateX(calc(100% + 4px));
+}
+
 .landing-header {
     position: fixed;
     top: 0;
@@ -1961,6 +2020,8 @@
     gap: 0.25rem;
     padding: 0.5rem;
     border-radius: 999px;
+    background-clip: padding-box;
+    clip-path: inset(0 round 999px);
 }
 
 .landing-header__nav-link {
@@ -2065,6 +2126,8 @@
     background: transparent;
     cursor: pointer;
     padding: 0;
+    background-clip: padding-box;
+    clip-path: inset(0 round 50%);
 }
 
 .landing-header__hamburger-bar {
@@ -2270,8 +2333,6 @@
 }
 
 
-/* ─── Body scroll lock when drawer is open ─── */
-
 body.drawer-open {
     overflow: hidden;
 }
@@ -2307,7 +2368,6 @@ body.drawer-open {
     }
 }
 
-/* parallax-intro.css */
 .pricing-parallax-intro {
     --pricing-text-first-opacity: 1;
     --pricing-text-first-y: 0px;
@@ -2321,7 +2381,6 @@ body.drawer-open {
     color: var(--color-white);
 }
 
-/* Static mode: no parallax animation, text and images properly separated */
 .pricing-parallax-intro--static {
     height: auto;
     min-height: 100vh;
@@ -2539,14 +2598,12 @@ body.drawer-open {
     }
 }
 
-/* plans-trial-affiliates-section.css */
 .plans-trial-affiliates-section {
     position: relative;
     z-index: 7;
     background: var(--color-primary);
 }
 
-/* pricing-plans-panel.css */
 .pricing-plans-panel {
     position: relative;
     overflow: hidden;
@@ -3025,7 +3082,6 @@ body.drawer-open {
     }
 }
 
-/* expected-outcomes-panel.css */
 .expected-outcomes-panel {
     position: relative;
     z-index: 4;
@@ -3046,7 +3102,6 @@ body.drawer-open {
     position: relative;
     overflow: hidden;
     min-height: 48vh;
-    /* Transform is now applied to the child video instead */
 }
 
 .expected-outcomes-panel__media--top {
@@ -3286,7 +3341,7 @@ body.drawer-open {
     --media-overlay-opacity: 0;
 
     position: relative;
-    height: 350vh; /* Increased from 230vh to allow extra scroll time after video expands */
+    height: 350vh;
     background: #f7f7f4;
 }
 
@@ -3712,7 +3767,6 @@ body.drawer-open {
     background: #f7f7f4;
 }
 
-/* solution-panel.css */
 .solution-panel {
     position: relative;
     overflow: hidden;
@@ -4342,11 +4396,8 @@ body.drawer-open {
     background: #ad4f28;
 }
 
-/* When liquid-glass is combined with a color variant, preserve the solid
-   background and only layer the glass shimmer + border on top */
 .landing-button.liquid-glass {
     border: 1px solid var(--glass-border-color, rgba(255, 255, 255, 0.22));
-    /* Reset the glass background — the variant's solid color takes priority */
     background: var(--btn-solid-bg);
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
@@ -4383,7 +4434,6 @@ body.drawer-open {
     }
 }
 
-/* ─── Topline Styles for relocated headers ─── */
 .solution-panel__topline,
 .pricing-plans-panel__topline {
     width: min(100% - 2rem, var(--layout-max-width));
