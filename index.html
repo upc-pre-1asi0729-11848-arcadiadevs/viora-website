@@ -57,10 +57,11 @@
                 </nav>
 
                 <div class="landing-header__actions">
-                    <button class="landing-header__language-button liquid-glass liquid-glass--deep" type="button" aria-label="Change language"
-                        data-i18n-aria="aria.languageToggle" data-hover-sound data-liquid-glass>
-                        <span class="landing-header__lang-option" data-lang-switch="en"><b>EN</b></span> | <span class="landing-header__lang-option" data-lang-switch="es">ES</span>
-                    </button>
+                    <div class="landing-header__language-switcher liquid-glass liquid-glass--deep" data-language-switcher data-liquid-glass>
+                        <button class="landing-header__language-btn" type="button" data-lang-switch="en" data-hover-sound>EN</button>
+                        <button class="landing-header__language-btn" type="button" data-lang-switch="es" data-hover-sound>ES</button>
+                        <div class="landing-header__language-slider"></div>
+                    </div>
 
                     <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="14" data-hover-sound>
                         <a class="landing-header__cta" href="https://viora-webapp.web.app" data-i18n="navbar.getStarted">
@@ -71,10 +72,11 @@
 
                 <!-- Mobile: language toggle + hamburger -->
                 <div class="landing-header__mobile-actions">
-                    <button class="landing-header__language-button landing-header__language-button--mobile liquid-glass liquid-glass--deep" type="button" aria-label="Change language"
-                        data-i18n-aria="aria.languageToggle" data-hover-sound data-liquid-glass>
-                        <span class="landing-header__lang-option" data-lang-switch="en"><b>EN</b></span> | <span class="landing-header__lang-option" data-lang-switch="es">ES</span>
-                    </button>
+                    <div class="landing-header__language-switcher liquid-glass liquid-glass--deep" data-language-switcher data-liquid-glass>
+                        <button class="landing-header__language-btn" type="button" data-lang-switch="en" data-hover-sound>EN</button>
+                        <button class="landing-header__language-btn" type="button" data-lang-switch="es" data-hover-sound>ES</button>
+                        <div class="landing-header__language-slider"></div>
+                    </div>
 
                     <span class="magnetic-target landing-header__hamburger-magnetic" data-magnetic data-magnetic-strength="1" data-magnetic-max="20">
                         <button class="landing-header__hamburger liquid-glass liquid-glass--deep" type="button" aria-label="Open menu" aria-expanded="false" data-drawer-toggle data-liquid-glass data-hover-sound>
