@@ -649,7 +649,7 @@
 .team-members-panel {
     position: relative;
     background: var(--color-primary-dark);
-    padding: clamp(5rem, 8vw, 7rem) var(--space-layout-x);
+    padding: clamp(1.5rem, 3vw, 2.75rem) var(--space-layout-x) clamp(5rem, 8vw, 7rem);
     overflow: hidden;
     color: var(--color-white);
 }
@@ -662,34 +662,8 @@
     gap: 2.5rem;
 }
 
-.team-members-panel__topline {
-    min-height: 3rem;
-    display: flex;
-    align-items: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.28);
-}
-
-.team-members-panel__section-label {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.9rem;
-    font-family: var(--font-family-primary);
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 1;
-    color: var(--color-white);
-}
-
-.team-members-panel__section-label::before {
-    content: "";
-    width: 0.75rem;
-    height: 0.75rem;
-    border-radius: 999px;
-    background: var(--color-white);
-}
-
 .team-members-panel__header {
-    padding-top: clamp(1rem, 2vw, 2rem);
+    padding-top: 0;
     text-align: center;
 }
 
@@ -701,10 +675,6 @@
     line-height: 1.08;
     letter-spacing: -0.04em;
     color: var(--color-white);
-}
-
-.team-members-panel__title br {
-    display: none;
 }
 
 /* Draggable Team Slider */
@@ -1019,10 +989,6 @@
         flex: 0 0 250px;
     }
 
-    .team-members-panel__title br {
-        display: block;
-    }
-    
     .about-presentation {
         margin-top: 3rem;
     }
