@@ -2,26 +2,37 @@ import { i18n } from '../i18n.js';
 
 export function initializeLandingHeader() {
     // ── Language toggle: separate EN / ES click handlers ──
-    const allLangButtons = document.querySelectorAll('.landing-header__language-button');
+    const switchers = document.querySelectorAll('.landing-header__language-switcher');
 
     function updateAllLangButtons(lang) {
-        allLangButtons.forEach(btn => {
-            const enSpan = btn.querySelector('[data-lang-switch="en"]');
-            const esSpan = btn.querySelector('[data-lang-switch="es"]');
-            if (enSpan) enSpan.innerHTML = lang === 'en' ? '<b>EN</b>' : 'EN';
-            if (esSpan) esSpan.innerHTML = lang === 'es' ? '<b>ES</b>' : 'ES';
+        switchers.forEach(switcher => {
+            if (lang === 'es') {
+                switcher.classList.add('landing-header__language-switcher--es');
+                switcher.classList.remove('landing-header__language-switcher--en');
+            } else {
+                switcher.classList.add('landing-header__language-switcher--en');
+                switcher.classList.remove('landing-header__language-switcher--es');
+            }
+
+            const enBtn = switcher.querySelector('[data-lang-switch="en"]');
+            const esBtn = switcher.querySelector('[data-lang-switch="es"]');
+            if (enBtn) {
+                enBtn.classList.toggle('landing-header__language-btn--active', lang === 'en');
+                enBtn.setAttribute('aria-pressed', lang === 'en' ? 'true' : 'false');
+            }
+            if (esBtn) {
+                esBtn.classList.toggle('landing-header__language-btn--active', lang === 'es');
+                esBtn.setAttribute('aria-pressed', lang === 'es' ? 'true' : 'false');
+            }
         });
     }
 
-    allLangButtons.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            const langSpan = e.target.closest('[data-lang-switch]');
-            if (langSpan) {
-                const targetLang = langSpan.dataset.langSwitch;
+    switchers.forEach(switcher => {
+        switcher.addEventListener('click', (e) => {
+            const btn = e.target.closest('[data-lang-switch]');
+            if (btn) {
+                const targetLang = btn.dataset.langSwitch;
                 i18n.setLanguage(targetLang);
-            } else {
-                // If clicked on the button but not on a specific span (like the separator), toggle it
-                i18n.toggleLanguage();
             }
         });
     });
