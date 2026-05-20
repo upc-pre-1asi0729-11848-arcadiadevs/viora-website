@@ -18,6 +18,8 @@ import { initializeReferralsInfo } from './components/referrals-info.js';
 import { initializeAboutMissionPanel } from './components/about-mission-panel.js';
 import { initializeTeamMembersPanel } from './components/team-members-panel.js';
 import { initializeLearningFromBestPanel } from './components/learning-from-best-panel.js';
+import { initializeImageCtaSection } from './components/image-cta-section.js';
+import { initializeFinalCtaSection } from './components/final-cta-section.js';
 
 
 import { initializeFooterSection } from './components/footer-section.js';
@@ -43,6 +45,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         initializeExpectedOutcomesPanel();
 
         initializeRoleBenefitsSection();
+        initializeImageCtaSection();
         
         initializePricingPlansPanel();
         initializeReferralsInfo();
@@ -50,6 +53,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         initializeAboutMissionPanel();
         initializeTeamMembersPanel();
         initializeLearningFromBestPanel();
+        initializeFinalCtaSection();
 
 
 
