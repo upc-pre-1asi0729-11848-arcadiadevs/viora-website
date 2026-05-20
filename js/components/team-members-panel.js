@@ -1,12 +1,12 @@
 import { i18n } from '../i18n.js';
 
 const MEMBERS = [
-    { id: 1, firstName: 'Victor', lastName: 'Paredes', roleKey: 'teamMembers.role', img: './assets/images/about/members/victor.png', badge: './assets/logos/arcadia-dark-green.png' },
-    { id: 2, firstName: 'Fabrizio', lastName: 'Santi', roleKey: 'teamMembers.role', img: './assets/images/about/members/fabricio.png', badge: './assets/logos/arcadia-dark-green.png' },
-    { id: 3, firstName: 'Jahat', lastName: 'Trinidad', roleKey: 'teamMembers.role', img: './assets/images/about/members/jahat.png', badge: './assets/logos/arcadia-dark-green.png' },
-    { id: 4, firstName: 'Diana', lastName: 'Li', roleKey: 'teamMembers.role', img: './assets/images/about/members/diana.png', badge: './assets/logos/arcadia-dark-green.png' },
-    { id: 5, firstName: 'Piero', lastName: 'Espada', roleKey: 'teamMembers.role', img: './assets/images/about/members/piero.png', badge: './assets/logos/arcadia-dark-green.png' },
-    { id: 6, firstName: 'Josue', lastName: 'Carpio', roleKey: 'teamMembers.role', img: './assets/images/about/members/josue.png', badge: './assets/logos/arcadia-dark-green.png' }
+    { id: 1, firstName: 'Victor', lastName: 'Paredes', roleKey: 'teamMembers.role', img: './assets/images/about/members/enhanced/victor-enh.png', badge: './assets/logos/arcadia-dark-green.png' },
+    { id: 2, firstName: 'Fabrizio', lastName: 'Santi', roleKey: 'teamMembers.role', img: './assets/images/about/members/enhanced/fabricio-enh.png', badge: './assets/logos/arcadia-dark-green.png' },
+    { id: 3, firstName: 'Jahat', lastName: 'Trinidad', roleKey: 'teamMembers.role', img: './assets/images/about/members/enhanced/jahat-enh.png', badge: './assets/logos/arcadia-dark-green.png' },
+    { id: 4, firstName: 'Diana', lastName: 'Li', roleKey: 'teamMembers.role', img: './assets/images/about/members/enhanced/diana-enh.png', badge: './assets/logos/arcadia-dark-green.png' },
+    { id: 5, firstName: 'Piero', lastName: 'Espada', roleKey: 'teamMembers.role', img: './assets/images/about/members/enhanced/piero-enh.png', badge: './assets/logos/arcadia-dark-green.png' },
+    { id: 6, firstName: 'Josue', lastName: 'Carpio', roleKey: 'teamMembers.role', img: './assets/images/about/members/enhanced/josue-enh.png', badge: './assets/logos/arcadia-dark-green.png' }
 ];
 
 function clamp(value, min, max) {
