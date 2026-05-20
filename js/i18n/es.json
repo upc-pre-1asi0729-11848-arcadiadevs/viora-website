@@ -153,6 +153,31 @@
       "note": "Encontrar nuevos clientes y responder temprano ante riesgos de campo es difícil sin las señales adecuadas. Viora te ayuda a descubrir oportunidades de servicio, revisar contexto de campo con indicadores satelitales y entregar orientación técnica más rápida y estructurada."
     }
   },
+  "imageCta": {
+    "tabsAria": "Capacidades de la plataforma Viora",
+    "items": {
+      "producer": {
+        "name": "PRODUCTOR",
+        "title": "Tu huerto habla.\n¿Lo estás escuchando?",
+        "subtitle": "Monitorea la salud del suelo, los niveles de agua y las condiciones del cultivo en tiempo real — todo desde una sola plataforma."
+      },
+      "harvest": {
+        "name": "COSECHA",
+        "title": "Planifica tu cosecha.\nMaximiza cada rendimiento.",
+        "subtitle": "Recibe recomendaciones basadas en datos sobre el momento óptimo para cosechar y reduce pérdidas antes de que ocurran."
+      },
+      "specialist": {
+        "name": "ESPECIALISTA",
+        "title": "Detecta amenazas antes de\nque se propaguen.",
+        "subtitle": "Recibe alertas epidemiológicas de plagas y colabora directamente con productores para actuar rápido y proteger el campo."
+      },
+      "insights": {
+        "name": "ANÁLISIS",
+        "title": "Tu experiencia,\namplificada por datos.",
+        "subtitle": "Accede a reportes históricos de campo, da seguimiento a intervenciones y entrega recomendaciones precisas respaldadas por evidencia real."
+      }
+    }
+  },
   "pricingIntro": {
     "sectionLabel": "Planes de Precio",
     "firstTitle": "Deja de pagar por una agricultura reactiva",
@@ -224,12 +249,18 @@
     "ctaAria": "Contáctanos"
   },
   "teamMembers": {
-    "title": "Meet the Arcadia Team",
+    "title": "Conoce al equipo Arcadia",
     "cta": "Ver más miembros",
     "role": "Grupo ArcadiaDevs",
     "toggleVideo": "Video",
     "toggleImage": "Imagen",
-    "footerText": "Our team understands both sides of the field. From agronomists and data engineers to product visionaries, everyone at Viora is united in bridging the gap between producers who grow and specialists who protect — turning shared knowledge into smarter, more productive harvests."
+    "footerText": "Nuestro equipo entiende ambos lados del campo. Desde agrónomos e ingenieros de datos hasta visionarios de producto, todos en Viora estamos unidos para cerrar la brecha entre los productores que cultivan y los especialistas que protegen — convirtiendo el conocimiento compartido en cosechas más inteligentes y productivas."
+  },
+  "finalCta": {
+    "title": "Campos inteligentes.\nCosechas más fuertes.\nHecho para quienes cultivan.",
+    "subtitle": "La tierra siempre ha tenido respuestas.\nViora te ayuda a escucharlas.",
+    "button": "Comenzar",
+    "buttonAria": "Comenzar con Viora"
   },
   "learningFromBest": {
     "title": "Aprendiendo de los mejores"

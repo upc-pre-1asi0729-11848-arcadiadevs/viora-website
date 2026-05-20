@@ -153,6 +153,31 @@
       "note": "Finding new clients and responding early to field risk is difficult without the right signals. Viora helps you discover service opportunities, review field context with satellite-based indicators, and deliver faster, more structured technical guidance."
     }
   },
+  "imageCta": {
+    "tabsAria": "Viora platform capabilities",
+    "items": {
+      "producer": {
+        "name": "PRODUCER",
+        "title": "Your orchard speaks.\nAre you listening?",
+        "subtitle": "Monitor soil health, water levels, and crop conditions in real time — all from one platform."
+      },
+      "harvest": {
+        "name": "HARVEST",
+        "title": "Plan your harvest.\nMaximize every yield.",
+        "subtitle": "Get data-driven recommendations on the optimal time to harvest and reduce losses before they happen."
+      },
+      "specialist": {
+        "name": "SPECIALIST",
+        "title": "Detect threats before\nthey spread.",
+        "subtitle": "Receive epidemiological pest alerts and collaborate directly with producers to act fast and protect the field."
+      },
+      "insights": {
+        "name": "INSIGHTS",
+        "title": "Your expertise,\namplified by data.",
+        "subtitle": "Access historical field reports, track interventions, and deliver precise recommendations backed by real evidence."
+      }
+    }
+  },
   "pricingIntro": {
     "sectionLabel": "Pricing Plans",
     "firstTitle": "Stop paying for reactive farming",
@@ -230,6 +255,12 @@
     "toggleVideo": "Video",
     "toggleImage": "Image",
     "footerText": "Our team understands both sides of the field. From agronomists and data engineers to product visionaries, everyone at Viora is united in bridging the gap between producers who grow and specialists who protect — turning shared knowledge into smarter, more productive harvests."
+  },
+  "finalCta": {
+    "title": "Smarter fields. Stronger harvests.\nBuilt for those who grow.",
+    "subtitle": "The land has always had answers.\nViora helps you hear them.",
+    "button": "Get Started",
+    "buttonAria": "Get started with Viora"
   },
   "learningFromBest": {
     "title": "Learning from the best"
