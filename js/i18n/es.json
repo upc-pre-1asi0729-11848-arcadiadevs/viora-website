@@ -224,9 +224,12 @@
     "ctaAria": "Contáctanos"
   },
   "teamMembers": {
-    "title": "Conoce a<br>nuestro equipo",
+    "title": "Meet the Arcadia Team",
     "cta": "Ver más miembros",
-    "role": "Grupo ArcadiaDevs"
+    "role": "Grupo ArcadiaDevs",
+    "toggleVideo": "Video",
+    "toggleImage": "Imagen",
+    "footerText": "Our team understands both sides of the field. From agronomists and data engineers to product visionaries, everyone at Viora is united in bridging the gap between producers who grow and specialists who protect — turning shared knowledge into smarter, more productive harvests."
   },
   "learningFromBest": {
     "title": "Aprendiendo de los mejores"
