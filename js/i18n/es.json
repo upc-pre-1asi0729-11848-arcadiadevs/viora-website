@@ -134,6 +134,111 @@
     "specialistsTitle": "Especialistas",
     "title": "Una plataforma. Dos experiencias poderosas.",
     "description": "Ya sea que gestiones producción olivarera o brindes servicios de protección de cultivos, Viora te ofrece herramientas y conexiones para actuar antes y decidir mejor.",
+    "navAria": "Cards de segmentos",
+    "growersLinkAria": "Ir al segmento de productores",
+    "specialistsLinkAria": "Ir al segmento de especialistas",
+    "story": {
+      "growers": {
+        "eyebrow": "Productores",
+        "steps": [
+          {
+            "title": "Empieza con tu parcela de olivos",
+            "description": "Convierte tu campo en una unidad productiva monitoreada registrando sus límites y su historial agronómico.",
+            "bullets": [
+              "Delimita tu área productiva con límites georreferenciados.",
+              "Conecta tu parcela con monitoreo climático y satelital.",
+              "Construye un historial agronómico con podas, fertilización y registros de campo."
+            ],
+            "cta": "Crear cuenta de productor"
+          },
+          {
+            "title": "Monitorea clima y vigor del cultivo",
+            "description": "Viora consolida clima, porciones de frío, salud vegetal y proyecciones de rendimiento en un panel de decisión.",
+            "bullets": [
+              "Sigue la acumulación de frío y el comportamiento climático local.",
+              "Detecta zonas de bajo vigor con NDVI e imágenes satelitales.",
+              "Anticipa riesgo de vecería y variaciones proyectadas de cosecha."
+            ],
+            "cta": "Abrir panel productor"
+          },
+          {
+            "title": "Actúa antes de perder producción",
+            "description": "Cuando Viora detecta estrés fenológico, convierte el riesgo en una ruta clara de acción para el productor.",
+            "bullets": [
+              "Recibe alertas automáticas por déficit de frío y riesgo fenológico.",
+              "Revisa recomendaciones nutricionales dinámicas vinculadas a alertas activas.",
+              "Prioriza decisiones de campo antes de afectar la productividad."
+            ],
+            "cta": "Iniciar monitoreo preventivo"
+          },
+          {
+            "title": "Conecta con soporte experto",
+            "description": "Cuando el riesgo se vuelve crítico, Viora te ayuda a pasar de la detección a la intervención profesional.",
+            "bullets": [
+              "Solicita apoyo de especialistas fitosanitarios.",
+              "Revisa propuestas técnicas para tus riesgos activos de campo.",
+              "Mantén trazable el ciclo de intervención desde la alerta hasta la resolución."
+            ],
+            "cta": "Obtener soporte experto"
+          }
+        ]
+      },
+      "specialists": {
+        "eyebrow": "Especialistas",
+        "steps": [
+          {
+            "title": "Publica tu perfil profesional",
+            "description": "Crea una presencia profesional que haga visible tu experiencia técnica dentro del ecosistema olivícola.",
+            "bullets": [
+              "Muestra tu experiencia fitosanitaria, credenciales y cobertura de servicio.",
+              "Mantén actualizada tu información profesional y de contacto.",
+              "Controla tu disponibilidad según tu capacidad operativa."
+            ],
+            "cta": "Crear perfil especialista"
+          },
+          {
+            "title": "Recibe oportunidades por riesgo",
+            "description": "Viora conecta especialistas con productores que necesitan soporte técnico oportuno basado en señales activas de campo.",
+            "bullets": [
+              "Descubre productores con riesgo climático o fitosanitario.",
+              "Prioriza oportunidades por severidad, ubicación y contexto del campo.",
+              "Responde antes, cuando la intervención aún puede evitar pérdidas mayores."
+            ],
+            "cta": "Unirme como especialista"
+          },
+          {
+            "title": "Evalúa cada caso con contexto",
+            "description": "Revisa el historial técnico de cada parcela antes de preparar tu propuesta de intervención.",
+            "bullets": [
+              "Analiza historial de parcela, síntomas reportados y severidad de alerta.",
+              "Usa NDVI, indicadores climáticos y registros agronómicos como soporte.",
+              "Prepara propuestas técnicas y económicas más claras."
+            ],
+            "cta": "Abrir espacio especialista"
+          },
+          {
+            "title": "Entrega prescripciones y confianza",
+            "description": "Cierra cada servicio con trazabilidad técnica, prescripciones de campo y feedback que fortalece tu reputación.",
+            "bullets": [
+              "Registra hallazgos de campo y recomendaciones técnicas.",
+              "Apoya una ejecución trazable de intervenciones fitosanitarias.",
+              "Construye confianza con feedback de servicio y visibilidad profesional."
+            ],
+            "cta": "Unirme al marketplace"
+          }
+        ]
+      }
+    },
+    "visuals": {
+      "plot": { "title": "Límites de parcela", "note": "Configuración georreferenciada con historial agronómico.", "metric": "3.8 ha mapeadas" },
+      "dashboard": { "title": "Panel de decisión", "note": "Clima, NDVI, porciones de frío y señales de rendimiento.", "metric": "NDVI +12%" },
+      "alerts": { "title": "Alertas preventivas", "note": "Las señales de estrés se convierten en acciones priorizadas.", "metric": "Riesgo detectado" },
+      "support": { "title": "Soporte experto", "note": "Solicitudes trazables desde la alerta hasta la resolución.", "metric": "Propuesta lista" },
+      "profile": { "title": "Perfil especialista", "note": "Credenciales, cobertura y disponibilidad en un solo lugar.", "metric": "Verificado" },
+      "opportunities": { "title": "Oportunidades por riesgo", "note": "Casos priorizados por severidad y ubicación.", "metric": "4 casos activos" },
+      "case": { "title": "Contexto del caso", "note": "Historial, NDVI, clima y síntomas reportados.", "metric": "Contexto completo" },
+      "prescription": { "title": "Prescripción de campo", "note": "Recomendaciones técnicas con trazabilidad del servicio.", "metric": "Confianza +" }
+    },
     "producer": {
       "tab": "Productores olivareros",
       "title": "Para Productores Olivareros",
@@ -264,6 +369,97 @@
   },
   "learningFromBest": {
     "title": "Aprendiendo de los mejores"
+  },
+  "segmentSummary": {
+    "title": "Cada olivar merece las herramientas correctas.",
+    "aria": "Tarjetas de resumen por segmento",
+    "button": "Unirse",
+    "cards": [
+      {
+        "audience": "Para productores olivareros",
+        "title": "MONITOR",
+        "price": "$149",
+        "priceUnit": "/ mes",
+        "description": "Monitoreo de campo en tiempo real para productores que quieren visibilidad completa de la salud de su olivar.",
+        "bullets": [
+          "Panel de datos de sensores IoT",
+          "Alertas de humedad y temperatura del suelo",
+          "Reportes semanales de salud del campo",
+          "Hasta 2 olivares incluidos"
+        ],
+        "color": "#2E4A3A"
+      },
+      {
+        "audience": "Para productores olivareros",
+        "title": "HARVEST",
+        "price": "$149",
+        "priceUnit": "/ mes",
+        "description": "Planificacion de cosecha basada en datos para maximizar rendimientos y reducir perdidas antes de que ocurran.",
+        "bullets": [
+          "Predicciones del momento optimo de cosecha",
+          "Pronostico de rendimiento por bloque",
+          "Reportes de desempeno postcosecha",
+          "Exportacion de datos a CSV / PDF"
+        ],
+        "color": "#E8B923"
+      },
+      {
+        "audience": "Para productores olivareros",
+        "title": "PROTECT",
+        "price": "$149",
+        "priceUnit": "/ mes",
+        "description": "Proteccion proactiva contra plagas con alertas epidemiologicas adaptadas a tus olivares.",
+        "bullets": [
+          "Alertas de riesgo de plagas en tiempo real",
+          "Acceso directo a especialistas de campo",
+          "Historial de intervenciones",
+          "Olivares ilimitados"
+        ],
+        "color": "#1F2C26"
+      },
+      {
+        "audience": "Para especialistas de campo",
+        "title": "Alerts",
+        "price": "$149",
+        "priceUnit": "/ mes",
+        "description": "Recibe alertas epidemiologicas de plagas y actua rapido para proteger los campos que gestionas.",
+        "bullets": [
+          "Notificaciones de brotes geolocalizadas",
+          "Sistema de clasificacion por severidad",
+          "Colabora con hasta 5 productores",
+          "Notificaciones push moviles"
+        ],
+        "color": "#F8F4ED"
+      },
+      {
+        "audience": "Para especialistas de campo",
+        "title": "Harvest",
+        "price": "$149",
+        "priceUnit": "/ mes",
+        "description": "Accede a datos historicos de campo y entrega recomendaciones precisas respaldadas por evidencia real.",
+        "bullets": [
+          "Historial completo de reportes de campo",
+          "Mapas de calor y deteccion de anomalias",
+          "Plantillas de recomendacion personalizadas",
+          "Acceso API para exportacion de datos"
+        ],
+        "color": "#C15A2E"
+      },
+      {
+        "audience": "Para especialistas de campo",
+        "title": "Network",
+        "price": "$149",
+        "priceUnit": "/ mes",
+        "description": "Conecta con productores olivareros a escala y gestiona todos los campos de tus clientes desde un solo lugar.",
+        "bullets": [
+          "Conexiones ilimitadas con productores",
+          "Panel centralizado multi-campo",
+          "Herramientas de colaboracion en equipo",
+          "Soporte prioritario y onboarding"
+        ],
+        "color": "#2E4A3A"
+      }
+    ]
   },
   "contact": {
     "sectionLabel": "Contacto",
