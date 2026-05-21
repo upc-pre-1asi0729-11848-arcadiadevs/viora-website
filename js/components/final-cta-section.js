@@ -8,6 +8,18 @@ function easeOutCubic(value) {
     return 1 - Math.pow(1 - value, 3);
 }
 
+function interpolateChannel(from, to, progress) {
+    return Math.round(from + (to - from) * progress);
+}
+
+function interpolateRgb(from, to, progress, alpha = 1) {
+    const r = interpolateChannel(from[0], to[0], progress);
+    const g = interpolateChannel(from[1], to[1], progress);
+    const b = interpolateChannel(from[2], to[2], progress);
+
+    return alpha < 1 ? `rgba(${r}, ${g}, ${b}, ${alpha})` : `rgb(${r}, ${g}, ${b})`;
+}
+
 function setLineState(line, reveal) {
     const eased = easeOutCubic(reveal);
 
@@ -48,6 +60,31 @@ function attachFinalCtaSection(section) {
     let lineGroups = [];
     let ticking = false;
 
+    function setWipeState(progress) {
+        const eased = easeOutCubic(progress);
+        const white = [255, 255, 255];
+        const primary = [46, 74, 58];
+        const ink = [30, 39, 34];
+        const widthProgress = Math.pow(progress, 1.18);
+
+        section.style.setProperty('--final-cta-wipe-progress', eased.toFixed(4));
+        const riseProgress = clamp(progress / 0.92, 0, 1);
+        const flattenProgress = clamp((progress - 0.92) / 0.18, 0, 1);
+        const easedRise = easeOutCubic(riseProgress);
+        const easedFlatten = easeOutCubic(flattenProgress);
+
+        section.style.setProperty('--final-cta-wipe-apex-y', `${(112 - easedRise * 114).toFixed(2)}%`);
+        section.style.setProperty('--final-cta-wipe-top-half-width', `${(easedFlatten * 170).toFixed(2)}vw`);
+        section.style.setProperty('--final-cta-wipe-half-width', `${(18 + widthProgress * 312).toFixed(2)}vw`);
+        section.style.setProperty('--final-cta-title-active-color', interpolateRgb(white, primary, eased));
+        section.style.setProperty('--final-cta-title-muted-color', interpolateRgb(white, ink, eased, 0.2));
+        section.style.setProperty('--final-cta-subtitle-active-color', interpolateRgb(white, ink, eased, 0.64));
+        section.style.setProperty('--final-cta-subtitle-muted-color', interpolateRgb(white, ink, eased, 0.18));
+        section.style.setProperty('--final-cta-button-bg', interpolateRgb(white, primary, eased));
+        section.style.setProperty('--final-cta-button-color', interpolateRgb(primary, white, eased));
+        section.style.setProperty('--final-cta-icon-filter', eased < 0.5 ? 'brightness(0) saturate(100%) invert(25%) sepia(14%) saturate(888%) hue-rotate(91deg) brightness(93%) contrast(88%)' : 'none');
+    }
+
     function rebuild() {
         lineGroups = revealElements.map((element) => ({
             element,
@@ -64,6 +101,7 @@ function attachFinalCtaSection(section) {
 
     function updateReveal() {
         if (reducedMotion.matches) {
+            setWipeState(1);
             revealAll();
             ticking = false;
             return;
@@ -72,6 +110,11 @@ function attachFinalCtaSection(section) {
         const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
         const staggerRange = 0.38;
         const softness = 0.68;
+        const sectionRect = section.getBoundingClientRect();
+        const wipeStart = viewportHeight * 0.5;
+        const wipeProgress = clamp((wipeStart - sectionRect.top) / wipeStart, 0, 1);
+
+        setWipeState(wipeProgress);
 
         lineGroups.forEach(({ element, lines }) => {
             const rect = element.getBoundingClientRect();
@@ -100,6 +143,7 @@ function attachFinalCtaSection(section) {
 
     i18n.subscribe(rebuild);
 
+    setWipeState(0);
     rebuild();
 
     section.dataset.finalCtaInitialized = 'true';
