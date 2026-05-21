@@ -1,7 +1,9 @@
-export function initializeLiquidGlassEffect() {
-    const glassElements = document.querySelectorAll('[data-liquid-glass]');
+export function initializeLiquidGlassEffect(root = document) {
+    const glassElements = root.querySelectorAll('[data-liquid-glass]');
 
     glassElements.forEach((element) => {
+        if (element.dataset.liquidGlassInitialized === 'true') return;
+
         element.addEventListener('pointermove', (event) => {
             const rect = element.getBoundingClientRect();
 
@@ -11,5 +13,7 @@ export function initializeLiquidGlassEffect() {
             element.style.setProperty('--glass-x', `${x}%`);
             element.style.setProperty('--glass-y', `${y}%`);
         });
+
+        element.dataset.liquidGlassInitialized = 'true';
     });
 }
