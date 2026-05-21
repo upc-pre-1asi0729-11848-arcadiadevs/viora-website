@@ -1,4 +1,8 @@
 
+.magnetic-target {
+    display: inline-flex;
+}
+
 .landing-button {
     min-width: 11.5rem;
     min-height: 3.5rem;
