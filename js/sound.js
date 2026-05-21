@@ -30,6 +30,36 @@ function updateSoundToggleButton(button) {
     flatWave.style.display = isSoundEnabled ? 'none' : '';
 }
 
+function initializeFloatingSoundToggle(root = document) {
+    const floatingToggle = root.querySelector('[data-floating-sound-toggle]');
+    const floatingWrap = root.querySelector('[data-floating-sound-toggle-wrap]');
+    const heroSection = document.querySelector('.hero-section');
+    const floatingElement = floatingWrap || floatingToggle;
+
+    if (!floatingElement || floatingElement.dataset.floatingSoundInitialized === 'true') return;
+
+    floatingElement.dataset.floatingSoundInitialized = 'true';
+
+    const setFloatingVisibility = (isVisible) => {
+        floatingElement.classList.toggle('floating-sound-toggle-wrap--visible', isVisible);
+    };
+
+    if (!heroSection || !('IntersectionObserver' in window)) {
+        setFloatingVisibility(true);
+        return;
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            setFloatingVisibility(!entry.isIntersecting);
+        });
+    }, {
+        threshold: 0.01
+    });
+
+    observer.observe(heroSection);
+}
+
 export function isSoundGlobalOn() {
     return isSoundEnabled;
 }
@@ -56,8 +86,13 @@ export function initializeSoundToggle(root = document) {
     soundToggleButtons.forEach((button) => {
         updateSoundToggleButton(button);
 
+        if (button.dataset.soundToggleInitialized === 'true') return;
+        button.dataset.soundToggleInitialized = 'true';
+
         button.addEventListener('click', () => {
             toggleSoundGlobalState();
         });
     });
+
+    initializeFloatingSoundToggle(root);
 }
