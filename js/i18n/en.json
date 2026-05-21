@@ -134,6 +134,111 @@
     "specialistsTitle": "Specialists",
     "title": "One platform. Two powerful experiences.",
     "description": "Whether you manage olive production or provide crop protection services, Viora gives you the tools and connections to act earlier and decide better.",
+    "navAria": "Segment cards",
+    "growersLinkAria": "Go to growers segment",
+    "specialistsLinkAria": "Go to specialists segment",
+    "story": {
+      "growers": {
+        "eyebrow": "Growers",
+        "steps": [
+          {
+            "title": "Start with your olive plot",
+            "description": "Turn your field into a monitored production unit by registering its boundaries and agronomic history.",
+            "bullets": [
+              "Delimit your productive area with georeferenced plot boundaries.",
+              "Connect your plot to climate and satellite-based monitoring.",
+              "Build an agronomic history with pruning, fertilization, and field records."
+            ],
+            "cta": "Create grower account"
+          },
+          {
+            "title": "Monitor climate and crop vigor",
+            "description": "Viora consolidates climate behavior, chill portions, vegetation health, and yield projections in one decision dashboard.",
+            "bullets": [
+              "Track chill accumulation and local weather behavior.",
+              "Detect low-vigor areas through NDVI and satellite imagery.",
+              "Anticipate alternate bearing risk and projected harvest variation."
+            ],
+            "cta": "Open grower dashboard"
+          },
+          {
+            "title": "Act before stress becomes loss",
+            "description": "When Viora detects phenological stress, it turns risk into a clear action path for the producer.",
+            "bullets": [
+              "Receive automated alerts for chill deficit and phenological risk.",
+              "Review dynamic nutrition recommendations linked to active alerts.",
+              "Prioritize field decisions before productivity is affected."
+            ],
+            "cta": "Start preventive monitoring"
+          },
+          {
+            "title": "Connect with expert support",
+            "description": "When risk becomes critical, Viora helps you move from detection to professional intervention.",
+            "bullets": [
+              "Request support from phytosanitary specialists.",
+              "Review technical proposals for your active field risks.",
+              "Keep the intervention cycle traceable from alert to resolution."
+            ],
+            "cta": "Get specialist support"
+          }
+        ]
+      },
+      "specialists": {
+        "eyebrow": "Specialists",
+        "steps": [
+          {
+            "title": "Publish your professional profile",
+            "description": "Create a professional presence that makes your technical experience visible inside the olive production ecosystem.",
+            "bullets": [
+              "Show your phytosanitary expertise, credentials, and service coverage.",
+              "Keep your contact and professional information updated.",
+              "Control your availability according to your operational capacity."
+            ],
+            "cta": "Create specialist profile"
+          },
+          {
+            "title": "Receive field-risk opportunities",
+            "description": "Viora connects specialists with producers who need timely technical support based on active field signals.",
+            "bullets": [
+              "Discover producers facing climate or phytosanitary risk.",
+              "Prioritize opportunities by severity, location, and field context.",
+              "Respond earlier, when intervention can still prevent major loss."
+            ],
+            "cta": "Join as specialist"
+          },
+          {
+            "title": "Evaluate each case with context",
+            "description": "Review the technical background of each plot before preparing your intervention proposal.",
+            "bullets": [
+              "Analyze plot history, reported symptoms, and alert severity.",
+              "Use NDVI, weather indicators, and agronomic records as support.",
+              "Prepare clearer technical and economic proposals."
+            ],
+            "cta": "Open specialist workspace"
+          },
+          {
+            "title": "Deliver prescriptions and grow trust",
+            "description": "Close each service with technical traceability, field prescriptions, and feedback that strengthens your reputation.",
+            "bullets": [
+              "Register field findings and technical recommendations.",
+              "Support traceable execution of phytosanitary interventions.",
+              "Build trust through service feedback and professional visibility."
+            ],
+            "cta": "Join the marketplace"
+          }
+        ]
+      }
+    },
+    "visuals": {
+      "plot": { "title": "Plot boundaries", "note": "Georeferenced field setup with agronomic history.", "metric": "3.8 ha mapped" },
+      "dashboard": { "title": "Decision dashboard", "note": "Climate, NDVI, chill portions, and yield signals.", "metric": "NDVI +12%" },
+      "alerts": { "title": "Preventive alerts", "note": "Stress signals become prioritized field actions.", "metric": "Risk detected" },
+      "support": { "title": "Expert support", "note": "Traceable requests from alert to resolution.", "metric": "Proposal ready" },
+      "profile": { "title": "Specialist profile", "note": "Credentials, coverage, and availability in one place.", "metric": "Verified" },
+      "opportunities": { "title": "Risk opportunities", "note": "Prioritized producer cases by severity and location.", "metric": "4 active cases" },
+      "case": { "title": "Case context", "note": "Plot history, NDVI, weather, and reported symptoms.", "metric": "Full context" },
+      "prescription": { "title": "Field prescription", "note": "Technical recommendations with service traceability.", "metric": "Trust +" }
+    },
     "producer": {
       "tab": "Olive Producers",
       "title": "For Olive Producers",
@@ -264,6 +369,97 @@
   },
   "learningFromBest": {
     "title": "Learning from the best"
+  },
+  "segmentSummary": {
+    "title": "Every orchard deserves the right tools.",
+    "aria": "Segment summary cards",
+    "button": "Join",
+    "cards": [
+      {
+        "audience": "For olive producers",
+        "title": "MONITOR",
+        "price": "$149",
+        "priceUnit": "/ month",
+        "description": "Real-time field monitoring for olive producers who want full visibility of their orchard health.",
+        "bullets": [
+          "IoT sensor data dashboard",
+          "Soil moisture & temperature alerts",
+          "Weekly field health reports",
+          "Up to 2 orchards included"
+        ],
+        "color": "#2E4A3A"
+      },
+      {
+        "audience": "For olive producers",
+        "title": "HARVEST",
+        "price": "$149",
+        "priceUnit": "/ month",
+        "description": "Data-driven harvest planning to maximize yields and reduce losses before they happen.",
+        "bullets": [
+          "Optimal harvest timing predictions",
+          "Yield forecasting by block",
+          "Post-harvest performance reports",
+          "Export data to CSV / PDF"
+        ],
+        "color": "#E8B923"
+      },
+      {
+        "audience": "For olive producers",
+        "title": "PROTECT",
+        "price": "$149",
+        "priceUnit": "/ month",
+        "description": "Proactive pest protection with epidemiological alerts tailored to your olive groves.",
+        "bullets": [
+          "Real-time pest risk alerts",
+          "Direct access to field specialists",
+          "Intervention history log",
+          "Unlimited orchards"
+        ],
+        "color": "#1F2C26"
+      },
+      {
+        "audience": "For field specialists",
+        "title": "Alerts",
+        "price": "$149",
+        "priceUnit": "/ month",
+        "description": "Receive epidemiological pest alerts and act fast to protect the fields you manage.",
+        "bullets": [
+          "Geo-located outbreak notifications",
+          "Severity classification system",
+          "Collaborate with up to 5 producers",
+          "Mobile push notifications"
+        ],
+        "color": "#F8F4ED"
+      },
+      {
+        "audience": "For field specialists",
+        "title": "Harvest",
+        "price": "$149",
+        "priceUnit": "/ month",
+        "description": "Access historical field data and deliver precise recommendations backed by real evidence.",
+        "bullets": [
+          "Full field report history",
+          "Heatmaps & anomaly detection",
+          "Custom recommendation templates",
+          "API access for data export"
+        ],
+        "color": "#C15A2E"
+      },
+      {
+        "audience": "For field specialists",
+        "title": "Network",
+        "price": "$149",
+        "priceUnit": "/ month",
+        "description": "Connect with olive producers at scale and manage all your client fields from one place.",
+        "bullets": [
+          "Unlimited producer connections",
+          "Centralized multi-field dashboard",
+          "Team collaboration tools",
+          "Priority support & onboarding"
+        ],
+        "color": "#2E4A3A"
+      }
+    ]
   },
   "contact": {
     "sectionLabel": "Contact",
