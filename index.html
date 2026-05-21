@@ -216,6 +216,12 @@
 
         <section class="problem-cards-section" id="problem-cards" aria-labelledby="problem-cards-title">
             <div class="problem-cards-section__container">
+                <div class="problem-cards-section__topline" id="features">
+                    <span class="problem-cards-section__section-label" data-i18n="problemCards.sectionLabel">
+                        Features
+                    </span>
+                </div>
+
                 <div class="problem-cards-section__layout">
                     <div class="problem-cards-section__content">
                         <p class="problem-cards-section__tag" data-i18n="problemCards.tag">
@@ -342,14 +348,6 @@
                     </figure>
                 </div>
             </section>
-
-            <div class="solution-panel__topline" id="features">
-                <div class="solution-panel__container">
-                    <span class="solution-panel__section-label" data-i18n="problemCards.sectionLabel">
-                        Features
-                    </span>
-                </div>
-            </div>
 
             <section class="solution-panel" id="solution-panel" aria-labelledby="solution-panel-title">
                 <div class="solution-panel__header">
@@ -558,7 +556,93 @@
             </section>
         </section>
 
-        <section class="role-benefits-section role-benefits-section--growers" id="growers" aria-labelledby="role-benefits-growers-title">
+        <section class="segments-overview" aria-labelledby="segments-overview-title">
+            <div class="segments-overview__topline">
+                <span class="segments-overview__section-label" data-i18n="roleBenefits.sectionLabel">
+                    Segments
+                </span>
+            </div>
+
+            <div class="segments-overview__intro">
+                <h2 class="segments-overview__title" id="segments-overview-title" data-i18n="roleBenefits.title">
+                    One platform. Two powerful experiences.
+                </h2>
+                <p class="segments-overview__description" data-i18n="roleBenefits.description">
+                    Whether you manage olive production or provide crop protection services, Viora gives you the tools and connections to act earlier and decide better.
+                </p>
+            </div>
+
+            <nav class="segments-overview__nav" aria-label="Segment cards" data-i18n-aria-label="roleBenefits.navAria">
+                <a class="segments-overview__arrow segments-overview__arrow--prev" href="#growers" aria-label="Go to growers segment" data-i18n-aria-label="roleBenefits.growersLinkAria" data-hover-sound>&larr;</a>
+                <a class="segments-overview__option segments-overview__option--growers" href="#growers" data-i18n="roleBenefits.growersTitle" data-hover-sound>Growers</a>
+                <a class="segments-overview__option segments-overview__option--specialists" href="#specialists" data-i18n="roleBenefits.specialistsTitle" data-hover-sound>Specialists</a>
+                <a class="segments-overview__arrow segments-overview__arrow--next" href="#specialists" aria-label="Go to specialists segment" data-i18n-aria-label="roleBenefits.specialistsLinkAria" data-hover-sound>&rarr;</a>
+            </nav>
+        </section>
+
+        <section class="segment-story-group" aria-label="Growers and specialists journeys">
+            <section class="segment-story segment-story--growers" id="growers" data-segment-story="growers" aria-labelledby="segment-story-growers-title">
+                <div class="segment-story__sticky">
+                    <article class="segment-story__card">
+                        <div class="segment-story__content">
+                            <p class="segment-story__eyebrow" data-segment-eyebrow>Growers</p>
+                            <h2 class="segment-story__title" id="segment-story-growers-title" data-segment-title>Start with your olive plot</h2>
+                            <p class="segment-story__description" data-segment-description></p>
+                            <ul class="segment-story__bullets" data-segment-bullets></ul>
+                            <div class="segment-story__actions">
+                                <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
+                                    <a class="segment-story__mobile-button landing-button landing-button--green liquid-glass liquid-glass--green" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound data-segment-cta>Create grower account</a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="segment-story__visual-wrap" aria-hidden="true">
+                            <div class="segment-story__visual" data-segment-visual></div>
+                        </div>
+
+                        <div class="segment-story__progress" aria-hidden="true">
+                            <span data-segment-current>01</span>
+                            <span>/ 04</span>
+                        </div>
+                        <div class="segment-story__dots" data-segment-dots aria-hidden="true"></div>
+                    </article>
+                </div>
+
+                <div class="segment-story__mobile-list" data-segment-mobile-list></div>
+            </section>
+
+            <section class="segment-story segment-story--specialists" id="specialists" data-segment-story="specialists" aria-labelledby="segment-story-specialists-title">
+                <div class="segment-story__sticky">
+                    <article class="segment-story__card">
+                        <div class="segment-story__content">
+                            <p class="segment-story__eyebrow" data-segment-eyebrow>Specialists</p>
+                            <h2 class="segment-story__title" id="segment-story-specialists-title" data-segment-title>Be visible when growers need help</h2>
+                            <p class="segment-story__description" data-segment-description></p>
+                            <ul class="segment-story__bullets" data-segment-bullets></ul>
+                            <div class="segment-story__actions">
+                                <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
+                                    <a class="segment-story__mobile-button landing-button landing-button--orange liquid-glass liquid-glass--orange" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound data-segment-cta>Join specialist network</a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="segment-story__visual-wrap" aria-hidden="true">
+                            <div class="segment-story__visual" data-segment-visual></div>
+                        </div>
+
+                        <div class="segment-story__progress" aria-hidden="true">
+                            <span data-segment-current>01</span>
+                            <span>/ 04</span>
+                        </div>
+                        <div class="segment-story__dots" data-segment-dots aria-hidden="true"></div>
+                    </article>
+                </div>
+
+                <div class="segment-story__mobile-list" data-segment-mobile-list></div>
+            </section>
+        </section>
+
+        <section class="role-benefits-section role-benefits-section--growers" id="growers-legacy" aria-labelledby="role-benefits-growers-title" hidden aria-hidden="true">
             <div class="role-benefits-section__container">
                 <div class="role-benefits-section__topline">
                     <span class="role-benefits-section__section-label" data-i18n="roleBenefits.growersTitle">
@@ -612,7 +696,7 @@
             </div>
         </section>
 
-        <section class="role-benefits-section role-benefits-section--specialists" id="specialists" aria-labelledby="role-benefits-specialists-title">
+        <section class="role-benefits-section role-benefits-section--specialists" id="specialists-legacy" aria-labelledby="role-benefits-specialists-title" hidden aria-hidden="true">
             <div class="role-benefits-section__container">
                 <div class="role-benefits-section__topline">
                     <span class="role-benefits-section__section-label" data-i18n="roleBenefits.specialistsTitle">
@@ -712,8 +796,9 @@
         </section>
 
         <section class="plans-trial-affiliates-section" aria-label="Pricing plans section">
-            <section class="pricing-parallax-intro pricing-parallax-intro--static" id="pricing-intro" aria-labelledby="pricing-parallax-title">
-                <div class="pricing-parallax-intro__container">
+            <section class="pricing-parallax-intro" id="pricing-intro" data-pricing-parallax-intro aria-labelledby="pricing-parallax-title">
+                <div class="pricing-parallax-intro__sticky">
+                    <div class="pricing-parallax-intro__container">
                     <div class="pricing-parallax-intro__copy">
                         <div class="pricing-parallax-intro__text-group pricing-parallax-intro__text-group--first">
                             <h2 class="pricing-parallax-intro__title" id="pricing-parallax-title" data-i18n="pricingIntro.firstTitle">
@@ -737,9 +822,10 @@
                     </div>
 
                     <div class="pricing-parallax-intro__image-stage" aria-hidden="true">
-                        <img class="pricing-parallax-intro__image pricing-parallax-intro__image--one" src="./assets/images/pricing/pricing-olive-field-01.png" alt="" />
-                        <img class="pricing-parallax-intro__image pricing-parallax-intro__image--two" src="./assets/images/pricing/pricing-olive-field-02.png" alt="" />
-                        <img class="pricing-parallax-intro__image pricing-parallax-intro__image--three" src="./assets/images/pricing/pricing-olive-field-03.png" alt="" />
+                        <img class="pricing-parallax-intro__image pricing-parallax-intro__image--one" src="./assets/images/pricing/pricing-olive-field-01.png" alt="" data-pricing-parallax-image />
+                        <img class="pricing-parallax-intro__image pricing-parallax-intro__image--two" src="./assets/images/pricing/pricing-olive-field-02.png" alt="" data-pricing-parallax-image />
+                        <img class="pricing-parallax-intro__image pricing-parallax-intro__image--three" src="./assets/images/pricing/pricing-olive-field-03.png" alt="" data-pricing-parallax-image />
+                    </div>
                     </div>
                 </div>
             </section>
@@ -1147,48 +1233,15 @@
             </section>
         </section>
 
-        <section class="image-cta-section" data-image-cta-section aria-labelledby="image-cta-title-active">
-            <div class="image-cta-section__sticky">
-                <div class="image-cta-section__stage" data-image-cta-stage>
-                    <div class="image-cta-section__slides" aria-hidden="true">
-                        <img class="image-cta-section__image image-cta-section__image--active" src="./assets/images/cta/image_cta_1.png" alt="" data-image-cta-image="0" />
-                        <img class="image-cta-section__image" src="./assets/images/cta/image_cta_2.png" alt="" data-image-cta-image="1" />/>
-                        <img class="image-cta-section__image" src="./assets/images/cta/image_cta_3.png" alt="" data-image-cta-image="2" />
-                        <img class="image-cta-section__image" src="./assets/images/cta/image_cta_4.png" alt="" data-image-cta-image="3" />
-                    </div>
+        <section class="segment-summary-section" data-segment-summary-section aria-labelledby="segment-summary-title">
+            <div class="segment-summary-section__header">
+                <h2 class="segment-summary-section__title" id="segment-summary-title" data-i18n="segmentSummary.title">
+                    Every orchard deserves the right tools.
+                </h2>
+            </div>
 
-                    <div class="image-cta-section__scrim" aria-hidden="true"></div>
-
-                    <div class="image-cta-section__content" data-image-cta-copy>
-                        <h2 class="image-cta-section__title" id="image-cta-title-active" data-image-cta-title data-i18n="imageCta.items.producer.title">
-                            Your orchard speaks.<br />Are you listening?
-                        </h2>
-
-                        <p class="image-cta-section__subtitle" data-image-cta-subtitle data-i18n="imageCta.items.producer.subtitle">
-                            Monitor soil health, water levels, and crop conditions in real time - all from one platform.
-                        </p>
-                    </div>
-
-                    <div class="image-cta-section__counter" aria-hidden="true">
-                        <span data-image-cta-current>01</span>
-                        <span>/ 04</span>
-                    </div>
-
-                    <div class="image-cta-section__tabs" role="tablist" aria-label="Viora capabilities" data-i18n-aria-label="imageCta.tabsAria">
-                        <button class="image-cta-section__tab image-cta-section__tab--active" type="button" role="tab" aria-selected="true" data-image-cta-tab="0" data-i18n="imageCta.items.producer.name">
-                            PRODUCER
-                        </button>
-                        <button class="image-cta-section__tab" type="button" role="tab" aria-selected="false" data-image-cta-tab="1" data-i18n="imageCta.items.harvest.name">
-                            HARVEST
-                        </button>
-                        <button class="image-cta-section__tab" type="button" role="tab" aria-selected="false" data-image-cta-tab="2" data-i18n="imageCta.items.specialist.name">
-                            SPECIALIST
-                        </button>
-                        <button class="image-cta-section__tab" type="button" role="tab" aria-selected="false" data-image-cta-tab="3" data-i18n="imageCta.items.insights.name">
-                            INSIGHTS
-                        </button>
-                    </div>
-                </div>
+            <div class="segment-summary-section__viewport" data-segment-summary-viewport aria-label="Segment summary cards" data-i18n-aria-label="segmentSummary.aria">
+                <div class="segment-summary-section__track" data-segment-summary-track></div>
             </div>
         </section>
 
