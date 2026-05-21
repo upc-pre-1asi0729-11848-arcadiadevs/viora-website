@@ -46,21 +46,31 @@ export function initializeLandingHeader() {
     updateAllLangButtons(i18n.currentLang);
 
     const navLinks = document.querySelectorAll('.landing-header__nav-link');
+    const navLinkList = Array.from(navLinks);
+
+    function setActiveNavLink(targetId) {
+        navLinkList.forEach(nav => {
+            const isActive = nav.getAttribute('href') === `#${targetId}`;
+            nav.classList.toggle('landing-header__nav-link--active', isActive);
+
+            if (isActive) {
+                nav.setAttribute('aria-current', 'page');
+            } else {
+                nav.removeAttribute('aria-current');
+            }
+        });
+    }
 
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
 
-            navLinks.forEach(nav => {
-                nav.classList.remove('landing-header__nav-link--active');
-            });
-
-            this.classList.add('landing-header__nav-link--active');
-
             const href = this.getAttribute('href');
             if (href && href.startsWith('#')) {
                 const targetId = href.substring(1);
                 if (targetId) {
+                    setActiveNavLink(targetId);
+
                     const targetSection = document.getElementById(targetId);
                     if (targetSection) {
                         targetSection.scrollIntoView({ behavior: 'smooth' });
@@ -70,8 +80,62 @@ export function initializeLandingHeader() {
         });
     });
 
+    initializeActiveSectionTracking(navLinkList, setActiveNavLink);
+
     /* ═══ Drawer Logic ═══ */
     initializeDrawer();
+}
+
+
+function initializeActiveSectionTracking(navLinks, setActiveNavLink) {
+    const trackedSections = navLinks
+        .map(link => {
+            const href = link.getAttribute('href');
+            const id = href?.startsWith('#') ? href.substring(1) : '';
+            const target = id ? document.getElementById(id) : null;
+
+            if (!target) return null;
+
+            const activationElement = id === 'pricing'
+                ? target.closest('.plans-trial-affiliates-section') || target
+                : target;
+
+            return { id, element: activationElement };
+        })
+        .filter(Boolean);
+
+    if (!trackedSections.length) return;
+
+    let ticking = false;
+
+    function getSectionTop(element) {
+        return element.getBoundingClientRect().top + window.scrollY;
+    }
+
+    function updateActiveSection() {
+        ticking = false;
+
+        const activationY = window.scrollY + Math.min(window.innerHeight * 0.42, 360);
+        let activeId = trackedSections[0].id;
+
+        trackedSections.forEach(section => {
+            if (getSectionTop(section.element) <= activationY) {
+                activeId = section.id;
+            }
+        });
+
+        setActiveNavLink(activeId);
+    }
+
+    function requestActiveSectionUpdate() {
+        if (ticking) return;
+        ticking = true;
+        window.requestAnimationFrame(updateActiveSection);
+    }
+
+    window.addEventListener('scroll', requestActiveSectionUpdate, { passive: true });
+    window.addEventListener('resize', requestActiveSectionUpdate);
+    requestActiveSectionUpdate();
 }
 
 
