@@ -2,10 +2,34 @@ import { i18n } from '../i18n.js';
 import { initializeLiquidGlassEffect } from '../effects/liquid-glass.effect.js';
 import { initializeMagneticEffect } from '../effects/magnetic.effect.js';
 import { initializeHoverSoundEffect } from '../effects/hover-sound.effect.js';
+import { isSoundGlobalOn } from '../sound.js';
 
 const APP_URL = 'https://viora-webapp.web.app';
+const DRAG_SOUND_PATH = './assets/audio/drag-cards.mp3';
+const DRAG_SOUND_VOLUME = 0.28;
 const DRAG_DISTANCE = 260;
 const VISIBLE_RADIUS = 2;
+
+let dragAudio = null;
+
+function getDragAudio() {
+    if (!dragAudio) {
+        dragAudio = new Audio(DRAG_SOUND_PATH);
+        dragAudio.preload = 'auto';
+        dragAudio.volume = DRAG_SOUND_VOLUME;
+    }
+
+    return dragAudio;
+}
+
+function playDragCardSound() {
+    if (!isSoundGlobalOn()) return;
+
+    const audio = getDragAudio();
+    const soundNode = audio.cloneNode();
+    soundNode.volume = audio.volume;
+    soundNode.play().catch(() => {});
+}
 
 function escapeHtml(value) {
     return String(value ?? '')
@@ -119,6 +143,7 @@ function attachDrag(section) {
     let hasDragged = false;
     let frameId = null;
     let clickSuppressed = false;
+    let lastSoundIndex = 0;
 
     function getCardElements() {
         return Array.from(track.querySelectorAll('[data-segment-summary-card]'));
@@ -207,7 +232,14 @@ function attachDrag(section) {
         if (!total) return;
 
         const projectedIndex = activeIndex - velocity * 0.48;
-        animateTo(Math.round(projectedIndex));
+        const targetIndex = wrapIndex(Math.round(projectedIndex), total);
+
+        if (hasDragged && total > 1 && targetIndex !== lastSoundIndex) {
+            lastSoundIndex = targetIndex;
+            playDragCardSound();
+        }
+
+        animateTo(targetIndex);
     }
 
     viewport.addEventListener('pointerdown', (event) => {
@@ -222,6 +254,7 @@ function attachDrag(section) {
         lastMoveTime = performance.now();
         velocity = 0;
         hasDragged = false;
+        lastSoundIndex = wrapIndex(Math.round(activeIndex), getCardElements().length);
         viewport.classList.add('is-dragging');
         viewport.setPointerCapture(pointerId);
     });
@@ -239,6 +272,14 @@ function attachDrag(section) {
 
         if (Math.abs(deltaX) > 6) {
             hasDragged = true;
+        }
+
+        const total = getCardElements().length;
+        const nearestIndex = wrapIndex(Math.round(activeIndex), total);
+
+        if (hasDragged && total > 1 && nearestIndex !== lastSoundIndex) {
+            lastSoundIndex = nearestIndex;
+            playDragCardSound();
         }
 
         lastMoveX = event.clientX;
