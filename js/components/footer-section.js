@@ -647,22 +647,6 @@ function attachFooterPhysics(section) {
     window.addEventListener('pagehide', () => clearFooterPhysics(physicsInstance), { once: true });
 }
 
-function attachFooterNewsletter(section) {
-    const form = section.querySelector('[data-footer-newsletter-form]');
-
-    if (!form) return;
-
-    form.addEventListener('submit', (event) => {
-        event.preventDefault();
-
-        const input = form.querySelector('input[type="email"]');
-
-        if (!input || !input.value.trim()) return;
-
-        input.value = '';
-    });
-}
-
 function attachLegalDrawer(section) {
     const drawer = section.querySelector('[data-legal-drawer]');
     const panel = drawer?.querySelector('.legal-drawer__panel');
@@ -818,7 +802,6 @@ export function initializeFooterSection(root = document) {
 
     attachFooterPhysics(section);
     attachLegalDrawer(section);
-    attachFooterNewsletter(section);
 
     section.dataset.footerInitialized = 'true';
 }
