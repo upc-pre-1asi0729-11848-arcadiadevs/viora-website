@@ -1,6 +1,6 @@
 import { initializeHeroAmbientSound } from './hero-ambient-sound.js';
 
-const MAX_BACKGROUND_MOVEMENT = 14;
+const MAX_BACKGROUND_MOVEMENT = 16;
 
 export function initializeHeroSection() {
     initializeHeroAmbientSound();
