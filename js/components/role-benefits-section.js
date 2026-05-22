@@ -69,6 +69,13 @@ function createVisualMarkup(config, index) {
     `;
 }
 
+function createMobileVisualMarkup(config, index) {
+    const step = config.steps[index];
+    const image = step?.image || config.image;
+
+    return `<img class="segment-story__mobile-character" src="${image}" alt="" loading="lazy" aria-hidden="true" />`;
+}
+
 function renderDots(container, count, activeIndex) {
     if (!container) return;
 
@@ -124,11 +131,12 @@ function createMobileCard(storyKey, index) {
     const config = STORY_CONFIG[storyKey];
     const text = getStepText(config, index);
     const bullets = text.bullets.map((bullet) => `<li>${bullet}</li>`).join('');
+    const buttonVariant = storyKey === 'specialists' ? 'orange' : 'green';
 
     return `
         <article class="segment-story__mobile-card">
             <div class="segment-story__mobile-visual" aria-hidden="true">
-                ${createVisualMarkup(config, index)}
+                ${createMobileVisualMarkup(config, index)}
             </div>
             <div class="segment-story__mobile-content">
                 <span class="segment-story__mobile-count">${formatCounter(index)} / ${String(config.steps.length).padStart(2, '0')}</span>
@@ -136,7 +144,7 @@ function createMobileCard(storyKey, index) {
                 <p>${text.description}</p>
                 <ul>${bullets}</ul>
                 <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="12">
-                    <a class="segment-story__mobile-button landing-button landing-button--green liquid-glass liquid-glass--green" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound>${text.cta}</a>
+                    <a class="segment-story__mobile-button landing-button landing-button--${buttonVariant} liquid-glass liquid-glass--${buttonVariant}" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound>${text.cta}</a>
                 </span>
             </div>
         </article>
