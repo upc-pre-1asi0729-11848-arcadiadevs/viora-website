@@ -591,10 +591,14 @@
             </div>
 
             <nav class="segments-overview__nav" aria-label="Segment cards" data-i18n-aria-label="roleBenefits.navAria">
-                <a class="segments-overview__arrow segments-overview__arrow--prev" href="#growers" aria-label="Go to growers segment" data-i18n-aria-label="roleBenefits.growersLinkAria" data-hover-sound>&larr;</a>
+                <a class="segments-overview__arrow segments-overview__arrow--prev" href="#growers" aria-label="Go to growers segment" data-i18n-aria-label="roleBenefits.growersLinkAria" data-magnetic data-magnetic-strength="1" data-magnetic-max="14" data-hover-sound>
+                    <img class="segments-overview__arrow-icon segments-overview__arrow-icon--prev" src="./assets/icons/arrow-white.svg" alt="" aria-hidden="true" />
+                </a>
                 <a class="segments-overview__option segments-overview__option--growers" href="#growers" data-i18n="roleBenefits.growersTitle" data-hover-sound>Growers</a>
                 <a class="segments-overview__option segments-overview__option--specialists" href="#specialists" data-i18n="roleBenefits.specialistsTitle" data-hover-sound>Specialists</a>
-                <a class="segments-overview__arrow segments-overview__arrow--next" href="#specialists" aria-label="Go to specialists segment" data-i18n-aria-label="roleBenefits.specialistsLinkAria" data-hover-sound>&rarr;</a>
+                <a class="segments-overview__arrow segments-overview__arrow--next" href="#specialists" aria-label="Go to specialists segment" data-i18n-aria-label="roleBenefits.specialistsLinkAria" data-magnetic data-magnetic-strength="1" data-magnetic-max="14" data-hover-sound>
+                    <img class="segments-overview__arrow-icon" src="./assets/icons/arrow-white.svg" alt="" aria-hidden="true" />
+                </a>
             </nav>
         </section>
 
@@ -764,51 +768,6 @@
                             </div>
                         </div>
                     </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="image-cta-section" hidden aria-hidden="true">
-            <div class="image-cta-section__sticky">
-                <div class="image-cta-section__stage" data-image-cta-stage>
-                    <div class="image-cta-section__slides" aria-hidden="true">
-                        <img class="image-cta-section__image image-cta-section__image--active" src="./assets/images/cta/image_cta_1.avif" alt="" data-image-cta-image="0" />
-                        <img class="image-cta-section__image" src="./assets/images/cta/image_cta_2.avif" alt="" data-image-cta-image="1" />
-                        <img class="image-cta-section__image" src="./assets/images/cta/image_cta_3.avif" alt="" data-image-cta-image="2" />
-                        <img class="image-cta-section__image" src="./assets/images/cta/image_cta_4.avif" alt="" data-image-cta-image="3" />
-                    </div>
-
-                    <div class="image-cta-section__scrim" aria-hidden="true"></div>
-
-                    <div class="image-cta-section__content" data-image-cta-copy>
-                        <h2 class="image-cta-section__title" id="image-cta-title" data-image-cta-title data-i18n="imageCta.items.producer.title">
-                            Your orchard speaks.<br />Are you listening?
-                        </h2>
-
-                        <p class="image-cta-section__subtitle" data-image-cta-subtitle data-i18n="imageCta.items.producer.subtitle">
-                            Monitor soil health, water levels, and crop conditions in real time — all from one platform.
-                        </p>
-                    </div>
-
-                    <div class="image-cta-section__counter" aria-hidden="true">
-                        <span data-image-cta-current>01</span>
-                        <span>/ 04</span>
-                    </div>
-
-                    <div class="image-cta-section__tabs" role="tablist" aria-label="Viora capabilities" data-i18n-aria-label="imageCta.tabsAria">
-                        <button class="image-cta-section__tab image-cta-section__tab--active" type="button" role="tab" aria-selected="true" data-image-cta-tab="0" data-i18n="imageCta.items.producer.name">
-                            PRODUCER
-                        </button>
-                        <button class="image-cta-section__tab" type="button" role="tab" aria-selected="false" data-image-cta-tab="1" data-i18n="imageCta.items.harvest.name">
-                            HARVEST
-                        </button>
-                        <button class="image-cta-section__tab" type="button" role="tab" aria-selected="false" data-image-cta-tab="2" data-i18n="imageCta.items.specialist.name">
-                            SPECIALIST
-                        </button>
-                        <button class="image-cta-section__tab" type="button" role="tab" aria-selected="false" data-image-cta-tab="3" data-i18n="imageCta.items.insights.name">
-                            INSIGHTS
-                        </button>
-                    </div>
                 </div>
             </div>
         </section>
@@ -1136,37 +1095,32 @@
                         </h2>
                     </div>
 
-                    <!-- Draggable Viewport -->
                     <div class="team-members-slider__viewport" data-team-slider-viewport>
                         <div class="team-members-slider__track" data-team-slider-track>
-                            <!-- Cards will be dynamically injected by JS -->
                         </div>
                     </div>
 
-                    <!-- Progress Indicator Bar -->
                     <div class="team-members-slider__progress-container">
                         <div class="team-members-slider__progress-track">
                             <div class="team-members-slider__progress-bar" data-team-slider-progress-bar></div>
                         </div>
                     </div>
 
-                    <!-- Dual Presentation Area -->
                     <div class="about-presentation">
-                        <!-- Toggler Switch (Liquid Glass, elegant language-style pill switcher) -->
+
                         <div class="about-presentation__toggle liquid-glass liquid-glass--deep" data-presentation-toggle data-liquid-glass>
                             <button class="about-presentation__toggle-btn about-presentation__toggle-btn--active" type="button" data-pres-switch="video" data-hover-sound data-i18n="teamMembers.toggleVideo">Video</button>
                             <button class="about-presentation__toggle-btn" type="button" data-pres-switch="image" data-hover-sound data-i18n="teamMembers.toggleImage">Image</button>
                             <div class="about-presentation__toggle-slider"></div>
                         </div>
 
-                        <!-- Stage: Loop Video or Image Carousel -->
+
                         <div class="about-presentation__stage" data-presentation-stage>
-                            <!-- Video Element -->
+
                             <video class="about-presentation__video about-presentation__video--active" data-presentation-video autoplay loop muted playsinline>
                                 <source src="./assets/videos/about-placeholder.mp4" type="video/mp4" />
                             </video>
 
-                            <!-- Carousel Container -->
                             <div class="about-presentation__carousel" data-presentation-carousel>
                                 <div class="about-presentation__slide about-presentation__slide--active" style="background-image: url('./assets/images/about/carrusel/image_1.png');"></div>
                                 <div class="about-presentation__slide" style="background-image: url('./assets/images/about/carrusel/image_2.png');"></div>
@@ -1174,7 +1128,6 @@
                             </div>
                         </div>
 
-                        <!-- Thematic Footer Text: Styled exactly 32px using Caros Regular -->
                         <p class="about-presentation__footer-text" data-scroll-text-reveal data-i18n="teamMembers.footerText">
                             Our team understands both sides of the field. From agronomists and data engineers to product visionaries, everyone at Viora is united in bridging the gap between producers who grow and specialists who protect — turning shared knowledge into smarter, more productive harvests.
                         </p>
@@ -1202,7 +1155,7 @@
                     <div class="learning-from-best-panel__bubble" data-learning-bubble>
                         <div class="learning-from-best-panel__bubble-glow"></div>
                         <div class="learning-from-best-panel__bubble-content">
-                            <img src="./assets/images/inspo/elon.png" alt="" />
+                            <img src="./assets/images/inspo/angel.png" alt="" />
                         </div>
                     </div>
 
@@ -1314,21 +1267,30 @@
                     <a href="#home" data-hover-sound data-i18n="footer.links.home">Home</a>
                     <a href="#about" data-hover-sound data-i18n="footer.links.about">About Us</a>
 
-                    <a href="#" data-hover-sound data-i18n="footer.links.terms">Terms of Service</a>
-                    <a href="#" data-hover-sound data-i18n="footer.links.privacy">Privacy Policy</a>
+                    <a href="#" data-legal-drawer-open="terms" data-hover-sound data-i18n="footer.links.terms">Terms of Service</a>
+                    <a href="#" data-legal-drawer-open="privacy" data-hover-sound data-i18n="footer.links.privacy">Privacy Policy</a>
                 </nav>
             </div>
 
             <div class="footer-section__right">
+                <div class="footer-section__characters" aria-hidden="true">
+                    <span class="footer-section__character footer-section__character--specialist">
+                        <img class="footer-section__character-img footer-section__character-img--default" src="./assets/images/footer/image1.png" alt="" />
+                        <img class="footer-section__character-img footer-section__character-img--hover" src="./assets/images/footer/hover_image1.png" alt="" />
+                    </span>
+                    <span class="footer-section__character footer-section__character--grower">
+                        <img class="footer-section__character-img footer-section__character-img--default" src="./assets/images/footer/image2.png" alt="" />
+                        <img class="footer-section__character-img footer-section__character-img--hover" src="./assets/images/footer/hover_image2.png" alt="" />
+                    </span>
+                </div>
+
                 <p class="footer-section__newsletter-text" data-i18n="footer.newsletterText">
                     Get the latest updates on precision farming, new Viora features, and expert agronomist tips, straight to your inbox.
                 </p>
 
-                <form class="footer-section__newsletter-form" data-footer-newsletter-form>
-                    <label class="sr-only" for="footer-email" data-i18n="footer.emailLabel">Email address</label>
-                    <input class="footer-section__email-input" id="footer-email" type="email" name="email" placeholder="Email address" data-i18n-placeholder="footer.emailPlaceholder" autocomplete="email" />
-                    <button class="footer-section__subscribe-button liquid-glass liquid-glass--green" type="submit" data-liquid-glass data-hover-sound data-i18n="footer.subscribe">subscribe</button>
-                </form>
+                <a class="footer-section__cta liquid-glass liquid-glass--green" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound>
+                    Try Viora now :D
+                </a>
 
                 <div class="footer-section__social">
                     <span data-i18n="footer.followUs">FOLLOW US:</span>
@@ -1339,6 +1301,102 @@
                     <a href="#" aria-label="LinkedIn" data-hover-sound><img src="./assets/icons/linkedin.svg" alt="" aria-hidden="true" /></a>
                 </div>
             </div>
+        </div>
+
+        <div class="legal-drawer" data-legal-drawer hidden>
+            <div class="legal-drawer__backdrop" data-legal-drawer-close></div>
+            <aside class="legal-drawer__panel" role="dialog" aria-modal="true" aria-labelledby="legal-drawer-title" tabindex="-1">
+                <button class="legal-drawer__close" type="button" aria-label="Close legal drawer" data-legal-drawer-close>
+                    &times;
+                </button>
+
+                <div class="legal-drawer__scroll">
+                    <article class="legal-drawer__content" data-legal-drawer-content="terms">
+                        <h2 id="legal-drawer-title">T&eacute;rminos de Servicio</h2>
+                        <p class="legal-drawer__updated">&Uacute;ltima actualizaci&oacute;n: mayo de 2026</p>
+
+                        <p>Bienvenido a Viora, una plataforma AgTech orientada a productores olivareros y especialistas fitosanitarios. Al acceder o utilizar nuestra Landing Page, aplicaci&oacute;n web o servicios relacionados, aceptas estos T&eacute;rminos de Servicio.</p>
+
+                        <h3>1. Uso de la plataforma</h3>
+                        <p>Viora permite a los usuarios acceder a herramientas digitales para el monitoreo de parcelas, an&aacute;lisis de datos clim&aacute;ticos y satelitales, alertas preventivas, recomendaciones agron&oacute;micas y conexi&oacute;n con especialistas agr&iacute;colas.</p>
+                        <p>El usuario se compromete a utilizar la plataforma de forma responsable, proporcionando informaci&oacute;n verdadera, actualizada y pertinente para el correcto funcionamiento de los servicios.</p>
+
+                        <h3>2. Registro y acceso</h3>
+                        <p>Para utilizar determinadas funcionalidades de Viora, el usuario puede necesitar crear una cuenta como Productor Olivarero o Especialista Fitosanitario. Cada perfil tendr&aacute; acceso a funcionalidades espec&iacute;ficas seg&uacute;n su rol dentro de la plataforma.</p>
+                        <p>El usuario es responsable de mantener la confidencialidad de sus credenciales de acceso y de toda actividad realizada desde su cuenta.</p>
+
+                        <h3>3. Informaci&oacute;n agron&oacute;mica y t&eacute;cnica</h3>
+                        <p>Los datos mostrados por Viora, incluyendo indicadores clim&aacute;ticos, NDVI, alertas de riesgo, proyecciones y recomendaciones, tienen fines informativos y de apoyo a la toma de decisiones.</p>
+                        <p>Viora no reemplaza la evaluaci&oacute;n profesional presencial ni garantiza resultados productivos espec&iacute;ficos. Las decisiones finales sobre manejo agr&iacute;cola, tratamientos o intervenciones t&eacute;cnicas son responsabilidad del usuario y/o del especialista contratado.</p>
+
+                        <h3>4. Conexi&oacute;n entre productores y especialistas</h3>
+                        <p>Viora puede facilitar la conexi&oacute;n entre productores olivareros y especialistas fitosanitarios mediante solicitudes, propuestas t&eacute;cnicas, cotizaciones o revelaci&oacute;n de datos de contacto.</p>
+                        <p>La relaci&oacute;n profesional, acuerdos econ&oacute;micos, ejecuci&oacute;n de servicios y resultados de la intervenci&oacute;n son responsabilidad de las partes involucradas.</p>
+
+                        <h3>5. Uso permitido</h3>
+                        <p>El usuario no debe utilizar Viora para publicar informaci&oacute;n falsa, manipular datos, realizar acciones fraudulentas, vulnerar cuentas de terceros, afectar el funcionamiento de la plataforma o usar la informaci&oacute;n con fines contrarios a la ley.</p>
+
+                        <h3>6. Disponibilidad del servicio</h3>
+                        <p>Viora busca mantener una experiencia estable y segura. Sin embargo, la plataforma puede presentar interrupciones temporales por mantenimiento, actualizaciones, fallas t&eacute;cnicas o indisponibilidad de servicios externos como APIs clim&aacute;ticas, satelitales, mapas o sistemas de pago.</p>
+
+                        <h3>7. Propiedad intelectual</h3>
+                        <p>El dise&ntilde;o, marca, contenidos, interfaces, textos, gr&aacute;ficos, componentes visuales y funcionalidades de Viora pertenecen a ArcadiaDevs o a sus respectivos titulares. No est&aacute; permitido copiar, modificar, distribuir o explotar estos elementos sin autorizaci&oacute;n previa.</p>
+
+                        <h3>8. Cambios en los t&eacute;rminos</h3>
+                        <p>Viora puede actualizar estos T&eacute;rminos de Servicio para reflejar mejoras del producto, cambios legales o ajustes operativos. La versi&oacute;n actualizada estar&aacute; disponible en la plataforma.</p>
+                    </article>
+
+                    <article class="legal-drawer__content" data-legal-drawer-content="privacy" hidden>
+                        <h2 id="legal-drawer-privacy-title">Pol&iacute;tica de Privacidad</h2>
+                        <p class="legal-drawer__updated">&Uacute;ltima actualizaci&oacute;n: mayo de 2026</p>
+                        <p>En Viora valoramos la privacidad y seguridad de la informaci&oacute;n de nuestros usuarios. Esta Pol&iacute;tica de Privacidad explica qu&eacute; datos podemos recopilar, c&oacute;mo los usamos y qu&eacute; medidas aplicamos para protegerlos.</p>
+
+                        <h3>1. Informaci&oacute;n que recopilamos</h3>
+                        <p>Viora puede recopilar informaci&oacute;n proporcionada por el usuario, como nombre, correo electr&oacute;nico, tel&eacute;fono, rol seleccionado, datos de perfil profesional, informaci&oacute;n de contacto y preferencias de uso.</p>
+                        <p>En el caso de productores, tambi&eacute;n podemos tratar informaci&oacute;n relacionada con parcelas agr&iacute;colas, ubicaci&oacute;n aproximada o georreferenciada, historial agron&oacute;mico, registros de manejo, alertas, reportes de s&iacute;ntomas y datos asociados al monitoreo del cultivo.</p>
+                        <p>En el caso de especialistas, podemos tratar informaci&oacute;n relacionada con experiencia profesional, servicios ofrecidos, zona de cobertura, disponibilidad, propuestas t&eacute;cnicas, cotizaciones y evaluaciones recibidas.</p>
+
+                        <h3>2. Informaci&oacute;n generada por la plataforma</h3>
+                        <p>La plataforma puede generar o procesar informaci&oacute;n derivada del uso del servicio, como indicadores clim&aacute;ticos, an&aacute;lisis satelitales, alertas preventivas, proyecciones de rendimiento, estados de riesgo, trazabilidad de intervenciones y actividad dentro del marketplace.</p>
+
+                        <h3>3. Uso de la informaci&oacute;n</h3>
+                        <p>Utilizamos la informaci&oacute;n para:</p>
+                        <ul class="legal-drawer__list">
+                            <li>Crear y gestionar cuentas de usuario.</li>
+                            <li>Personalizar la experiencia seg&uacute;n el rol del usuario.</li>
+                            <li>Habilitar el monitoreo de parcelas y el an&aacute;lisis agron&oacute;mico.</li>
+                            <li>Generar alertas, recomendaciones y reportes preventivos.</li>
+                            <li>Facilitar la conexi&oacute;n entre productores y especialistas.</li>
+                            <li>Mejorar la calidad, seguridad y funcionamiento de la plataforma.</li>
+                            <li>Realizar an&aacute;lisis internos para optimizar la experiencia del producto.</li>
+                        </ul>
+
+                        <h3>4. Servicios externos</h3>
+                        <p>Viora puede integrarse con servicios externos para obtener datos clim&aacute;ticos, satelitales, mapas, almacenamiento, autenticaci&oacute;n, pagos o comunicaciones. Estos servicios pueden procesar informaci&oacute;n necesaria para cumplir su funci&oacute;n dentro de la plataforma.</p>
+                        <p>Viora procura utilizar proveedores confiables y limitar el intercambio de datos a lo estrictamente necesario para la operaci&oacute;n del servicio.</p>
+
+                        <h3>5. Datos de ubicaci&oacute;n y parcelas</h3>
+                        <p>Los datos de ubicaci&oacute;n de parcelas se utilizan para habilitar funcionalidades como monitoreo clim&aacute;tico, an&aacute;lisis satelital, alertas territoriales y conexi&oacute;n con especialistas cercanos.</p>
+                        <p>Esta informaci&oacute;n no debe utilizarse para fines distintos a los relacionados con el funcionamiento de Viora y la prestaci&oacute;n de servicios agron&oacute;micos dentro de la plataforma.</p>
+
+                        <h3>6. Comunicaci&oacute;n entre usuarios</h3>
+                        <p>Cuando un productor acepta una propuesta o cotizaci&oacute;n de un especialista, Viora puede habilitar la visualizaci&oacute;n de datos de contacto necesarios para que ambas partes coordinen la intervenci&oacute;n fuera o dentro de los canales disponibles.</p>
+                        <p>El usuario debe utilizar esta informaci&oacute;n &uacute;nicamente para fines relacionados con el servicio solicitado.</p>
+
+                        <h3>7. Seguridad de la informaci&oacute;n</h3>
+                        <p>Aplicamos medidas t&eacute;cnicas y organizativas razonables para proteger los datos contra acceso no autorizado, p&eacute;rdida, alteraci&oacute;n o uso indebido. Sin embargo, ning&uacute;n sistema digital es completamente infalible, por lo que recomendamos a los usuarios proteger sus credenciales y mantener actualizada su informaci&oacute;n.</p>
+
+                        <h3>8. Conservaci&oacute;n de datos</h3>
+                        <p>La informaci&oacute;n se conservar&aacute; mientras sea necesaria para brindar el servicio, cumplir obligaciones operativas, resolver disputas, mantener trazabilidad o cumplir requerimientos legales aplicables.</p>
+
+                        <h3>9. Derechos del usuario</h3>
+                        <p>El usuario puede solicitar la actualizaci&oacute;n, correcci&oacute;n o eliminaci&oacute;n de sus datos personales, as&iacute; como realizar consultas sobre el tratamiento de su informaci&oacute;n mediante los canales oficiales de contacto de Viora.</p>
+
+                        <h3>10. Cambios en esta pol&iacute;tica</h3>
+                        <p>Viora puede actualizar esta Pol&iacute;tica de Privacidad debido a cambios en la plataforma, nuevos servicios, mejoras de seguridad o requisitos legales. La versi&oacute;n vigente estar&aacute; disponible en la Landing Page o en la aplicaci&oacute;n web.</p>
+                    </article>
+                </div>
+            </aside>
         </div>
     </footer>
 

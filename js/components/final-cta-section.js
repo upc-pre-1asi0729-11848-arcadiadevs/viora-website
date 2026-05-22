@@ -8,6 +8,12 @@ function easeOutCubic(value) {
     return 1 - Math.pow(1 - value, 3);
 }
 
+function easeInOutCubic(value) {
+    return value < 0.5
+        ? 4 * value * value * value
+        : 1 - Math.pow(-2 * value + 2, 3) / 2;
+}
+
 function interpolateChannel(from, to, progress) {
     return Math.round(from + (to - from) * progress);
 }
@@ -57,25 +63,23 @@ function attachFinalCtaSection(section) {
 
     const revealElements = Array.from(section.querySelectorAll('[data-final-cta-reveal]'));
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const mobileMotion = window.matchMedia('(max-width: 768px)');
     let lineGroups = [];
     let ticking = false;
 
     function setWipeState(progress) {
-        const eased = easeOutCubic(progress);
+        const isMobileMotion = mobileMotion.matches;
+        const eased = isMobileMotion ? easeInOutCubic(progress) : easeOutCubic(progress);
         const white = [255, 255, 255];
         const primary = [46, 74, 58];
         const ink = [30, 39, 34];
-        const widthProgress = Math.pow(progress, 1.18);
+        const wipeY = 100 - progress * 100;
+        const peakHeight = isMobileMotion ? 24 : 26;
+        const peak = Math.sin(progress * Math.PI) * peakHeight;
 
         section.style.setProperty('--final-cta-wipe-progress', eased.toFixed(4));
-        const riseProgress = clamp(progress / 0.92, 0, 1);
-        const flattenProgress = clamp((progress - 0.92) / 0.18, 0, 1);
-        const easedRise = easeOutCubic(riseProgress);
-        const easedFlatten = easeOutCubic(flattenProgress);
-
-        section.style.setProperty('--final-cta-wipe-apex-y', `${(112 - easedRise * 114).toFixed(2)}%`);
-        section.style.setProperty('--final-cta-wipe-top-half-width', `${(easedFlatten * 170).toFixed(2)}vw`);
-        section.style.setProperty('--final-cta-wipe-half-width', `${(18 + widthProgress * 312).toFixed(2)}vw`);
+        section.style.setProperty('--final-cta-wipe-y', `${wipeY.toFixed(2)}%`);
+        section.style.setProperty('--final-cta-wipe-peak', `${peak.toFixed(2)}vh`);
         section.style.setProperty('--final-cta-title-active-color', interpolateRgb(white, primary, eased));
         section.style.setProperty('--final-cta-title-muted-color', interpolateRgb(white, ink, eased, 0.2));
         section.style.setProperty('--final-cta-subtitle-active-color', interpolateRgb(white, ink, eased, 0.64));
@@ -111,14 +115,17 @@ function attachFinalCtaSection(section) {
         const staggerRange = 0.38;
         const softness = 0.68;
         const sectionRect = section.getBoundingClientRect();
-        const wipeStart = viewportHeight * 0.5;
-        const wipeProgress = clamp((wipeStart - sectionRect.top) / wipeStart, 0, 1);
+        const wipeStart = viewportHeight * (mobileMotion.matches ? 0.90 : 0.5);
+        const wipeRange = viewportHeight * (mobileMotion.matches ? 0.88 : 0.5);
+        const wipeProgress = clamp((wipeStart - sectionRect.top) / wipeRange, 0, 1);
 
         setWipeState(wipeProgress);
 
         lineGroups.forEach(({ element, lines }) => {
             const rect = element.getBoundingClientRect();
-            const progress = clamp((viewportHeight * 0.94 - rect.top) / (viewportHeight * 0.62), 0, 1);
+            const progress = mobileMotion.matches
+                ? clamp((viewportHeight * 1.05 - rect.top) / (viewportHeight * 0.52), 0, 1)
+                : clamp((viewportHeight * 0.94 - rect.top) / (viewportHeight * 0.62), 0, 1);
             const lastIndex = Math.max(lines.length - 1, 1);
 
             lines.forEach((line, index) => {
