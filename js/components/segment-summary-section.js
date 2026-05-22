@@ -9,6 +9,8 @@ const DRAG_SOUND_PATH = './assets/audio/drag-cards.mp3';
 const DRAG_SOUND_VOLUME = 0.28;
 const DRAG_DISTANCE = 260;
 const VISIBLE_RADIUS = 2;
+const MOBILE_VISIBLE_RADIUS = 1;
+const MOBILE_BREAKPOINT = '(max-width: 768px)';
 
 let dragAudio = null;
 
@@ -130,6 +132,7 @@ function attachDrag(section) {
     const viewport = section.querySelector('[data-segment-summary-viewport]');
     const track = section.querySelector('[data-segment-summary-track]');
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const mobileDeck = window.matchMedia(MOBILE_BREAKPOINT);
 
     if (!viewport || !track || section.dataset.segmentSummaryDragReady === 'true') return;
 
@@ -152,19 +155,27 @@ function attachDrag(section) {
     function renderDeck() {
         const cards = getCardElements();
         const total = cards.length;
+        const isMobileDeck = mobileDeck.matches;
+        const visibleRadius = isMobileDeck ? MOBILE_VISIBLE_RADIUS : VISIBLE_RADIUS;
 
         cards.forEach((card, index) => {
             const distance = getCircularDistance(index, activeIndex, total);
             const absDistance = Math.abs(distance);
             const direction = distance < 0 ? -1 : 1;
-            const clamped = Math.min(absDistance, VISIBLE_RADIUS + 1);
-            const progress = Math.min(absDistance, VISIBLE_RADIUS);
-            const fanX = distance * 28 + direction * Math.pow(progress, 1.18) * 88;
-            const fanY = Math.pow(progress, 1.25) * 18;
-            const rotation = distance * 6.5;
-            const scale = Math.max(0.82, 1 - progress * 0.055);
-            const opacity = absDistance <= VISIBLE_RADIUS + 0.7 ? 1 : 0;
-            const zIndex = Math.round((VISIBLE_RADIUS + 2 - clamped) * 20);
+            const clamped = Math.min(absDistance, visibleRadius + 1);
+            const progress = Math.min(absDistance, visibleRadius);
+            const fanX = isMobileDeck
+                ? direction * Math.pow(progress, 0.82) * 52
+                : distance * 28 + direction * Math.pow(progress, 1.18) * 88;
+            const fanY = isMobileDeck
+                ? Math.pow(progress, 1.08) * 8
+                : Math.pow(progress, 1.25) * 18;
+            const rotation = isMobileDeck ? distance * 6.2 : distance * 6.5;
+            const scale = isMobileDeck
+                ? Math.max(0.82, 1 - progress * 0.18)
+                : Math.max(0.82, 1 - progress * 0.055);
+            const opacity = absDistance <= visibleRadius + 0.18 ? 1 : 0;
+            const zIndex = Math.round((visibleRadius + 2 - clamped) * 20);
 
             card.style.setProperty('--deck-x', `${fanX.toFixed(2)}px`);
             card.style.setProperty('--deck-y', `${fanY.toFixed(2)}px`);
@@ -172,7 +183,7 @@ function attachDrag(section) {
             card.style.setProperty('--deck-scale', scale.toFixed(3));
             card.style.setProperty('--deck-opacity', opacity.toFixed(3));
             card.style.zIndex = String(zIndex);
-            card.setAttribute('aria-hidden', absDistance > VISIBLE_RADIUS + 0.7 ? 'true' : 'false');
+            card.setAttribute('aria-hidden', absDistance > visibleRadius + 0.18 ? 'true' : 'false');
             card.toggleAttribute('data-deck-active', absDistance < 0.45);
         });
     }
@@ -318,6 +329,7 @@ function attachDrag(section) {
     });
 
     window.requestAnimationFrame(renderDeck);
+    mobileDeck.addEventListener?.('change', renderDeck);
     section.dataset.segmentSummaryDragReady = 'true';
 }
 
