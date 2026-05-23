@@ -3675,6 +3675,7 @@ body.drawer-open {
 }
 
 .pricing-plans-panel__billing-toggle {
+    position: relative;
     width: min(100%, 22rem);
     margin: 3.2rem auto 0;
     display: grid;
@@ -3684,7 +3685,32 @@ body.drawer-open {
     background: #ded8cf;
 }
 
+.pricing-plans-panel__billing-toggle::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0;
+    z-index: 0;
+    width: 50%;
+    border-radius: inherit;
+    background: var(--color-primary);
+    transform: translate3d(var(--billing-toggle-x, 0%), 0, 0);
+    transition:
+            transform 420ms cubic-bezier(0.22, 1, 0.36, 1),
+            background-color var(--transition-fast);
+    will-change: transform;
+}
+
+.pricing-plans-panel[data-active-billing="yearly"] .pricing-plans-panel__billing-toggle::before {
+    --billing-toggle-x: 100%;
+}
+
+.pricing-plans-panel[data-active-plan="specialist"] .pricing-plans-panel__billing-toggle::before {
+    background: var(--color-accent);
+}
+
 .pricing-plans-panel__billing-option {
+    position: relative;
+    z-index: 1;
     min-height: 2.9rem;
     border: 0;
     background: transparent;
@@ -3693,12 +3719,12 @@ body.drawer-open {
     font-size: 1.125rem;
     font-weight: 400;
     cursor: pointer;
+    transition:
+            color var(--transition-fast);
 }
 
 .pricing-plans-panel__billing-option--active {
-    background: var(--color-primary);
     color: var(--color-white);
-    border-radius: 999px;
 }
 
 .pricing-plans-panel__stage {
@@ -3732,18 +3758,113 @@ body.drawer-open {
     display: flex;
     align-items: center;
     justify-content: center;
+    perspective: 75rem;
 }
 
 .pricing-plan__ticket {
+    /* Ticket tuning: adjust these variables to fine-tune normal and hover positions. */
+    --ticket-rotate: -8deg;
+    --ticket-hover-rotate: -2deg;
+    --ticket-hover-y: -0.35rem;
+    --ticket-left-width: 38%;
+    --ticket-right-width: 66%;
+    --ticket-left-x: 1%;
+    --ticket-left-y: -34%;
+    --ticket-left-z: 1.25rem;
+    --ticket-left-rotate: 1deg;
+    --ticket-right-x: -2.5%;
+    --ticket-right-y: -56%;
+    --ticket-right-z: 0;
+    --ticket-right-rotate: 1deg;
+    --ticket-left-hover-x: -8%;
+    --ticket-left-hover-y: -52%;
+    --ticket-left-hover-z: 2rem;
+    --ticket-left-hover-rotate: -13deg;
+    --ticket-right-hover-x: 5%;
+    --ticket-right-hover-y: -49%;
+    --ticket-right-hover-z: 0;
+    --ticket-right-hover-rotate: 3deg;
+
+    position: relative;
     width: min(100%, 42rem);
-    height: auto;
-    object-fit: contain;
+    aspect-ratio: 3 / 2;
     filter: drop-shadow(0 2rem 3rem rgba(0, 0, 0, 0.12));
-    transform: rotate(-9deg);
+    transform: rotate(var(--ticket-rotate)) translate3d(0, 0, 0);
+    transform-style: preserve-3d;
+    transition:
+            transform 700ms cubic-bezier(0.22, 1, 0.36, 1),
+            filter 700ms ease;
+    will-change: transform;
 }
 
 .pricing-plan--specialist .pricing-plan__ticket {
-    width: min(100%, 44rem);
+    --ticket-right-width: 71%;
+    --ticket-right-x: -3.4%;
+
+    width: min(100%, 42rem);
+}
+
+.pricing-plan__ticket-part {
+    position: absolute;
+    top: 50%;
+    display: block;
+    max-width: none;
+    height: auto;
+    object-fit: contain;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    transition:
+            transform 780ms cubic-bezier(0.16, 1, 0.3, 1),
+            filter 780ms ease;
+    will-change: transform;
+}
+
+.pricing-plan__ticket-part--left {
+    left: 0;
+    z-index: 2;
+    width: var(--ticket-left-width);
+    transform:
+            translate3d(var(--ticket-left-x), var(--ticket-left-y), var(--ticket-left-z))
+            rotate(var(--ticket-left-rotate));
+    transform-origin: 85% 50%;
+}
+
+.pricing-plan__ticket-part--right {
+    right: 0;
+    z-index: 1;
+    width: var(--ticket-right-width);
+    transform:
+            translate3d(var(--ticket-right-x), var(--ticket-right-y), var(--ticket-right-z))
+            rotate(var(--ticket-right-rotate));
+    transform-origin: 8% 50%;
+}
+
+.pricing-plan__visual:hover .pricing-plan__ticket,
+.pricing-plan__visual:focus-within .pricing-plan__ticket {
+    filter: drop-shadow(0 2.35rem 3.5rem rgba(0, 0, 0, 0.16));
+    transform: rotate(var(--ticket-hover-rotate)) translate3d(0, var(--ticket-hover-y), 0);
+}
+
+.pricing-plan__visual:hover .pricing-plan__ticket-part--left,
+.pricing-plan__visual:focus-within .pricing-plan__ticket-part--left {
+    transform:
+            translate3d(var(--ticket-left-hover-x), var(--ticket-left-hover-y), var(--ticket-left-hover-z))
+            rotate(var(--ticket-left-hover-rotate));
+}
+
+.pricing-plan__visual:hover .pricing-plan__ticket-part--right,
+.pricing-plan__visual:focus-within .pricing-plan__ticket-part--right {
+    transform:
+            translate3d(var(--ticket-right-hover-x), var(--ticket-right-hover-y), var(--ticket-right-hover-z))
+            rotate(var(--ticket-right-hover-rotate));
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .pricing-plan__ticket,
+    .pricing-plan__ticket-part {
+        transition: none;
+    }
 }
 
 .pricing-plan__content {
