@@ -4931,33 +4931,61 @@ body.drawer-open {
 
 .solution-card__icon {
     position: relative;
-    width: 6rem;
-    height: 4.5rem;
+    flex: 0 0 auto;
+    width: 5.8rem;
+    height: 4.55rem;
+    min-height: 4.55rem;
     display: block;
-    margin: 1.6rem auto 3.5rem;
+    margin: 0.8rem auto 3rem;
 }
 
 .solution-card__icon-img,
 .solution-card__icon-img--white {
     position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
+    top: 50%;
+    left: 50%;
+    width: var(--solution-icon-width, 100%);
+    height: var(--solution-icon-height, 100%);
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
     transition: opacity 320ms ease;
-    transform: scale(var(--icon-scale, 2.5));
+    transform: translate(-50%, -50%);
     -webkit-user-drag: none;
     user-select: none;
     pointer-events: none;
 }
 
 
-.solution-card:nth-child(1) { --icon-scale: 3; } /* Epidemiological Alerts */
-.solution-card:nth-child(2) { --icon-scale: 3.5; } /* Specialist Marketplace */
-.solution-card:nth-child(3) { --icon-scale: 2.5; } /* NDVI Monitoring */
-.solution-card:nth-child(4) { --icon-scale: 4.0; } /* Chill Portion Tracking */
-.solution-card:nth-child(5) { --icon-scale: 3; } /* Dynamic Nutrition Plans */
-.solution-card:nth-child(6) { --icon-scale: 7; } /* Climate Risk Outlook */
+.solution-card:nth-child(1) {
+    --solution-icon-width: 3.75rem;
+    --solution-icon-height: 3.55rem;
+}
+
+.solution-card:nth-child(2) {
+    --solution-icon-width: 4.35rem;
+    --solution-icon-height: 3.55rem;
+}
+
+.solution-card:nth-child(3) {
+    --solution-icon-width: 4.65rem;
+    --solution-icon-height: 3.4rem;
+}
+
+.solution-card:nth-child(4) {
+    --solution-icon-width: 4.15rem;
+    --solution-icon-height: 3.25rem;
+}
+
+.solution-card:nth-child(5) {
+    --solution-icon-width: 4rem;
+    --solution-icon-height: 3.2rem;
+}
+
+.solution-card:nth-child(6) {
+    --solution-icon-width: 4.35rem;
+    --solution-icon-height: 3.55rem;
+}
 
 .solution-card__icon-img {
     opacity: 1;
@@ -5046,6 +5074,27 @@ body.drawer-open {
 
     .solution-panel__track {
         gap: 1.5rem;
+    }
+
+    .solution-card {
+        height: 23.75rem;
+        padding: 2.55rem 1.2rem 1.85rem;
+    }
+
+    .solution-card__title {
+        font-size: 1.35rem;
+    }
+
+    .solution-card__icon {
+        width: 5.35rem;
+        height: 4.15rem;
+        min-height: 4.15rem;
+        margin: 1rem auto 1.9rem;
+    }
+
+    .solution-card__description {
+        font-size: 0.82rem;
+        line-height: 1.3;
     }
 }
 
