@@ -238,49 +238,6 @@
       "opportunities": { "title": "Oportunidades por riesgo", "note": "Casos priorizados por severidad y ubicación.", "metric": "4 casos activos" },
       "case": { "title": "Contexto del caso", "note": "Historial, NDVI, clima y síntomas reportados.", "metric": "Contexto completo" },
       "prescription": { "title": "Prescripción de campo", "note": "Recomendaciones técnicas con trazabilidad del servicio.", "metric": "Confianza +" }
-    },
-    "producer": {
-      "tab": "Productores olivareros",
-      "title": "Para Productores Olivareros",
-      "pill1": "Monitoreo satelital, climático y de porciones de frío.",
-      "pill2": "Alertas epidemiológicas automatizadas ante plagas.",
-      "pill3": "Predicción de vecería y soporte de nutrición dinámica.",
-      "cta": "Ver Planes",
-      "note": "La volatilidad climática y los brotes repentinos de plagas hacen que la producción olivarera sea más difícil de predecir. Viora convierte datos de campo en información accionable para detectar riesgos antes, proteger el rendimiento y responder más rápido con el especialista adecuado."
-    },
-    "specialist": {
-      "tab": "Especialistas fitosanitarios",
-      "title": "Especialistas fitosanitarios",
-      "pill1": "Accede a nuevas oportunidades de servicio mediante el marketplace de especialistas.",
-      "pill2": "Revisa contexto de parcelas, patrones NDVI y señales de riesgo reportadas.",
-      "pill3": "Herramientas de prescripción digital y evaluación de campo.",
-      "cta": "Unirme al Marketplace",
-      "note": "Encontrar nuevos clientes y responder temprano ante riesgos de campo es difícil sin las señales adecuadas. Viora te ayuda a descubrir oportunidades de servicio, revisar contexto de campo con indicadores satelitales y entregar orientación técnica más rápida y estructurada."
-    }
-  },
-  "imageCta": {
-    "tabsAria": "Capacidades de la plataforma Viora",
-    "items": {
-      "producer": {
-        "name": "PRODUCTOR",
-        "title": "Tu huerto habla.\n¿Lo estás escuchando?",
-        "subtitle": "Monitorea la salud del suelo, los niveles de agua y las condiciones del cultivo en tiempo real — todo desde una sola plataforma."
-      },
-      "harvest": {
-        "name": "COSECHA",
-        "title": "Planifica tu cosecha.\nMaximiza cada rendimiento.",
-        "subtitle": "Recibe recomendaciones basadas en datos sobre el momento óptimo para cosechar y reduce pérdidas antes de que ocurran."
-      },
-      "specialist": {
-        "name": "ESPECIALISTA",
-        "title": "Detecta amenazas antes de\nque se propaguen.",
-        "subtitle": "Recibe alertas epidemiológicas de plagas y colabora directamente con productores para actuar rápido y proteger el campo."
-      },
-      "insights": {
-        "name": "ANÁLISIS",
-        "title": "Tu experiencia,\namplificada por datos.",
-        "subtitle": "Accede a reportes históricos de campo, da seguimiento a intervenciones y entrega recomendaciones precisas respaldadas por evidencia real."
-      }
     }
   },
   "pricingIntro": {

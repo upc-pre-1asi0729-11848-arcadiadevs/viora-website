@@ -238,49 +238,6 @@
       "opportunities": { "title": "Risk opportunities", "note": "Prioritized producer cases by severity and location.", "metric": "4 active cases" },
       "case": { "title": "Case context", "note": "Plot history, NDVI, weather, and reported symptoms.", "metric": "Full context" },
       "prescription": { "title": "Field prescription", "note": "Technical recommendations with service traceability.", "metric": "Trust +" }
-    },
-    "producer": {
-      "tab": "Olive Producers",
-      "title": "For Olive Producers",
-      "pill1": "Satellite, climate, and chill portion monitoring.",
-      "pill2": "Automated epidemiological pest alerts.",
-      "pill3": "Alternate bearing prediction and dynamic nutrition support.",
-      "cta": "View Pricing Plans",
-      "note": "Climate volatility and sudden pest outbreaks make olive production harder to predict. Viora turns field data into actionable insights, helping you detect risk earlier, protect yield, and respond faster with the right specialist when needed."
-    },
-    "specialist": {
-      "tab": "Phytosanitary specialists",
-      "title": "Phytosanitary specialists",
-      "pill1": "Access new service opportunities through the specialist marketplace.",
-      "pill2": "Review plot context, NDVI patterns, and reported field risk signals.",
-      "pill3": "Digital prescriptions and field assessment tools.",
-      "cta": "Join the Marketplace",
-      "note": "Finding new clients and responding early to field risk is difficult without the right signals. Viora helps you discover service opportunities, review field context with satellite-based indicators, and deliver faster, more structured technical guidance."
-    }
-  },
-  "imageCta": {
-    "tabsAria": "Viora platform capabilities",
-    "items": {
-      "producer": {
-        "name": "PRODUCER",
-        "title": "Your orchard speaks.\nAre you listening?",
-        "subtitle": "Monitor soil health, water levels, and crop conditions in real time — all from one platform."
-      },
-      "harvest": {
-        "name": "HARVEST",
-        "title": "Plan your harvest.\nMaximize every yield.",
-        "subtitle": "Get data-driven recommendations on the optimal time to harvest and reduce losses before they happen."
-      },
-      "specialist": {
-        "name": "SPECIALIST",
-        "title": "Detect threats before\nthey spread.",
-        "subtitle": "Receive epidemiological pest alerts and collaborate directly with producers to act fast and protect the field."
-      },
-      "insights": {
-        "name": "INSIGHTS",
-        "title": "Your expertise,\namplified by data.",
-        "subtitle": "Access historical field reports, track interventions, and deliver precise recommendations backed by real evidence."
-      }
     }
   },
   "pricingIntro": {
