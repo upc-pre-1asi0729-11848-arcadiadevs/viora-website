@@ -1,4 +1,5 @@
 import { i18n } from '../i18n.js';
+import { initializeAboutAmbientSound } from './about-ambient-sound.js';
 
 const MEMBERS = [
     { id: 1, firstName: 'Victor', lastName: 'Paredes', roleKey: 'teamMembers.role', img: './assets/images/about/members/enhanced/victor-enh.png', badge: './assets/logos/arcadia-dark-green.png' },
@@ -113,6 +114,8 @@ export function initializeTeamMembersPanel(root = document) {
     const section = root.querySelector('[data-team-members-panel]');
 
     if (!section || section.dataset.teamMembersInitialized === 'true') return;
+
+    initializeAboutAmbientSound();
 
     const track = section.querySelector('[data-team-slider-track]');
     const viewport = section.querySelector('[data-team-slider-viewport]');
