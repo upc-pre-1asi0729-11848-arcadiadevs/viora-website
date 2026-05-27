@@ -70,7 +70,7 @@ function attachScrollTextReveal(textElement) {
 
         const rect = textElement.getBoundingClientRect();
         const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-        const revealStart = viewportHeight * 0.99;
+        const revealStart = viewportHeight * 1.05;
         const revealDistance = Math.max(viewportHeight * 0.38, rect.height * 1.4);
         const progress = clamp((revealStart - rect.top) / revealDistance, 0, 1);
         const staggerRange = 0.72;
@@ -309,7 +309,7 @@ export function initializeTeamMembersPanel(root = document) {
             videoBtn?.classList.add('about-presentation__toggle-btn--active');
             imageBtn?.classList.remove('about-presentation__toggle-btn--active');
             presentation?.classList.remove('about-presentation--image-active');
-            
+
             videoEl?.classList.add('about-presentation__video--active');
             carouselEl?.classList.remove('about-presentation__carousel--active');
 
