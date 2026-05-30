@@ -35,6 +35,19 @@
     object-fit: contain;
 }
 
+.landing-button__label {
+    display: inline-flex;
+    align-items: center;
+}
+
+.landing-button__trailing-icon {
+    width: 1.15rem;
+    height: 1.15rem;
+    margin-left: 0.45rem;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
 .landing-button--primary {
     color: var(--color-ink);
     background: #E8E4DF;
