@@ -128,6 +128,16 @@
       "ctaAria": "Explore the marketplace"
     }
   },
+  "featureProduct": {
+    "brand": "Viora",
+    "tagline": "Land that speaks.\nProduction that grows.",
+    "eyebrow": "Intelligent monitoring",
+    "title": "Your field speaks.\nAre you listening?",
+    "playAria": "Play product video",
+    "moreAria": "Show additional product content",
+    "cta": "Prueba Viora gratis",
+    "moreText": "Access real-time field data with deep IoT monitoring. Manage your harvests with Viora Harvest tools. Stay one step ahead with localized, precise epidemiological alerts for your olive grove. And connect with the best agronomic specialists when your field needs them most."
+  },
   "roleBenefits": {
     "sectionLabel": "Segments",
     "growersTitle": "Growers",
