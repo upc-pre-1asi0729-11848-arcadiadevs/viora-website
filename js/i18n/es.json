@@ -25,7 +25,28 @@
     "getStarted": "Comenzar con Viora",
     "heroActions": "Acciones principales del Hero",
     "languageToggle": "Cambiar idioma",
-    "soundToggle": "Activar o desactivar sonido"
+    "soundToggle": "Activar o desactivar sonido",
+    "mobileNav": "Navegación móvil",
+    "closeMenu": "Cerrar menú",
+    "problemCards": "Tarjetas de problemas",
+    "problemSolution": "Sección de problema y solución",
+    "solutionCarousel": "Carrusel de capacidades de la solución Viora",
+    "prevSolution": "Tarjeta de solución anterior",
+    "nextSolution": "Tarjeta de solución siguiente",
+    "segments": "Viajes de usuario para Productores y Especialistas",
+    "pricingSection": "Sección de planes de precios",
+    "prevPlan": "Plan de precios anterior",
+    "nextPlan": "Plan de precios siguiente",
+    "producerTicket": "Ticket de Viora para productores de olivos",
+    "specialistTicket": "Ticket de Viora para especialistas fitosanitarios",
+    "startTrial": "Comenzar prueba sin riesgo",
+    "aboutSection": "Acerca de Viora y ArcadiaDevs",
+    "youtube": "YouTube",
+    "facebook": "Facebook",
+    "twitter": "Twitter",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "closeLegal": "Cerrar panel legal"
   },
   "aboutIntro": {
     "eyebrow": "Creado para el ecosistema olivarero moderno",
@@ -260,6 +281,8 @@
       "detail3": "Alertas epidemiológicas automatizadas",
       "detail4": "Recomendaciones de nutrición dinámica",
       "detail5": "Acceso a especialistas en protección de cultivos cuando el riesgo aumenta",
+      "priceMonthly": "$149.00",
+      "priceYearly": "$1,490.00",
       "cta": "Registrarse"
     },
     "specialist": {
@@ -270,6 +293,8 @@
       "detail3": "Visibilidad dentro del ecosistema Viora",
       "detail4": "Acceso al contexto de campo e indicadores de riesgo satelitales",
       "detail5": "Conexión más rápida con productores que necesitan intervención",
+      "priceMonthly": "$149.00",
+      "priceYearly": "$1,490.00",
       "cta": "Registrarse"
     }
   },
@@ -453,6 +478,8 @@
     "emailLabel": "Correo electrónico",
     "emailPlaceholder": "Correo electrónico",
     "subscribe": "suscribirse",
+    "tryViora": "Prueba Viora ahora :D",
     "followUs": "SÍGUENOS:"
+    
   }
 }

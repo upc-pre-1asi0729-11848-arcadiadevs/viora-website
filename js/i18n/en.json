@@ -25,7 +25,28 @@
     "getStarted": "Get started with Viora",
     "heroActions": "Hero actions",
     "languageToggle": "Change language",
-    "soundToggle": "Toggle sound"
+    "soundToggle": "Toggle sound",
+    "mobileNav": "Mobile navigation",
+    "closeMenu": "Close menu",
+    "problemCards": "The Problem Cards",
+    "problemSolution": "Problem and solution section",
+    "solutionCarousel": "Viora solution capabilities carousel",
+    "prevSolution": "Previous solution card",
+    "nextSolution": "Next solution card",
+    "segments": "Growers and specialists journeys",
+    "pricingSection": "Pricing plans section",
+    "prevPlan": "Previous pricing plan",
+    "nextPlan": "Next pricing plan",
+    "producerTicket": "Viora referral ticket for olive producers",
+    "specialistTicket": "Viora referral ticket for phytosanitary specialists",
+    "startTrial": "Start risk-free trial",
+    "aboutSection": "About Viora and ArcadiaDevs",
+    "youtube": "YouTube",
+    "facebook": "Facebook",
+    "twitter": "Twitter",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "closeLegal": "Close legal drawer"
   },
   "aboutIntro": {
     "eyebrow": "Built for the modern olive ecosystem",
@@ -260,6 +281,8 @@
       "detail3": "Automated epidemiological alerts",
       "detail4": "Dynamic nutrition recommendations",
       "detail5": "Access to crop protection specialists when risk rises",
+      "priceMonthly": "$149.00",
+      "priceYearly": "$1,490.00",
       "cta": "Sign Up"
     },
     "specialist": {
@@ -270,6 +293,8 @@
       "detail3": "Visibility inside the Viora ecosystem",
       "detail4": "Access to field context and satellite-based risk indicators",
       "detail5": "Faster connection with producers who need intervention",
+      "priceMonthly": "$149.00",
+      "priceYearly": "$1,490.00",
       "cta": "Sign Up"
     }
   },
@@ -453,6 +478,7 @@
     "emailLabel": "Email address",
     "emailPlaceholder": "Email address",
     "subscribe": "subscribe",
-    "followUs": "FOLLOW US:"
+    "followUs": "FOLLOW US:",
+    "tryViora": "Try Viora now :D"
   }
 }
