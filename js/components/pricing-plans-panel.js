@@ -1,17 +1,9 @@
+import { i18n } from '../i18n.js';
 const ACTIVE_PLAN_CLASS = 'pricing-plan--active';
 const ACTIVE_BILLING_CLASS = 'pricing-plans-panel__billing-option--active';
 
 const PLANS = ['producer', 'specialist'];
 
-const PRODUCER_PRICES = {
-    monthly: '$149.00',
-    yearly: '$1,490.00',
-};
-
-const SPECIALIST_PRICES = {
-    monthly: '$149.00',
-    yearly: '$1,490.00',
-};
 
 function getNextIndex(currentIndex, direction) {
     return (currentIndex + direction + PLANS.length) % PLANS.length;
@@ -40,15 +32,17 @@ function setActivePlan(section, planName) {
 }
 
 function updatePrices(section, billingType) {
-    const producerPriceEl = section.querySelector('[data-pricing-price]');
+    const producerPriceEl = section.querySelector('[data-pricing-price-producer]');
     const specialistPriceEl = section.querySelector('[data-pricing-price-specialist]');
 
     if (producerPriceEl) {
-        producerPriceEl.textContent = PRODUCER_PRICES[billingType];
+        const priceKey = `pricingPlans.producer.price${billingType.charAt(0).toUpperCase() + billingType.slice(1)}`;
+        producerPriceEl.textContent = i18n.getTranslationValue(priceKey) || '';
     }
 
     if (specialistPriceEl) {
-        specialistPriceEl.textContent = SPECIALIST_PRICES[billingType];
+        const priceKey = `pricingPlans.specialist.price${billingType.charAt(0).toUpperCase() + billingType.slice(1)}`;
+        specialistPriceEl.textContent = i18n.getTranslationValue(priceKey) || '';
     }
 }
 
@@ -97,6 +91,11 @@ export function initializePricingPlansPanel(root = document) {
 
     setActivePlan(section, 'producer');
     setBilling(section, 'monthly');
+
+    i18n.subscribe(() => {
+        const currentBilling = section.dataset.activeBilling || 'monthly';
+        updatePrices(section, currentBilling);
+    });
 
     section.dataset.pricingPlansInitialized = 'true';
 }

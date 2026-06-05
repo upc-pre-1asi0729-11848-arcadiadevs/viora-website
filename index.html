@@ -77,7 +77,7 @@
                 </div>
 
                 <span class="magnetic-target landing-header__hamburger-magnetic" data-magnetic data-magnetic-strength="1" data-magnetic-max="20">
-                        <button class="landing-header__hamburger liquid-glass liquid-glass--deep" type="button" aria-label="Open menu" aria-expanded="false" data-drawer-toggle data-liquid-glass data-hover-sound>
+                        <button class="landing-header__hamburger liquid-glass liquid-glass--deep" type="button" data-i18n-aria-label="aria.mobileNav" aria-expanded="false" data-drawer-toggle data-liquid-glass data-hover-sound>
                             <span class="landing-header__hamburger-bar"></span>
                             <span class="landing-header__hamburger-bar"></span>
                         </button>
@@ -88,10 +88,10 @@
         <!-- Mobile Drawer (right → left) -->
         <div class="landing-header__drawer-backdrop" data-drawer-backdrop></div>
 
-        <aside class="landing-header__drawer" data-drawer aria-label="Mobile navigation">
+        <aside class="landing-header__drawer" data-drawer data-i18n-aria-label="aria.mobileNav">
             <!-- Close button -->
             <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="18">
-                    <button class="landing-header__drawer-close liquid-glass liquid-glass--deep" type="button" aria-label="Close menu" data-drawer-close data-liquid-glass data-hover-sound>
+                    <button class="landing-header__drawer-close liquid-glass liquid-glass--deep" type="button" data-i18n-aria-label="aria.closeMenu" data-drawer-close data-liquid-glass data-hover-sound>
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                             <path d="M2 2L14 14M14 2L2 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                         </svg>
@@ -233,7 +233,7 @@
                     </div>
                 </div>
 
-                <div class="problem-cards-section__cards" aria-label="The Problem Cards">
+                <div class="problem-cards-section__cards" data-i18n-aria-label="aria.problemCards">
                     <div class="problem-cards-section__cards-title">
                         <span data-i18n="problemCards.cardsTitle"></span>
                         <span aria-hidden="true">
@@ -289,7 +289,7 @@
         </div>
     </section>
 
-    <section class="problem-solution-section" id="solution" aria-label="Problem and solution section">
+    <section class="problem-solution-section" id="solution" data-i18n-aria-label="aria.problemSolution">
         <section class="problem-panel" data-video-expand-section aria-labelledby="problem-panel-title">
             <div class="problem-panel__sticky" data-video-expand-sticky>
                 <div class="problem-panel__intro-layout">
@@ -321,7 +321,7 @@
                 <p class="solution-panel__subtitle" data-i18n="solutionPanel.subtitle"></p>
             </div>
 
-            <div class="solution-panel__carousel" data-solution-carousel aria-label="Viora solution capabilities carousel">
+            <div class="solution-panel__carousel" data-solution-carousel data-i18n-aria-label="aria.solutionCarousel">
                 <div class="solution-panel__track" data-solution-track>
                     <article class="solution-card" data-solution-card tabindex="0">
                         <h3 class="solution-card__title" data-i18n="solutionPanel.cards.alerts.title"></h3>
@@ -393,13 +393,13 @@
 
             <div class="solution-panel__controls" aria-label="Solution carousel controls">
                     <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
-                        <button class="solution-panel__control" type="button" data-solution-prev data-hover-sound aria-label="Previous solution card">
+                        <button class="solution-panel__control" type="button" data-solution-prev data-hover-sound data-i18n-aria-label="aria.prevSolution">
                             ←
                         </button>
                     </span>
 
                 <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
-                        <button class="solution-panel__control" type="button" data-solution-next data-hover-sound aria-label="Next solution card">
+                        <button class="solution-panel__control" type="button" data-solution-next data-hover-sound data-i18n-aria-label="aria.nextSolution">
                             →
                         </button>
                     </span>
@@ -597,7 +597,7 @@
         </nav>
     </section>
 
-    <section class="segment-story-group" aria-label="Growers and specialists journeys">
+    <section class="segment-story-group" data-i18n-aria-label="aria.segments">
         <section class="segment-story segment-story--growers" id="growers" data-segment-story="growers" aria-labelledby="segment-story-growers-title">
             <div class="segment-story__sticky">
                 <article class="segment-story__card">
@@ -659,7 +659,7 @@
         </section>
     </section>
 
-    <section class="plans-trial-affiliates-section" aria-label="Pricing plans section">
+    <section class="plans-trial-affiliates-section" data-i18n-aria-label="aria.pricingSection">
         <section class="pricing-parallax-intro" id="pricing-intro" data-pricing-parallax-intro aria-labelledby="pricing-parallax-title">
             <div class="pricing-parallax-intro__sticky">
                 <div class="pricing-parallax-intro__container">
@@ -694,7 +694,7 @@
 
                 <div class="pricing-plans-panel__controls">
                         <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
-                            <button class="pricing-plans-panel__arrow" type="button" data-pricing-prev data-hover-sound aria-label="Previous pricing plan">
+                            <button class="pricing-plans-panel__arrow" type="button" data-pricing-prev data-hover-sound data-i18n-aria-label="aria.prevPlan">
                                 <img src="./assets/icons/arrow-forward.svg" alt="" aria-hidden="true" />
                             </button>
                         </span>
@@ -704,7 +704,7 @@
                         </span>
 
                     <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
-                            <button class="pricing-plans-panel__arrow pricing-plans-panel__arrow--next" type="button" data-pricing-next data-hover-sound aria-label="Next pricing plan">
+                            <button class="pricing-plans-panel__arrow pricing-plans-panel__arrow--next" type="button" data-pricing-next data-hover-sound data-i18n-aria-label="aria.nextPlan">
                                 <img src="./assets/icons/arrow-forward.svg" alt="" aria-hidden="true" />
                             </button>
                         </span>
@@ -719,7 +719,7 @@
                 <div class="pricing-plans-panel__stage">
                     <article class="pricing-plan pricing-plan--producer pricing-plan--active" data-pricing-plan="producer">
                         <div class="pricing-plan__visual">
-                            <div class="pricing-plan__ticket" role="img" aria-label="Viora referral ticket for olive producers">
+                            <div class="pricing-plan__ticket" role="img" data-i18n-aria-label="aria.producerTicket">
                                 <img class="pricing-plan__ticket-part pricing-plan__ticket-part--left" src="./assets/images/pricing/new-ticket/viora-ticket-left-part-grower.png" alt="" aria-hidden="true" />
                                 <img class="pricing-plan__ticket-part pricing-plan__ticket-part--right" src="./assets/images/pricing/new-ticket/viora-ticket-right-part-grower.png" alt="" aria-hidden="true" />
                             </div>
@@ -743,9 +743,7 @@
                                 <li data-i18n="pricingPlans.producer.detail5"></li>
                             </ul>
 
-                            <strong class="pricing-plan__price" data-pricing-price>
-                                $149.00
-                            </strong>
+                            <strong class="pricing-plan__price" data-pricing-price-producer></strong>
 
                             <div class="pricing-plan__actions">
                                     <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
@@ -755,7 +753,7 @@
                                     </span>
 
                                 <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
-                                        <a class="landing-button landing-button--icon landing-button--green liquid-glass liquid-glass--green" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound aria-label="Start risk-free trial">
+                                        <a class="landing-button landing-button--icon landing-button--green liquid-glass liquid-glass--green" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound data-i18n-aria-label="aria.startTrial">
                                             <img class="landing-button__icon-img" src="./assets/icons/arrow-white.svg" alt="" aria-hidden="true" />
                                         </a>
                                     </span>
@@ -765,7 +763,7 @@
 
                     <article class="pricing-plan pricing-plan--specialist" data-pricing-plan="specialist">
                         <div class="pricing-plan__visual">
-                            <div class="pricing-plan__ticket" role="img" aria-label="Viora referral ticket for phytosanitary specialists">
+                            <div class="pricing-plan__ticket" role="img" data-i18n-aria-label="aria.specialistTicket">
                                 <img class="pricing-plan__ticket-part pricing-plan__ticket-part--left" src="./assets/images/pricing/new-ticket/viora-ticket-left-part-specialist.png" alt="" aria-hidden="true" />
                                 <img class="pricing-plan__ticket-part pricing-plan__ticket-part--right" src="./assets/images/pricing/new-ticket/viora-ticket-right-part-specialist.png" alt="" aria-hidden="true" />
                             </div>
@@ -789,9 +787,7 @@
                                 <li data-i18n="pricingPlans.specialist.detail5"></li>
                             </ul>
 
-                            <strong class="pricing-plan__price" data-pricing-price-specialist>
-                                $149.00
-                            </strong>
+                            <strong class="pricing-plan__price" data-pricing-price-specialist></strong>
 
                             <div class="pricing-plan__actions">
                                     <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
@@ -801,7 +797,7 @@
                                     </span>
 
                                 <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
-                                        <a class="landing-button landing-button--icon landing-button--orange liquid-glass liquid-glass--orange" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound aria-label="Start risk-free trial">
+                                        <a class="landing-button landing-button--icon landing-button--orange liquid-glass liquid-glass--orange" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound data-i18n-aria-label="aria.startTrial">
                                             <img class="landing-button__icon-img" src="./assets/icons/arrow-white.svg" alt="" aria-hidden="true" />
                                         </a>
                                     </span>
@@ -871,7 +867,7 @@
         </section>
     </section>
 
-    <section class="about-section" id="about" aria-label="About Viora and ArcadiaDevs">
+    <section class="about-section" id="about" data-i18n-aria-label="aria.aboutSection">
         <section class="about-mission-panel" data-about-mission-panel aria-labelledby="about-mission-title">
             <div class="about-mission-panel__container">
                 <div class="about-mission-panel__topline">
@@ -1057,7 +1053,7 @@
                     </span>
 
                 <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
-                        <a class="landing-button landing-button--icon landing-button--green liquid-glass liquid-glass--green" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound data-i18n-aria-label="finalCta.buttonAria">
+                        <a class="landing-button landing-button--icon landing-button--green liquid-glass liquid-glass--green" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound data-i18n-aria-label="navbar.getStarted">
                             <img class="landing-button__icon-img" src="./assets/icons/arrow-white.svg" alt="" aria-hidden="true" />
                         </a>
                     </span>
@@ -1108,16 +1104,16 @@
             <p class="footer-section__newsletter-text" data-i18n="footer.newsletterText"></p>
 
             <a class="footer-section__cta liquid-glass liquid-glass--green" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound>
-                Try Viora now :D
+                <span data-i18n="footer.tryViora"></span>
             </a>
 
             <div class="footer-section__social">
                 <span data-i18n="footer.followUs"></span>
-                <a href="#" aria-label="YouTube" data-hover-sound><img src="./assets/icons/youtube.svg" alt="" aria-hidden="true" /></a>
-                <a href="#" aria-label="Facebook" data-hover-sound><img src="./assets/icons/facebook.svg" alt="" aria-hidden="true" /></a>
-                <a href="#" aria-label="Twitter" data-hover-sound><img src="./assets/icons/twitter.svg" alt="" aria-hidden="true" /></a>
-                <a href="#" aria-label="Instagram" data-hover-sound><img src="./assets/icons/instagram.svg" alt="" aria-hidden="true" /></a>
-                <a href="#" aria-label="LinkedIn" data-hover-sound><img src="./assets/icons/linkedin.svg" alt="" aria-hidden="true" /></a>
+                <a href="#" data-i18n-aria-label="aria.youtube" data-hover-sound><img src="./assets/icons/youtube.svg" alt="" aria-hidden="true" /></a>
+                <a href="#" data-i18n-aria-label="aria.facebook" data-hover-sound><img src="./assets/icons/facebook.svg" alt="" aria-hidden="true" /></a>
+                <a href="#" data-i18n-aria-label="aria.twitter" data-hover-sound><img src="./assets/icons/twitter.svg" alt="" aria-hidden="true" /></a>
+                <a href="#" data-i18n-aria-label="aria.instagram" data-hover-sound><img src="./assets/icons/instagram.svg" alt="" aria-hidden="true" /></a>
+                <a href="#" data-i18n-aria-label="aria.linkedin" data-hover-sound><img src="./assets/icons/linkedin.svg" alt="" aria-hidden="true" /></a>
             </div>
         </div>
     </div>
@@ -1125,95 +1121,14 @@
     <div class="legal-drawer" data-legal-drawer hidden>
         <div class="legal-drawer__backdrop" data-legal-drawer-close></div>
         <aside class="legal-drawer__panel" role="dialog" aria-modal="true" aria-labelledby="legal-drawer-title" tabindex="-1">
-            <button class="legal-drawer__close" type="button" aria-label="Close legal drawer" data-legal-drawer-close>
+            <button class="legal-drawer__close" type="button" data-i18n-aria-label="aria.closeLegal" data-legal-drawer-close>
                 &times;
             </button>
 
             <div class="legal-drawer__scroll">
-                <article class="legal-drawer__content" data-legal-drawer-content="terms">
-                    <h2 id="legal-drawer-title">T&eacute;rminos de Servicio</h2>
-                    <p class="legal-drawer__updated">&Uacute;ltima actualizaci&oacute;n: mayo de 2026</p>
-
-                    <p>Bienvenido a Viora, una plataforma AgTech orientada a productores olivareros y especialistas fitosanitarios. Al acceder o utilizar nuestra Landing Page, aplicaci&oacute;n web o servicios relacionados, aceptas estos T&eacute;rminos de Servicio.</p>
-
-                    <h3>1. Uso de la plataforma</h3>
-                    <p>Viora permite a los usuarios acceder a herramientas digitales para el monitoreo de parcelas, an&aacute;lisis de datos clim&aacute;ticos y satelitales, alertas preventivas, recomendaciones agron&oacute;micas y conexi&oacute;n con especialistas agr&iacute;colas.</p>
-                    <p>El usuario se compromete a utilizar la plataforma de forma responsable, proporcionando informaci&oacute;n verdadera, actualizada y pertinente para el correcto funcionamiento de los servicios.</p>
-
-                    <h3>2. Registro y acceso</h3>
-                    <p>Para utilizar determinadas funcionalidades de Viora, el usuario puede necesitar crear una cuenta como Productor Olivarero o Especialista Fitosanitario. Cada perfil tendr&aacute; acceso a funcionalidades espec&iacute;ficas seg&uacute;n su rol dentro de la plataforma.</p>
-                    <p>El usuario es responsable de mantener la confidencialidad de sus credenciales de acceso y de toda actividad realizada desde su cuenta.</p>
-
-                    <h3>3. Informaci&oacute;n agron&oacute;mica y t&eacute;cnica</h3>
-                    <p>Los datos mostrados por Viora, incluyendo indicadores clim&aacute;ticos, NDVI, alertas de riesgo, proyecciones y recomendaciones, tienen fines informativos y de apoyo a la toma de decisiones.</p>
-                    <p>Viora no reemplaza la evaluaci&oacute;n profesional presencial ni garantiza resultados productivos espec&iacute;ficos. Las decisiones finales sobre manejo agr&iacute;cola, tratamientos o intervenciones t&eacute;cnicas son responsabilidad del usuario y/o del especialista contratado.</p>
-
-                    <h3>4. Conexi&oacute;n entre productores y especialistas</h3>
-                    <p>Viora puede facilitar la conexi&oacute;n entre productores olivareros y especialistas fitosanitarios mediante solicitudes, propuestas t&eacute;cnicas, cotizaciones o revelaci&oacute;n de datos de contacto.</p>
-                    <p>La relaci&oacute;n profesional, acuerdos econ&oacute;micos, ejecuci&oacute;n de servicios y resultados de la intervenci&oacute;n son responsabilidad de las partes involucradas.</p>
-
-                    <h3>5. Uso permitido</h3>
-                    <p>El usuario no debe utilizar Viora para publicar informaci&oacute;n falsa, manipular datos, realizar acciones fraudulentas, vulnerar cuentas de terceros, afectar el funcionamiento de la plataforma o usar la informaci&oacute;n con fines contrarios a la ley.</p>
-
-                    <h3>6. Disponibilidad del servicio</h3>
-                    <p>Viora busca mantener una experiencia estable y segura. Sin embargo, la plataforma puede presentar interrupciones temporales por mantenimiento, actualizaciones, fallas t&eacute;cnicas o indisponibilidad de servicios externos como APIs clim&aacute;ticas, satelitales, mapas o sistemas de pago.</p>
-
-                    <h3>7. Propiedad intelectual</h3>
-                    <p>El dise&ntilde;o, marca, contenidos, interfaces, textos, gr&aacute;ficos, componentes visuales y funcionalidades de Viora pertenecen a ArcadiaDevs o a sus respectivos titulares. No est&aacute; permitido copiar, modificar, distribuir o explotar estos elementos sin autorizaci&oacute;n previa.</p>
-
-                    <h3>8. Cambios en los t&eacute;rminos</h3>
-                    <p>Viora puede actualizar estos T&eacute;rminos de Servicio para reflejar mejoras del producto, cambios legales o ajustes operativos. La versi&oacute;n actualizada estar&aacute; disponible en la plataforma.</p>
-                </article>
-
-                <article class="legal-drawer__content" data-legal-drawer-content="privacy" hidden>
-                    <h2 id="legal-drawer-privacy-title">Pol&iacute;tica de Privacidad</h2>
-                    <p class="legal-drawer__updated">&Uacute;ltima actualizaci&oacute;n: mayo de 2026</p>
-                    <p>En Viora valoramos la privacidad y seguridad de la informaci&oacute;n de nuestros usuarios. Esta Pol&iacute;tica de Privacidad explica qu&eacute; datos podemos recopilar, c&oacute;mo los usamos y qu&eacute; medidas aplicamos para protegerlos.</p>
-
-                    <h3>1. Informaci&oacute;n que recopilamos</h3>
-                    <p>Viora puede recopilar informaci&oacute;n proporcionada por el usuario, como nombre, correo electr&oacute;nico, tel&eacute;fono, rol seleccionado, datos de perfil profesional, informaci&oacute;n de contacto y preferencias de uso.</p>
-                    <p>En el caso de productores, tambi&eacute;n podemos tratar informaci&oacute;n relacionada con parcelas agr&iacute;colas, ubicaci&oacute;n aproximada o georreferenciada, historial agron&oacute;mico, registros de manejo, alertas, reportes de s&iacute;ntomas y datos asociados al monitoreo del cultivo.</p>
-                    <p>En el caso de especialistas, podemos tratar informaci&oacute;n relacionada con experiencia profesional, servicios ofrecidos, zona de cobertura, disponibilidad, propuestas t&eacute;cnicas, cotizaciones y evaluaciones recibidas.</p>
-
-                    <h3>2. Informaci&oacute;n generada por la plataforma</h3>
-                    <p>La plataforma puede generar o procesar informaci&oacute;n derivada del uso del servicio, como indicadores clim&aacute;ticos, an&aacute;lisis satelitales, alertas preventivas, proyecciones de rendimiento, estados de riesgo, trazabilidad de intervenciones y actividad dentro del marketplace.</p>
-
-                    <h3>3. Uso de la informaci&oacute;n</h3>
-                    <p>Utilizamos la informaci&oacute;n para:</p>
-                    <ul class="legal-drawer__list">
-                        <li>Crear y gestionar cuentas de usuario.</li>
-                        <li>Personalizar la experiencia seg&uacute;n el rol del usuario.</li>
-                        <li>Habilitar el monitoreo de parcelas y el an&aacute;lisis agron&oacute;mico.</li>
-                        <li>Generar alertas, recomendaciones y reportes preventivos.</li>
-                        <li>Facilitar la conexi&oacute;n entre productores y especialistas.</li>
-                        <li>Mejorar la calidad, seguridad y funcionamiento de la plataforma.</li>
-                        <li>Realizar an&aacute;lisis internos para optimizar la experiencia del producto.</li>
-                    </ul>
-
-                    <h3>4. Servicios externos</h3>
-                    <p>Viora puede integrarse con servicios externos para obtener datos clim&aacute;ticos, satelitales, mapas, almacenamiento, autenticaci&oacute;n, pagos o comunicaciones. Estos servicios pueden procesar informaci&oacute;n necesaria para cumplir su funci&oacute;n dentro de la plataforma.</p>
-                    <p>Viora procura utilizar proveedores confiables y limitar el intercambio de datos a lo estrictamente necesario para la operaci&oacute;n del servicio.</p>
-
-                    <h3>5. Datos de ubicaci&oacute;n y parcelas</h3>
-                    <p>Los datos de ubicaci&oacute;n de parcelas se utilizan para habilitar funcionalidades como monitoreo clim&aacute;tico, an&aacute;lisis satelital, alertas territoriales y conexi&oacute;n con especialistas cercanos.</p>
-                    <p>Esta informaci&oacute;n no debe utilizarse para fines distintos a los relacionados con el funcionamiento de Viora y la prestaci&oacute;n de servicios agron&oacute;micos dentro de la plataforma.</p>
-
-                    <h3>6. Comunicaci&oacute;n entre usuarios</h3>
-                    <p>Cuando un productor acepta una propuesta o cotizaci&oacute;n de un especialista, Viora puede habilitar la visualizaci&oacute;n de datos de contacto necesarios para que ambas partes coordinen la intervenci&oacute;n fuera o dentro de los canales disponibles.</p>
-                    <p>El usuario debe utilizar esta informaci&oacute;n &uacute;nicamente para fines relacionados con el servicio solicitado.</p>
-
-                    <h3>7. Seguridad de la informaci&oacute;n</h3>
-                    <p>Aplicamos medidas t&eacute;cnicas y organizativas razonables para proteger los datos contra acceso no autorizado, p&eacute;rdida, alteraci&oacute;n o uso indebido. Sin embargo, ning&uacute;n sistema digital es completamente infalible, por lo que recomendamos a los usuarios proteger sus credenciales y mantener actualizada su informaci&oacute;n.</p>
-
-                    <h3>8. Conservaci&oacute;n de datos</h3>
-                    <p>La informaci&oacute;n se conservar&aacute; mientras sea necesaria para brindar el servicio, cumplir obligaciones operativas, resolver disputas, mantener trazabilidad o cumplir requerimientos legales aplicables.</p>
-
-                    <h3>9. Derechos del usuario</h3>
-                    <p>El usuario puede solicitar la actualizaci&oacute;n, correcci&oacute;n o eliminaci&oacute;n de sus datos personales, as&iacute; como realizar consultas sobre el tratamiento de su informaci&oacute;n mediante los canales oficiales de contacto de Viora.</p>
-
-                    <h3>10. Cambios en esta pol&iacute;tica</h3>
-                    <p>Viora puede actualizar esta Pol&iacute;tica de Privacidad debido a cambios en la plataforma, nuevos servicios, mejoras de seguridad o requisitos legales. La versi&oacute;n vigente estar&aacute; disponible en la Landing Page o en la aplicaci&oacute;n web.</p>
-                </article>
+                
+                <article class="legal-drawer__content" data-legal-drawer-content="terms"></article>
+                <article class="legal-drawer__content" data-legal-drawer-content="privacy" hidden></article>
             </div>
         </aside>
     </div>
