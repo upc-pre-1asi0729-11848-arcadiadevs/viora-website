@@ -12,6 +12,7 @@ import { initializeProblemCardsSection, initializeProblemSolutionSection } from 
 import { initializeProblemPanel } from './components/problem-panel.js';
 import { initializeSolutionPanel } from './components/solution-panel.js';
 import { initializeExpectedOutcomesPanel } from './components/expected-outcomes-panel.js';
+import { initializeFeatureProductVideoCard } from './components/feature-product-video-card.js';
 import { initializeRoleBenefitsSection } from './components/role-benefits-section.js';
 import { initializePricingParallaxIntro } from './components/parallax-intro.js';
 import { initializePricingPlansPanel } from './components/pricing-plans-panel.js';
@@ -44,6 +45,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         initializeProblemPanel();
         initializeSolutionPanel();
         initializeExpectedOutcomesPanel();
+        initializeFeatureProductVideoCard();
 
         initializeRoleBenefitsSection();
         initializeSegmentSummarySection();
