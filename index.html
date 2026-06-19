@@ -464,7 +464,7 @@
     <section class="feature-product-video-section" aria-labelledby="feature-product-video-title">
         <div class="feature-product-video-section__container">
             <article class="feature-product-video-card" data-feature-product-card>
-                <video class="feature-product-video-card__video" src="./assets/videos/feature-about-the-product.mp4" muted loop playsinline preload="metadata" data-feature-product-video></video>
+                <video class="feature-product-video-card__video" src="./assets/videos/viora-about-the-product-av2.mp4" muted loop playsinline preload="metadata" data-feature-product-video></video>
 
                 <div class="feature-product-video-card__shade" aria-hidden="true"></div>
 
@@ -558,6 +558,12 @@
                             <input class="feature-product-video-card__volume-range" type="range" min="0" max="1" value="0.7" step="0.01" aria-label="Video volume" data-feature-product-volume disabled />
                         </label>
                     </div>
+
+                    <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="14">
+                        <a class="feature-product-video-card__button feature-product-video-card__button--youtube" href="https://youtu.be/hsNiK7cX_3k" target="_blank" rel="noopener noreferrer" data-hover-sound data-i18n-aria-label="featureProduct.youtubeAria">
+                            <img class="feature-product-video-card__button-icon" src="./assets/icons/youtube.svg" alt="" aria-hidden="true" />
+                        </a>
+                    </span>
 
                     <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="14">
                         <button class="feature-product-video-card__button feature-product-video-card__button--play liquid-glass liquid-glass--white" type="button" data-feature-product-play data-liquid-glass data-hover-sound data-i18n-aria-label="featureProduct.playAria">
@@ -947,13 +953,45 @@
                     <div class="about-presentation__stage" data-presentation-stage>
 
                         <video class="about-presentation__video about-presentation__video--active" data-presentation-video autoplay loop muted playsinline>
-                            <source src="./assets/videos/about-placeholder.mp4" type="video/mp4" />
+                            <source src="./assets/videos/arcadiadevs-about-the-team-av2.mp4" type="video/mp4" />
                         </video>
 
                         <div class="about-presentation__carousel" data-presentation-carousel>
-                            <div class="about-presentation__slide about-presentation__slide--active" style="background-image: url('./assets/images/about/carrusel/image_1.png');"></div>
-                            <div class="about-presentation__slide" style="background-image: url('./assets/images/about/carrusel/image_2.png');"></div>
-                            <div class="about-presentation__slide" style="background-image: url('./assets/images/about/carrusel/image_3.png');"></div>
+                            <div class="about-presentation__slide about-presentation__slide--active" style="background-image: url('./assets/images/about/carrusel/grupal-organizacion-1.png');"></div>
+                            <div class="about-presentation__slide" style="background-image: url('./assets/images/about/carrusel/grupal-organizacion-2.jpeg');"></div>
+                            <div class="about-presentation__slide" style="background-image: url('./assets/images/about/carrusel/grupal-organizacion-3.jpeg');"></div>
+                            <div class="about-presentation__slide" style="background-image: url('./assets/images/about/carrusel/grupal-organizacion-4.jpeg');"></div>
+                        </div>
+
+                        <div class="about-presentation__controls" data-about-video-controls aria-label="About video controls">
+                            <div class="about-presentation__media-controls" data-about-media-controls aria-hidden="true">
+                                <input class="about-presentation__progress" type="range" min="0" max="100" value="0" step="0.1" aria-label="Video progress" data-about-progress disabled />
+
+                                <label class="about-presentation__volume">
+                                    <img class="about-presentation__volume-icon" src="./assets/icons/volume-medium.svg" alt="" aria-hidden="true" />
+                                    <input class="about-presentation__volume-range" type="range" min="0" max="1" value="0.7" step="0.01" aria-label="Video volume" data-about-volume disabled />
+                                </label>
+                            </div>
+
+                            <span class="magnetic-target about-presentation__youtube-wrap" data-magnetic data-magnetic-strength="1" data-magnetic-max="12">
+                                <a class="about-presentation__video-button about-presentation__video-button--youtube" href="https://youtu.be/pn0-Jb5yjbc" target="_blank" rel="noopener noreferrer" data-hover-sound data-i18n-aria-label="teamMembers.videoYoutubeAria">
+                                    <img class="about-presentation__video-button-icon" src="./assets/icons/youtube.svg" alt="" aria-hidden="true" />
+                                </a>
+                            </span>
+
+                            <span class="magnetic-target about-presentation__video-play-wrap" data-magnetic data-magnetic-strength="1" data-magnetic-max="12">
+                                <button class="about-presentation__video-button about-presentation__video-button--play liquid-glass liquid-glass--white" type="button" data-about-video-play data-liquid-glass data-hover-sound data-i18n-aria-label="teamMembers.videoPlayAria">
+                                    <img class="about-presentation__video-button-icon" src="./assets/icons/play.svg" alt="" aria-hidden="true" data-about-video-play-icon />
+                                </button>
+                            </span>
+
+                            <span class="magnetic-target about-presentation__video-close-wrap" data-magnetic data-magnetic-strength="1" data-magnetic-max="12">
+                                <button class="about-presentation__video-button about-presentation__video-button--close liquid-glass liquid-glass--deep" type="button" data-about-video-close data-liquid-glass data-hover-sound data-i18n-aria-label="teamMembers.videoCloseAria">
+                                    <svg class="about-presentation__video-close-icon" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                        <path d="M2 2L14 14M14 2L2 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </button>
+                            </span>
                         </div>
                     </div>
 

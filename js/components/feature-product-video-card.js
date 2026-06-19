@@ -36,6 +36,7 @@ function initializeCard(card) {
     let hasActivated = false;
     let isUserPaused = false;
     let isInView = false;
+    let isPointerInside = false;
 
     setControlsEnabled(mediaControls, false);
     setRangeFill(progress, 0);
@@ -148,10 +149,27 @@ function initializeCard(card) {
         setRangeFill(volume, value * 100);
     });
 
+    function updateControlsVisibility() {
+        const shouldHide = hasActivated && !video.paused && !isPointerInside;
+        card.classList.toggle('feature-product-video-card--controls-hidden', shouldHide);
+    }
+
+    card.addEventListener('pointerenter', () => {
+        isPointerInside = true;
+        updateControlsVisibility();
+    });
+
+    card.addEventListener('pointerleave', () => {
+        isPointerInside = false;
+        updateControlsVisibility();
+    });
+
     video.addEventListener('timeupdate', syncProgress);
     video.addEventListener('play', syncPlayIcon);
     video.addEventListener('pause', syncPlayIcon);
     video.addEventListener('ended', syncPlayIcon);
+    video.addEventListener('play', updateControlsVisibility);
+    video.addEventListener('pause', updateControlsVisibility);
 
     if ('IntersectionObserver' in window) {
         const observer = new IntersectionObserver((entries) => {

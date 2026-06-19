@@ -277,6 +277,107 @@ export function initializeTeamMembersPanel(root = document) {
     const slides = section.querySelectorAll('.about-presentation__slide');
     const footerTextReveal = attachScrollTextReveal(section.querySelector('[data-scroll-text-reveal]'));
 
+    const videoPlayBtn = section.querySelector('[data-about-video-play]');
+    const videoPlayIcon = section.querySelector('[data-about-video-play-icon]');
+    const videoCloseBtn = section.querySelector('[data-about-video-close]');
+    const aboutMediaControls = section.querySelector('[data-about-media-controls]');
+    const aboutProgress = section.querySelector('[data-about-progress]');
+    const aboutVolume = section.querySelector('[data-about-volume]');
+    const VIDEO_INTERACTIVE_CLASS = 'about-presentation--video-interactive';
+
+    function setAboutRangeFill(range, value) {
+        range?.style.setProperty('--range-value', `${value}%`);
+    }
+
+    function setAboutControlsEnabled(isEnabled) {
+        if (!aboutMediaControls) return;
+
+        aboutMediaControls.setAttribute('aria-hidden', String(!isEnabled));
+        aboutMediaControls.querySelectorAll('input').forEach((input) => {
+            input.disabled = !isEnabled;
+        });
+    }
+
+    function syncAboutProgress() {
+        if (!aboutProgress || !videoEl || !videoEl.duration) return;
+
+        const value = (videoEl.currentTime / videoEl.duration) * 100;
+        aboutProgress.value = String(value);
+        setAboutRangeFill(aboutProgress, value);
+    }
+
+    function syncAboutVideoIcon() {
+        if (!videoPlayIcon) return;
+
+        const isInteractive = presentation?.classList.contains(VIDEO_INTERACTIVE_CLASS);
+        videoPlayIcon.src = isInteractive && videoEl && !videoEl.paused
+            ? './assets/icons/pause.svg'
+            : './assets/icons/play.svg';
+    }
+
+    function enterVideoInteractive() {
+        if (!videoEl) return;
+
+        presentation?.classList.add(VIDEO_INTERACTIVE_CLASS);
+        setAboutControlsEnabled(true);
+
+        videoEl.muted = false;
+        videoEl.volume = aboutVolume ? Number(aboutVolume.value) : 1;
+        videoEl.currentTime = 0;
+        videoEl.play().catch(() => {});
+
+        syncAboutProgress();
+        syncAboutVideoIcon();
+    }
+
+    function exitVideoInteractive({ resume = true } = {}) {
+        if (!videoEl) return;
+
+        presentation?.classList.remove(VIDEO_INTERACTIVE_CLASS);
+        setAboutControlsEnabled(false);
+
+        videoEl.muted = true;
+        videoEl.currentTime = 0;
+
+        if (aboutProgress) {
+            aboutProgress.value = '0';
+            setAboutRangeFill(aboutProgress, 0);
+        }
+
+        if (resume) {
+            videoEl.play().catch(() => {});
+        }
+
+        syncAboutVideoIcon();
+    }
+
+    setAboutControlsEnabled(false);
+    setAboutRangeFill(aboutProgress, 0);
+
+    if (aboutVolume) {
+        setAboutRangeFill(aboutVolume, Number(aboutVolume.value) * 100);
+        if (videoEl) videoEl.volume = Number(aboutVolume.value);
+    }
+
+    aboutProgress?.addEventListener('input', () => {
+        if (!videoEl || !videoEl.duration) return;
+
+        const value = Number(aboutProgress.value);
+        videoEl.currentTime = (value / 100) * videoEl.duration;
+        setAboutRangeFill(aboutProgress, value);
+    });
+
+    aboutVolume?.addEventListener('input', () => {
+        if (!videoEl) return;
+
+        const value = Number(aboutVolume.value);
+        videoEl.volume = value;
+        videoEl.muted = value === 0;
+        setAboutRangeFill(aboutVolume, value * 100);
+    });
+
+    videoEl?.addEventListener('timeupdate', syncAboutProgress);
+
     let carouselInterval = null;
     let activeSlideIdx = 0;
 
@@ -328,12 +429,37 @@ export function initializeTeamMembersPanel(root = document) {
             if (videoEl) {
                 videoEl.pause();
             }
+            exitVideoInteractive({ resume: false });
             startCarousel();
         }
     }
 
     videoBtn?.addEventListener('click', () => switchMode('video'));
     imageBtn?.addEventListener('click', () => switchMode('image'));
+
+    videoPlayBtn?.addEventListener('click', () => {
+        if (!videoEl) return;
+
+        const isInteractive = presentation?.classList.contains(VIDEO_INTERACTIVE_CLASS);
+
+        if (!isInteractive) {
+            enterVideoInteractive();
+            return;
+        }
+
+        if (videoEl.paused) {
+            videoEl.play().catch(() => {});
+        } else {
+            videoEl.pause();
+        }
+
+        syncAboutVideoIcon();
+    });
+
+    videoCloseBtn?.addEventListener('click', () => exitVideoInteractive());
+
+    videoEl?.addEventListener('play', syncAboutVideoIcon);
+    videoEl?.addEventListener('pause', syncAboutVideoIcon);
 
     // Handle initial state setup
     if (videoBtn && videoBtn.classList.contains('about-presentation__toggle-btn--active')) {
