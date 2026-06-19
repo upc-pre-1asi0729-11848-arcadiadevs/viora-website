@@ -156,6 +156,7 @@
     "title": "Your field speaks.\nAre you listening?",
     "playAria": "Play product video",
     "moreAria": "Show additional product content",
+    "youtubeAria": "Watch on YouTube",
     "cta": "Prueba Viora gratis",
     "moreText": "Access real-time field data with deep IoT monitoring. Manage your harvests with Viora Harvest tools. Stay one step ahead with localized, precise epidemiological alerts for your olive grove. And connect with the best agronomic specialists when your field needs them most."
   },
@@ -351,6 +352,9 @@
     "role": "Group ArcadiaDevs",
     "toggleVideo": "Video",
     "toggleImage": "Image",
+    "videoPlayAria": "Play team video",
+    "videoCloseAria": "Exit video playback",
+    "videoYoutubeAria": "Watch on YouTube",
     "footerText": "Our team understands both sides of the field. From agronomists and data engineers to product visionaries, everyone at Viora is united in bridging the gap between producers who grow and specialists who protect — turning shared knowledge into smarter, more productive harvests."
   },
   "finalCta": {
