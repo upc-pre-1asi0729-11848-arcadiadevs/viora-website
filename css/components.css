@@ -1,4 +1,8 @@
 
+.magnetic-target {
+    display: inline-flex;
+}
+
 .landing-button {
     min-width: 11.5rem;
     min-height: 3.5rem;
@@ -29,6 +33,19 @@
     width: 24px;
     height: 24px;
     object-fit: contain;
+}
+
+.landing-button__label {
+    display: inline-flex;
+    align-items: center;
+}
+
+.landing-button__trailing-icon {
+    width: 1.15rem;
+    height: 1.15rem;
+    margin-left: 0.45rem;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
 }
 
 .landing-button--primary {
@@ -84,9 +101,7 @@
 .landing-button--green.liquid-glass {
     --btn-solid-bg: var(--color-primary);
     background: var(--color-primary);
-    box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.18),
-        0 12px 32px rgba(46, 74, 58, 0.35);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18);
 }
 
 .landing-button--green.liquid-glass:hover {
@@ -96,9 +111,7 @@
 .landing-button--orange.liquid-glass {
     --btn-solid-bg: var(--color-accent);
     background: var(--color-accent);
-    box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.18),
-        0 12px 32px rgba(193, 90, 46, 0.35);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18);
 }
 
 .landing-button--orange.liquid-glass:hover {

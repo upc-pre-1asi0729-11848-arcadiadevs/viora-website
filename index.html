@@ -15,151 +15,136 @@
 </head>
 
 <body>
-    <main class="landing-page">
-        <header class="landing-header" aria-label="Main navigation" data-i18n-aria="aria.mainNavigation">
-            <div class="landing-header__container">
-                <a class="landing-header__brand" href="#home" aria-label="Go to Viora home" data-i18n-aria="aria.goHome" data-hover-sound>
-                    <img class="landing-header__logo" src="./assets/logos/viora-isologotipo-white.png" alt="Viora logo" />
+<main class="landing-page">
+    <header class="landing-header" data-i18n-aria="aria.mainNavigation">
+        <div class="landing-header__container">
+            <a class="landing-header__brand" href="#home" data-i18n-aria="aria.goHome" data-hover-sound>
+                <img class="landing-header__logo" src="./assets/logos/viora-isologotipo-white.png" alt="Viora logo" />
+            </a>
+
+            <nav class="landing-header__nav liquid-glass liquid-glass--deep" data-i18n-aria="aria.landingSections">
+                <a class="landing-header__nav-link landing-header__nav-link--active" href="#home" data-hover-sound>
+                    <img class="landing-header__nav-icon" src="./assets/icons/home-outline.svg" alt="" aria-hidden="true" />
+                    <span data-i18n="navbar.home"></span>
                 </a>
 
-                <nav class="landing-header__nav liquid-glass liquid-glass--deep" aria-label="Landing page sections" data-i18n-aria="aria.landingSections">
-                    <a class="landing-header__nav-link landing-header__nav-link--active" href="#home" data-hover-sound>
-                        <img class="landing-header__nav-icon" src="./assets/icons/home-outline.svg" alt="" aria-hidden="true" />
-                        <span data-i18n="navbar.home">Home</span>
-                    </a>
+                <a class="landing-header__nav-link" href="#features" data-hover-sound>
+                    <img class="landing-header__nav-icon" src="./assets/icons/diamond-outline.svg" alt="" aria-hidden="true" />
+                    <span data-i18n="navbar.features"></span>
+                </a>
 
-                    <a class="landing-header__nav-link" href="#features" data-hover-sound>
-                        <img class="landing-header__nav-icon" src="./assets/icons/diamond-outline.svg" alt="" aria-hidden="true" />
-                        <span data-i18n="navbar.features">Features</span>
-                    </a>
+                <a class="landing-header__nav-link" href="#growers" data-hover-sound>
+                    <img class="landing-header__nav-icon" src="./assets/icons/disc-outline.svg" alt="" aria-hidden="true" />
+                    <span data-i18n="navbar.growers"></span>
+                </a>
 
-                    <a class="landing-header__nav-link" href="#growers" data-hover-sound>
-                        <img class="landing-header__nav-icon" src="./assets/icons/disc-outline.svg" alt="" aria-hidden="true" />
-                        <span data-i18n="navbar.growers">Growers</span>
-                    </a>
+                <a class="landing-header__nav-link" href="#specialists" data-hover-sound>
+                    <img class="landing-header__nav-icon" src="./assets/icons/disc-outline.svg" alt="" aria-hidden="true" />
+                    <span data-i18n="navbar.specialists"></span>
+                </a>
 
-                    <a class="landing-header__nav-link" href="#specialists" data-hover-sound>
-                        <img class="landing-header__nav-icon" src="./assets/icons/disc-outline.svg" alt="" aria-hidden="true" />
-                        <span data-i18n="navbar.specialists">Specialists</span>
-                    </a>
+                <a class="landing-header__nav-link" href="#pricing" data-hover-sound>
+                    <img class="landing-header__nav-icon" src="./assets/icons/ticket-outline.svg" alt="" aria-hidden="true" />
+                    <span data-i18n="navbar.pricing"></span>
+                </a>
 
-                    <a class="landing-header__nav-link" href="#pricing" data-hover-sound>
-                        <img class="landing-header__nav-icon" src="./assets/icons/ticket-outline.svg" alt="" aria-hidden="true" />
-                        <span data-i18n="navbar.pricing">Pricing</span>
-                    </a>
+                <a class="landing-header__nav-link" href="#about" data-hover-sound>
+                    <img class="landing-header__nav-icon" src="./assets/icons/medical-outline.svg" alt="" aria-hidden="true" />
+                    <span data-i18n="navbar.aboutUs"></span>
+                </a>
 
-                    <a class="landing-header__nav-link" href="#about" data-hover-sound>
-                        <img class="landing-header__nav-icon" src="./assets/icons/medical-outline.svg" alt="" aria-hidden="true" />
-                        <span data-i18n="navbar.aboutUs">About Us</span>
-                    </a>
 
-                    <a class="landing-header__nav-link" href="#contact" data-hover-sound>
-                        <img class="landing-header__nav-icon" src="./assets/icons/call-outline.svg" alt="" aria-hidden="true" />
-                        <span data-i18n="navbar.contact">Contact</span>
-                    </a>
-                </nav>
+            </nav>
 
-                <div class="landing-header__actions">
-                    <button class="landing-header__language-button liquid-glass liquid-glass--deep" type="button" aria-label="Change language"
-                        data-i18n-aria="aria.languageToggle" data-hover-sound data-liquid-glass>
-                        <span class="landing-header__lang-option" data-lang-switch="en"><b>EN</b></span> | <span class="landing-header__lang-option" data-lang-switch="es">ES</span>
-                    </button>
-
-                    <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="14" data-hover-sound>
-                        <a class="landing-header__cta" href="https://viora-webapp.web.app" data-i18n="navbar.getStarted">
-                            Get Started
-                        </a>
-                    </span>
+            <div class="landing-header__actions">
+                <div class="landing-header__language-switcher liquid-glass liquid-glass--deep" data-language-switcher data-liquid-glass>
+                    <button class="landing-header__language-btn" type="button" data-lang-switch="en" data-hover-sound>EN</button>
+                    <button class="landing-header__language-btn" type="button" data-lang-switch="es" data-hover-sound>ES</button>
+                    <div class="landing-header__language-slider"></div>
                 </div>
 
-                <!-- Mobile: language toggle + hamburger -->
-                <div class="landing-header__mobile-actions">
-                    <button class="landing-header__language-button landing-header__language-button--mobile liquid-glass liquid-glass--deep" type="button" aria-label="Change language"
-                        data-i18n-aria="aria.languageToggle" data-hover-sound data-liquid-glass>
-                        <span class="landing-header__lang-option" data-lang-switch="en"><b>EN</b></span> | <span class="landing-header__lang-option" data-lang-switch="es">ES</span>
-                    </button>
+                <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="14" data-hover-sound>
+                        <a class="landing-header__cta" href="https://viora-webapp.web.app" data-i18n="navbar.getStarted"></a>
+                    </span>
+            </div>
 
-                    <span class="magnetic-target landing-header__hamburger-magnetic" data-magnetic data-magnetic-strength="1" data-magnetic-max="20">
-                        <button class="landing-header__hamburger liquid-glass liquid-glass--deep" type="button" aria-label="Open menu" aria-expanded="false" data-drawer-toggle data-liquid-glass data-hover-sound>
+            <!-- Mobile: language toggle + hamburger -->
+            <div class="landing-header__mobile-actions">
+                <div class="landing-header__language-switcher liquid-glass liquid-glass--deep" data-language-switcher data-liquid-glass>
+                    <button class="landing-header__language-btn" type="button" data-lang-switch="en" data-hover-sound>EN</button>
+                    <button class="landing-header__language-btn" type="button" data-lang-switch="es" data-hover-sound>ES</button>
+                    <div class="landing-header__language-slider"></div>
+                </div>
+
+                <span class="magnetic-target landing-header__hamburger-magnetic" data-magnetic data-magnetic-strength="1" data-magnetic-max="20">
+                        <button class="landing-header__hamburger liquid-glass liquid-glass--deep" type="button" data-i18n-aria-label="aria.mobileNav" aria-expanded="false" data-drawer-toggle data-liquid-glass data-hover-sound>
                             <span class="landing-header__hamburger-bar"></span>
                             <span class="landing-header__hamburger-bar"></span>
                         </button>
                     </span>
-                </div>
             </div>
+        </div>
 
-            <!-- Mobile Drawer (right → left) -->
-            <div class="landing-header__drawer-backdrop" data-drawer-backdrop></div>
+        <!-- Mobile Drawer (right → left) -->
+        <div class="landing-header__drawer-backdrop" data-drawer-backdrop></div>
 
-            <aside class="landing-header__drawer" data-drawer aria-label="Mobile navigation">
-                <!-- Close button -->
-                <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="18">
-                    <button class="landing-header__drawer-close liquid-glass liquid-glass--deep" type="button" aria-label="Close menu" data-drawer-close data-liquid-glass data-hover-sound>
+        <aside class="landing-header__drawer" data-drawer data-i18n-aria-label="aria.mobileNav">
+            <!-- Close button -->
+            <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="18">
+                    <button class="landing-header__drawer-close liquid-glass liquid-glass--deep" type="button" data-i18n-aria-label="aria.closeMenu" data-drawer-close data-liquid-glass data-hover-sound>
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                             <path d="M2 2L14 14M14 2L2 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </button>
                 </span>
 
-                <!-- Big links -->
-                <nav class="landing-header__drawer-big-links">
-                    <a href="#home" data-drawer-link data-hover-sound data-i18n="navbar.home">HOME</a>
-                    <a href="#features" data-drawer-link data-hover-sound data-i18n="navbar.features">FEATURES</a>
-                    <a href="#growers" data-drawer-link data-hover-sound data-i18n="navbar.growers">GROWERS</a>
-                    <a href="#specialists" data-drawer-link data-hover-sound data-i18n="navbar.specialists">SPECIALISTS</a>
-                    <a href="#pricing" data-drawer-link data-hover-sound data-i18n="navbar.pricing">PRICING</a>
-                </nav>
+            <!-- Big links -->
+            <nav class="landing-header__drawer-big-links">
+                <a href="#home" data-drawer-link data-hover-sound data-i18n="navbar.home"></a>
+                <a href="#features" data-drawer-link data-hover-sound data-i18n="navbar.features"></a>
+                <a href="#growers" data-drawer-link data-hover-sound data-i18n="navbar.growers"></a>
+                <a href="#specialists" data-drawer-link data-hover-sound data-i18n="navbar.specialists"></a>
+                <a href="#pricing" data-drawer-link data-hover-sound data-i18n="navbar.pricing"></a>
+            </nav>
 
-                <!-- Small links -->
-                <nav class="landing-header__drawer-small-links">
-                    <a href="#about" data-drawer-link data-hover-sound data-i18n="navbar.aboutUs">About Us</a>
-                    <a href="#contact" data-drawer-link data-hover-sound data-i18n="navbar.contact">Contact</a>
-                </nav>
+            <!-- Small links -->
+            <nav class="landing-header__drawer-small-links">
+                <a href="#about" data-drawer-link data-hover-sound data-i18n="navbar.aboutUs"></a>
 
-                <!-- CTA -->
-                <div class="landing-header__drawer-cta">
+            </nav>
+
+            <!-- CTA -->
+            <div class="landing-header__drawer-cta">
                     <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="14">
-                        <a class="landing-button landing-button--green liquid-glass liquid-glass--green" href="https://viora-webapp.web.app" data-drawer-link data-liquid-glass data-hover-sound data-i18n="navbar.getStarted">
-                            Get Started
-                        </a>
+                        <a class="landing-button landing-button--green liquid-glass liquid-glass--green" href="https://viora-webapp.web.app" data-drawer-link data-liquid-glass data-hover-sound data-i18n="navbar.getStarted"></a>
                     </span>
-                </div>
-            </aside>
-        </header>
-
-        <section class="hero-section" id="home" aria-labelledby="hero-title">
-            <div class="hero-section__background" data-hero-background></div>
-            <div class="hero-section__layer" aria-hidden="true"></div>
-
-            <div class="hero-section__content">
-                <h1 class="hero-section__title" id="hero-title" data-i18n="hero.title">
-                    Maximize Your Olive<br />
-                    Yields with Smart<br />
-                    Management.
-                </h1>
-
-                <p class="hero-section__subtitle" data-i18n="hero.subtitle">
-                    Empower the olive sector with climate and satellite-based insights,
-                    early phytosanitary alerts, and direct access to crop protection
-                    specialists. Built for olive growers and agronomic experts.
-                </p>
-
-                <div class="hero-section__actions" aria-label="Hero actions" data-i18n-aria="aria.heroActions">
-                    <landing-button variant="secondary" href="https://viora-webapp.web.app" i18n-key="hero.cta" liquid-glass-color="green">
-                        Get Started Now!
-                    </landing-button>
-                </div>
             </div>
+        </aside>
+    </header>
 
-            <div class="hero-section__meta">
-                <span class="hero-section__site-credit" data-i18n="hero.siteCredit">SITE BY @ARCADIADEVS</span>
+    <section class="hero-section" id="home" aria-labelledby="hero-title">
+        <div class="hero-section__background" data-hero-background></div>
+        <div class="hero-section__layer" aria-hidden="true"></div>
 
-                <div class="hero-section__meta-actions">
+        <div class="hero-section__content">
+            <h1 class="hero-section__title" id="hero-title" data-i18n="hero.title"></h1>
+
+            <p class="hero-section__subtitle" data-i18n="hero.subtitle"></p>
+
+            <div class="hero-section__actions" data-i18n-aria="aria.heroActions">
+                <landing-button variant="secondary" href="https://viora-webapp.web.app" i18n-key="hero.cta" liquid-glass-color="green" magnetic-max="14"></landing-button>
+            </div>
+        </div>
+
+        <div class="hero-section__meta">
+            <span class="hero-section__site-credit" data-i18n="hero.siteCredit"></span>
+
+            <div class="hero-section__meta-actions">
                     <span class="magnetic-target" data-magnetic data-magnetic-strength="0.3" data-magnetic-max="10">
                         <button class="hero-section__sound-button" type="button" data-sound-toggle data-hover-sound
-                            data-i18n-aria-label="aria.soundToggle" aria-label="Toggle sound" aria-pressed="false">
+                                data-i18n-aria-label="aria.soundToggle" aria-pressed="false">
                             <svg class="hero-section__sound-icon" width="24" height="10" viewBox="0 0 24 10" overflow="hidden"
-                                fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                 fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                                 <g class="hero-section__animated-wave" data-sound-wave-animated hidden>
                                     <path d="M0 5 Q 3 0 6 5 T 12 5 T 18 5 T 24 5 T 30 5 T 36 5" />
                                 </g>
@@ -169,1053 +154,1024 @@
                                 </g>
                             </svg>
 
-                            <span data-i18n="hero.sound">SOUND</span>
+                            <span data-i18n="hero.sound"></span>
                         </button>
                     </span>
+            </div>
+        </div>
+    </section>
+
+    <span class="magnetic-target floating-sound-toggle-wrap" data-magnetic data-magnetic-strength="1" data-magnetic-max="12" data-floating-sound-toggle-wrap>
+            <button class="floating-sound-toggle liquid-glass liquid-glass--green" type="button" data-sound-toggle data-floating-sound-toggle data-liquid-glass data-hover-sound
+                    data-i18n-aria-label="aria.soundToggle" aria-pressed="false">
+                <svg class="floating-sound-toggle__icon" width="24" height="10" viewBox="0 0 24 10" overflow="hidden"
+                     fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                    <g class="hero-section__animated-wave" data-sound-wave-animated hidden>
+                        <path d="M0 5 Q 3 0 6 5 T 12 5 T 18 5 T 24 5 T 30 5 T 36 5" />
+                    </g>
+
+                    <g data-sound-wave-flat>
+                        <path d="M0 5 L 24 5" />
+                    </g>
+                </svg>
+
+                <span data-i18n="hero.sound"></span>
+            </button>
+        </span>
+
+    <section class="about-intro-section" id="about-intro" data-wave-scroll aria-labelledby="about-intro-title">
+        <div class="about-intro-section__wave" aria-hidden="true"></div>
+        <div class="about-intro-section__glow" aria-hidden="true"></div>
+
+        <div class="about-intro-section__container">
+            <p class="about-intro-section__eyebrow" data-i18n="aboutIntro.eyebrow"></p>
+
+            <h2 class="about-intro-section__title" id="about-intro-title" data-i18n="aboutIntro.title"></h2>
+        </div>
+
+        <div class="about-intro-section__marquee" aria-label="Viora value keywords" data-infinite-marquee>
+            <div class="about-intro-section__marquee-track">
+                <div class="about-intro-section__marquee-content">
+                    <span data-i18n="aboutIntro.marquee.satellite"></span>
+                    <span class="about-intro-section__marquee-separator"></span>
+                    <span data-i18n="aboutIntro.marquee.farming"></span>
+                    <span class="about-intro-section__marquee-separator"></span>
+                    <span data-i18n="aboutIntro.marquee.grow"></span>
+                    <span class="about-intro-section__marquee-separator"></span>
+                </div>
+
+                <div class="about-intro-section__marquee-content" aria-hidden="true">
+                    <span data-i18n="aboutIntro.marquee.satellite"></span>
+                    <span class="about-intro-section__marquee-separator"></span>
+                    <span data-i18n="aboutIntro.marquee.farming"></span>
+                    <span class="about-intro-section__marquee-separator"></span>
+                    <span data-i18n="aboutIntro.marquee.grow"></span>
+                    <span class="about-intro-section__marquee-separator"></span>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="about-intro-section" id="about-intro" data-wave-scroll aria-labelledby="about-intro-title">
-            <div class="about-intro-section__wave" aria-hidden="true"></div>
-            <div class="about-intro-section__glow" aria-hidden="true"></div>
-
-            <div class="about-intro-section__container">
-                <p class="about-intro-section__eyebrow" data-i18n="aboutIntro.eyebrow">
-                    Built for the modern olive ecosystem
-                </p>
-
-                <h2 class="about-intro-section__title" id="about-intro-title" data-i18n="aboutIntro.title">
-                    Turn environmental and field data into actionable intelligence.
-                    Monitor plot health, anticipate pest risk, and act earlier to
-                    protect yield and production stability.
-                </h2>
+    <section class="problem-cards-section" id="problem-cards" aria-labelledby="problem-cards-title">
+        <div class="problem-cards-section__container">
+            <div class="problem-cards-section__topline" id="features">
+                <span class="problem-cards-section__section-label" data-i18n="problemCards.sectionLabel"></span>
             </div>
 
-            <div class="about-intro-section__marquee" aria-label="Viora value keywords" data-infinite-marquee>
-                <div class="about-intro-section__marquee-track">
-                    <div class="about-intro-section__marquee-content">
-                        <span data-i18n="aboutIntro.marquee.satellite">Satellite Intelligence</span>
-                        <span class="about-intro-section__marquee-separator"></span>
-                        <span data-i18n="aboutIntro.marquee.farming">Smart Farming</span>
-                        <span class="about-intro-section__marquee-separator"></span>
-                        <span data-i18n="aboutIntro.marquee.grow">Grow More</span>
-                        <span class="about-intro-section__marquee-separator"></span>
-                    </div>
+            <div class="problem-cards-section__layout">
+                <div class="problem-cards-section__content">
+                    <p class="problem-cards-section__tag" data-i18n="problemCards.tag"></p>
 
-                    <div class="about-intro-section__marquee-content" aria-hidden="true">
-                        <span data-i18n="aboutIntro.marquee.satellite">Satellite Intelligence</span>
-                        <span class="about-intro-section__marquee-separator"></span>
-                        <span data-i18n="aboutIntro.marquee.farming">Smart Farming</span>
-                        <span class="about-intro-section__marquee-separator"></span>
-                        <span data-i18n="aboutIntro.marquee.grow">Grow More</span>
-                        <span class="about-intro-section__marquee-separator"></span>
+                    <h2 class="problem-cards-section__title" id="problem-cards-title" data-i18n="problemCards.title"></h2>
+
+                    <p class="problem-cards-section__description" data-i18n="problemCards.description"></p>
+
+                    <div class="problem-cards-section__actions">
+                        <landing-button variant="secondary" href="#solution" i18n-key="problemCards.cta" liquid-glass-color="green" magnetic-max="14"></landing-button>
+
+                        <landing-button variant="secondary" href="#solution" liquid-glass-color="green" is-icon icon-src="./assets/icons/checkmark.svg" i18n-key="problemCards.ctaAria" magnetic-max="14"></landing-button>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section class="problem-cards-section" id="problem-cards" aria-labelledby="problem-cards-title">
-            <div class="problem-cards-section__container">
-                <div class="problem-cards-section__layout">
-                    <div class="problem-cards-section__content">
-                        <p class="problem-cards-section__tag" data-i18n="problemCards.tag">
-                            THE CHALLENGE
-                        </p>
-
-                        <h2 class="problem-cards-section__title" id="problem-cards-title" data-i18n="problemCards.title">
-                            Traditional olive farming leaves too much to chance
-                        </h2>
-
-                        <p class="problem-cards-section__description" data-i18n="problemCards.description">
-                            Scattered field records, reactive pest response, and climate uncertainty make olive production harder to predict. Today’s olive sector needs earlier signals, clearer risk visibility, and better decisions.
-                        </p>
-
-                        <div class="problem-cards-section__actions">
-                            <landing-button variant="secondary" href="#solution" i18n-key="problemCards.cta" liquid-glass-color="green" magnetic-max="16">
-                                See How Viora Solves This
-                            </landing-button>
-
-                            <landing-button variant="secondary" href="#solution" liquid-glass-color="green" is-icon icon-src="./assets/icons/checkmark.svg" i18n-key="problemCards.ctaAria" magnetic-max="16"></landing-button>
-                        </div>
-                    </div>
-
-                    <div class="problem-cards-section__cards" aria-label="The Problem Cards">
-                        <div class="problem-cards-section__cards-title">
-                            <span data-i18n="problemCards.cardsTitle">The Problem Cards</span>
-                            <span aria-hidden="true">
+                <div class="problem-cards-section__cards" data-i18n-aria-label="aria.problemCards">
+                    <div class="problem-cards-section__cards-title">
+                        <span data-i18n="problemCards.cardsTitle"></span>
+                        <span aria-hidden="true">
                                 <img src="./assets/icons/arrow-down.svg" alt="" />
                             </span>
-                        </div>
+                    </div>
 
-                        <div class="problem-cards-section__accordion" data-problem-cards-accordion>
-                            <article class="problem-card problem-card--active" data-problem-card>
-                                <button class="problem-card__trigger" type="button" aria-expanded="true" data-problem-card-trigger>
-                                    <span data-i18n="problemCards.cards.yields.title">
-                                        Unpredictable Yields
-                                    </span>
-                                </button>
+                    <div class="problem-cards-section__accordion" data-problem-cards-accordion>
+                        <article class="problem-card problem-card--active" data-problem-card>
+                            <button class="problem-card__trigger" type="button" aria-expanded="true" data-problem-card-trigger>
+                                <span data-i18n="problemCards.cards.yields.title"></span>
+                            </button>
 
-                                <div class="problem-card__body" data-problem-card-body>
-                                    <div class="problem-card__number" data-i18n="problemCards.cards.yields.number">
-                                        01
-                                    </div>
+                            <div class="problem-card__body" data-problem-card-body>
+                                <div class="problem-card__number" data-i18n="problemCards.cards.yields.number"></div>
 
-                                    <div class="problem-card__line"></div>
+                                <div class="problem-card__line"></div>
 
-                                    <p class="problem-card__text" data-i18n="problemCards.cards.yields.description">
-                                        Olive trees naturally alternate between high and low production years. Without precise stress management and data tracking, financial forecasting and harvest planning become incredibly difficult.
-                                    </p>
-                                </div>
-                            </article>
+                                <p class="problem-card__text" data-i18n="problemCards.cards.yields.description"></p>
+                            </div>
+                        </article>
 
-                            <article class="problem-card" data-problem-card>
-                                <button class="problem-card__trigger" type="button" aria-expanded="false" data-problem-card-trigger>
-                                    <span data-i18n="problemCards.cards.pests.title">
-                                        Epidemiological Pest Threats
-                                    </span>
-                                </button>
+                        <article class="problem-card" data-problem-card>
+                            <button class="problem-card__trigger" type="button" aria-expanded="false" data-problem-card-trigger>
+                                <span data-i18n="problemCards.cards.pests.title"></span>
+                            </button>
 
-                                <div class="problem-card__body" data-problem-card-body>
-                                    <div class="problem-card__number" data-i18n="problemCards.cards.pests.number">
-                                        02
-                                    </div>
+                            <div class="problem-card__body" data-problem-card-body>
+                                <div class="problem-card__number" data-i18n="problemCards.cards.pests.number"></div>
 
-                                    <div class="problem-card__line"></div>
+                                <div class="problem-card__line"></div>
 
-                                    <p class="problem-card__text" data-i18n="problemCards.cards.pests.description">
-                                        Pests like the Olive Fruit Fly can devastate crops rapidly. Relying on reactive treatments instead of early alerts leads to irreversible crop loss, lower oil quality, and excessive chemical costs.
-                                    </p>
-                                </div>
-                            </article>
+                                <p class="problem-card__text" data-i18n="problemCards.cards.pests.description"></p>
+                            </div>
+                        </article>
 
-                            <article class="problem-card" data-problem-card>
-                                <button class="problem-card__trigger" type="button" aria-expanded="false" data-problem-card-trigger>
-                                    <span data-i18n="problemCards.cards.climate.title">
-                                        Climate Volatility and ENSO Impact
-                                    </span>
-                                </button>
+                        <article class="problem-card" data-problem-card>
+                            <button class="problem-card__trigger" type="button" aria-expanded="false" data-problem-card-trigger>
+                                <span data-i18n="problemCards.cards.climate.title"></span>
+                            </button>
 
-                                <div class="problem-card__body" data-problem-card-body>
-                                    <div class="problem-card__number" data-i18n="problemCards.cards.climate.number">
-                                        03
-                                    </div>
+                            <div class="problem-card__body" data-problem-card-body>
+                                <div class="problem-card__number" data-i18n="problemCards.cards.climate.number"></div>
 
-                                    <div class="problem-card__line"></div>
+                                <div class="problem-card__line"></div>
 
-                                    <p class="problem-card__text" data-i18n="problemCards.cards.climate.description">
-                                        The El Niño-Southern Oscillation drastically alters temperature and humidity. These sudden micro-climate shifts directly disrupt flowering, fruit set, and overall orchard health.
-                                    </p>
-                                </div>
-                            </article>
-                        </div>
+                                <p class="problem-card__text" data-i18n="problemCards.cards.climate.description"></p>
+                            </div>
+                        </article>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="problem-solution-section" id="solution" data-i18n-aria-label="aria.problemSolution">
+        <section class="problem-panel" data-video-expand-section aria-labelledby="problem-panel-title">
+            <div class="problem-panel__sticky" data-video-expand-sticky>
+                <div class="problem-panel__intro-layout">
+                    <div class="problem-panel__intro-content">
+                        <h2 class="problem-panel__intro-text" id="problem-panel-title" data-i18n="problemSolution.problemPanel.introText"></h2>
+                    </div>
+
+                    <div class="problem-panel__media-placeholder" data-video-expand-placeholder></div>
+                </div>
+
+                <figure class="problem-panel__media" data-video-expand-media>
+                    <video class="problem-panel__video" src="./assets/videos/problem-panel-field-risk.mp4" muted autoplay loop playsinline></video>
+
+                    <figcaption class="problem-panel__caption" data-video-expand-caption>
+                        <div class="problem-panel__caption-line"></div>
+
+                        <p class="problem-panel__caption-text" data-i18n="problemSolution.problemPanel.expandedText"></p>
+                    </figcaption>
+                </figure>
             </div>
         </section>
 
-        <section class="problem-solution-section" id="solution" aria-label="Problem and solution section">
-            <section class="problem-panel" data-video-expand-section aria-labelledby="problem-panel-title">
-                <div class="problem-panel__sticky" data-video-expand-sticky>
-                    <div class="problem-panel__intro-layout">
-                        <div class="problem-panel__intro-content">
-                            <h2 class="problem-panel__intro-text" id="problem-panel-title" data-i18n="problemSolution.problemPanel.introText">
-                                Olive farming is becoming more volatile. Don’t just react to field risk — anticipate it.
-                                Viora helps you move forward with actionable data, earlier pest-risk visibility, and direct
-                                access to the right crop protection specialist.
-                            </h2>
+        <section class="solution-panel" id="solution-panel" aria-labelledby="solution-panel-title">
+            <div class="solution-panel__header">
+                <p class="solution-panel__eyebrow" data-i18n="solutionPanel.eyebrow"></p>
+
+                <h2 class="solution-panel__title" id="solution-panel-title" data-i18n="solutionPanel.title"></h2>
+
+                <p class="solution-panel__subtitle" data-i18n="solutionPanel.subtitle"></p>
+            </div>
+
+            <div class="solution-panel__carousel" data-solution-carousel data-i18n-aria-label="aria.solutionCarousel">
+                <div class="solution-panel__track" data-solution-track>
+                    <article class="solution-card" data-solution-card tabindex="0">
+                        <h3 class="solution-card__title" data-i18n="solutionPanel.cards.alerts.title"></h3>
+
+                        <div class="solution-card__icon" aria-hidden="true">
+                            <img src="./assets/icons/icons-cards/new/bug.png" alt="" class="solution-card__icon-img" />
+                            <img src="./assets/icons/icons-cards/new/bug_white.png" alt="" class="solution-card__icon-img--white" />
                         </div>
 
-                        <div class="problem-panel__media-placeholder" data-video-expand-placeholder></div>
-                    </div>
+                        <p class="solution-card__description" data-i18n="solutionPanel.cards.alerts.description"></p>
+                    </article>
 
-                    <figure class="problem-panel__media" data-video-expand-media>
-                        <video class="problem-panel__video" src="./assets/videos/problem-panel-field-risk.mp4" muted autoplay loop playsinline></video>
+                    <article class="solution-card" data-solution-card tabindex="0">
+                        <h3 class="solution-card__title" data-i18n="solutionPanel.cards.marketplace.title"></h3>
 
-                        <figcaption class="problem-panel__caption" data-video-expand-caption>
-                            <div class="problem-panel__caption-line"></div>
+                        <div class="solution-card__icon" aria-hidden="true">
+                            <img src="./assets/icons/icons-cards/new/bag.png" alt="" class="solution-card__icon-img" />
+                            <img src="./assets/icons/icons-cards/new/bag_white.png" alt="" class="solution-card__icon-img--white" />
+                        </div>
 
-                            <p class="problem-panel__caption-text" data-i18n="problemSolution.problemPanel.expandedText">
-                                Viora transforms environmental uncertainty into early, actionable risk intelligence
-                                for every olive plot.
-                            </p>
-                        </figcaption>
-                    </figure>
-                </div>
-            </section>
+                        <p class="solution-card__description" data-i18n="solutionPanel.cards.marketplace.description"></p>
+                    </article>
 
-            <div class="solution-panel__topline" id="features">
-                <div class="solution-panel__container">
-                    <span class="solution-panel__section-label" data-i18n="problemCards.sectionLabel">
-                        Features
-                    </span>
+                    <article class="solution-card solution-card--active" data-solution-card tabindex="0">
+                        <h3 class="solution-card__title" data-i18n="solutionPanel.cards.ndvi.title"></h3>
+
+                        <div class="solution-card__icon" aria-hidden="true">
+                            <img src="./assets/icons/icons-cards/new/satelite.png" alt="" class="solution-card__icon-img" />
+                            <img src="./assets/icons/icons-cards/new/satelite_white.png" alt="" class="solution-card__icon-img--white" />
+                        </div>
+
+                        <p class="solution-card__description" data-i18n="solutionPanel.cards.ndvi.description"></p>
+                    </article>
+
+                    <article class="solution-card" data-solution-card tabindex="0">
+                        <h3 class="solution-card__title" data-i18n="solutionPanel.cards.chill.title"></h3>
+
+                        <div class="solution-card__icon" aria-hidden="true">
+                            <img src="./assets/icons/icons-cards/new/cold-olive.png" alt="" class="solution-card__icon-img" />
+                            <img src="./assets/icons/icons-cards/new/cold-olive_white.png" alt="" class="solution-card__icon-img--white" />
+                        </div>
+
+                        <p class="solution-card__description" data-i18n="solutionPanel.cards.chill.description"></p>
+                    </article>
+
+                    <article class="solution-card" data-solution-card tabindex="0">
+                        <h3 class="solution-card__title" data-i18n="solutionPanel.cards.nutrition.title"></h3>
+
+                        <div class="solution-card__icon" aria-hidden="true">
+                            <img src="./assets/icons/icons-cards/new/olive.png" alt="" class="solution-card__icon-img" />
+                            <img src="./assets/icons/icons-cards/new/olive_white.png" alt="" class="solution-card__icon-img--white" />
+                        </div>
+
+                        <p class="solution-card__description" data-i18n="solutionPanel.cards.nutrition.description"></p>
+                    </article>
+
+                    <article class="solution-card" data-solution-card tabindex="0">
+                        <h3 class="solution-card__title" data-i18n="solutionPanel.cards.climate.title"></h3>
+
+                        <div class="solution-card__icon" aria-hidden="true">
+                            <img src="./assets/icons/icons-cards/new/stats.png" alt="" class="solution-card__icon-img" />
+                            <img src="./assets/icons/icons-cards/new/stats_white.png" alt="" class="solution-card__icon-img--white" />
+                        </div>
+
+                        <p class="solution-card__description" data-i18n="solutionPanel.cards.climate.description"></p>
+                    </article>
                 </div>
             </div>
 
-            <section class="solution-panel" id="solution-panel" aria-labelledby="solution-panel-title">
-                <div class="solution-panel__header">
-                    <p class="solution-panel__eyebrow" data-i18n="solutionPanel.eyebrow">
-                        THE SOLUTION
-                    </p>
-
-                    <h2 class="solution-panel__title" id="solution-panel-title" data-i18n="solutionPanel.title">
-                        Turn olive field data into preventive decisions
-                    </h2>
-
-                    <p class="solution-panel__subtitle" data-i18n="solutionPanel.subtitle">
-                        Predict earlier. Respond smarter.
-                    </p>
-                </div>
-
-                <div class="solution-panel__carousel" data-solution-carousel aria-label="Viora solution capabilities carousel">
-                    <div class="solution-panel__track" data-solution-track>
-                        <article class="solution-card" data-solution-card tabindex="0">
-                            <h3 class="solution-card__title" data-i18n="solutionPanel.cards.alerts.title">
-                                Epidemiological Alerts
-                            </h3>
-
-                            <div class="solution-card__icon" aria-hidden="true">
-                                <img src="./assets/icons/icons-cards/bug.png" alt="" class="solution-card__icon-img" />
-                                <img src="./assets/icons/icons-cards/bug-white.png" alt="" class="solution-card__icon-img--white" />
-                            </div>
-
-                            <p class="solution-card__description" data-i18n="solutionPanel.cards.alerts.description">
-                                Detect early warning signs of phytosanitary risk and receive timely alerts before outbreaks escalate across your plot or nearby fields.
-                            </p>
-                        </article>
-
-                        <article class="solution-card" data-solution-card tabindex="0">
-                            <h3 class="solution-card__title" data-i18n="solutionPanel.cards.marketplace.title">
-                                Specialist Marketplace
-                            </h3>
-
-                            <div class="solution-card__icon" aria-hidden="true">
-                                <img src="./assets/icons/icons-cards/bag.png" alt="" class="solution-card__icon-img" />
-                                <img src="./assets/icons/icons-cards/bag-white.png" alt="" class="solution-card__icon-img--white" />
-                            </div>
-
-                            <p class="solution-card__description" data-i18n="solutionPanel.cards.marketplace.description">
-                                Connect with crop protection specialists in your area, compare profiles, and reach the right expert when your field needs fast technical support.
-                            </p>
-                        </article>
-
-                        <article class="solution-card solution-card--active" data-solution-card tabindex="0">
-                            <h3 class="solution-card__title" data-i18n="solutionPanel.cards.ndvi.title">
-                                NDVI Monitoring
-                            </h3>
-
-                            <div class="solution-card__icon" aria-hidden="true">
-                                <img src="./assets/icons/icons-cards/satelite.png" alt="" class="solution-card__icon-img" />
-                                <img src="./assets/icons/icons-cards/satelite-white.png" alt="" class="solution-card__icon-img--white" />
-                            </div>
-
-                            <p class="solution-card__description" data-i18n="solutionPanel.cards.ndvi.description">
-                                Monitor canopy vigor remotely to detect early stress patterns and support faster field decisions with satellite-based visibility.
-                            </p>
-                        </article>
-
-                        <article class="solution-card" data-solution-card tabindex="0">
-                            <h3 class="solution-card__title" data-i18n="solutionPanel.cards.chill.title">
-                                Chill Portion Tracking
-                            </h3>
-
-                            <div class="solution-card__icon" aria-hidden="true">
-                                <img src="./assets/icons/icons-cards/cold-olive.png" alt="" class="solution-card__icon-img" />
-                                <img src="./assets/icons/icons-cards/cold-olive-white.png" alt="" class="solution-card__icon-img--white" />
-                            </div>
-
-                            <p class="solution-card__description" data-i18n="solutionPanel.cards.chill.description">
-                                Track chill accumulation across the season to anticipate phenological risk, protect flowering conditions, and reduce alternate bearing uncertainty.
-                            </p>
-                        </article>
-
-                        <article class="solution-card" data-solution-card tabindex="0">
-                            <h3 class="solution-card__title" data-i18n="solutionPanel.cards.nutrition.title">
-                                Dynamic Nutrition Plans
-                            </h3>
-
-                            <div class="solution-card__icon" aria-hidden="true">
-                                <img src="./assets/icons/icons-cards/olive.png" alt="" class="solution-card__icon-img" />
-                                <img src="./assets/icons/icons-cards/olive-white.png" alt="" class="solution-card__icon-img--white" />
-                            </div>
-
-                            <p class="solution-card__description" data-i18n="solutionPanel.cards.nutrition.description">
-                                Receive data-driven nutrition recommendations that adapt to field conditions, helping you respond earlier to stress and protect crop performance.
-                            </p>
-                        </article>
-
-                        <article class="solution-card" data-solution-card tabindex="0">
-                            <h3 class="solution-card__title" data-i18n="solutionPanel.cards.climate.title">
-                                Climate Risk Outlook
-                            </h3>
-
-                            <div class="solution-card__icon" aria-hidden="true">
-                                <img src="./assets/icons/icons-cards/dron.png" alt="" class="solution-card__icon-img" />
-                                <img src="./assets/icons/icons-cards/dron-white.png" alt="" class="solution-card__icon-img--white" />
-                            </div>
-
-                            <p class="solution-card__description" data-i18n="solutionPanel.cards.climate.description">
-                                Follow changing climate conditions and thermal anomalies to anticipate stress events, prepare earlier, and make more confident seasonal decisions.
-                            </p>
-                        </article>
-                    </div>
-                </div>
-
-                <div class="solution-panel__controls" aria-label="Solution carousel controls">
+            <div class="solution-panel__controls" aria-label="Solution carousel controls">
                     <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
-                        <button class="solution-panel__control" type="button" data-solution-prev data-hover-sound aria-label="Previous solution card">
+                        <button class="solution-panel__control" type="button" data-solution-prev data-hover-sound data-i18n-aria-label="aria.prevSolution">
                             ←
                         </button>
                     </span>
 
-                    <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
-                        <button class="solution-panel__control" type="button" data-solution-next data-hover-sound aria-label="Next solution card">
+                <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
+                        <button class="solution-panel__control" type="button" data-solution-next data-hover-sound data-i18n-aria-label="aria.nextSolution">
                             →
                         </button>
                     </span>
-                </div>
-            </section>
-
-            <section class="expected-outcomes-panel" id="expected-outcomes" data-outcomes-parallax-section aria-labelledby="expected-outcomes-title">
-                <div class="expected-outcomes-panel__grid">
-                    <div class="expected-outcomes-panel__media expected-outcomes-panel__media--top" data-outcomes-parallax-item data-parallax-speed="-16">
-                        <video class="expected-outcomes-panel__video" src="./assets/videos/outcomes-grower-field.mp4" poster="./assets/images/problem-solution/outcomes-grower-field-poster.webp" muted autoplay loop playsinline></video>
-                    </div>
-
-                    <div class="expected-outcomes-panel__content expected-outcomes-panel__content--metrics" data-outcomes-parallax-item data-parallax-speed="-22">
-                        <p class="expected-outcomes-panel__eyebrow" data-i18n="expectedOutcomes.eyebrow">
-                            Expected Outcomes
-                        </p>
-
-                        <h2 class="expected-outcomes-panel__title" id="expected-outcomes-title" data-i18n="expectedOutcomes.title">
-                            MAKE SMARTER OLIVE DECISIONS AND REDUCE SEASONAL RISK.
-                        </h2>
-
-                        <div class="expected-outcomes-panel__dotted-line" aria-hidden="true"></div>
-
-                        <div class="expected-outcomes-panel__metrics">
-                            <div class="expected-outcomes-panel__metric">
-                                <strong class="expected-outcomes-panel__metric-value" data-i18n="expectedOutcomes.metrics.delivery.value">
-                                    &lt;10 min
-                                </strong>
-                                <span class="expected-outcomes-panel__metric-label" data-i18n="expectedOutcomes.metrics.delivery.label">
-                                    Alert Delivery Goal
-                                </span>
-                            </div>
-
-                            <div class="expected-outcomes-panel__metric">
-                                <strong class="expected-outcomes-panel__metric-value" data-i18n="expectedOutcomes.metrics.growers.value">
-                                    150+
-                                </strong>
-                                <span class="expected-outcomes-panel__metric-label" data-i18n="expectedOutcomes.metrics.growers.label">
-                                    Target Olive Growers in Early Adoption
-                                </span>
-                            </div>
-
-                            <div class="expected-outcomes-panel__metric">
-                                <strong class="expected-outcomes-panel__metric-value" data-i18n="expectedOutcomes.metrics.specialists.value">
-                                    30+
-                                </strong>
-                                <span class="expected-outcomes-panel__metric-label" data-i18n="expectedOutcomes.metrics.specialists.label">
-                                    Target Specialists in the Network
-                                </span>
-                            </div>
-
-                            <div class="expected-outcomes-panel__metric">
-                                <strong class="expected-outcomes-panel__metric-value" data-i18n="expectedOutcomes.metrics.reduction.value">
-                                    15%
-                                </strong>
-                                <span class="expected-outcomes-panel__metric-label" data-i18n="expectedOutcomes.metrics.reduction.label">
-                                    Hypothesized Reduction in Input Spending
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="expected-outcomes-panel__content expected-outcomes-panel__content--recommendation" data-outcomes-parallax-item data-parallax-speed="28">
-                        <p class="expected-outcomes-panel__eyebrow" data-i18n="expectedOutcomes.recommendation.eyebrow">
-                            A Viora’s Recommendation
-                        </p>
-
-                        <h3 class="expected-outcomes-panel__recommendation-title" data-i18n="expectedOutcomes.recommendation.title">
-                            NEVER FACE A PEST OUTBREAK ALONE
-                        </h3>
-
-                        <div class="expected-outcomes-panel__dotted-line" aria-hidden="true"></div>
-
-                        <p class="expected-outcomes-panel__recommendation-text" data-i18n="expectedOutcomes.recommendation.description">
-                            When risk rises, Viora connects you with nearby specialists who can review your field data, assess the situation, and help you respond faster with targeted technical action.
-                        </p>
-
-                        <landing-button variant="green" href="https://viora-webapp.web.app" i18n-key="expectedOutcomes.recommendation.cta" magnetic-max="16">
-                            Explore the Marketplace
-                        </landing-button>
-                    </div>
-
-                    <div class="expected-outcomes-panel__media expected-outcomes-panel__media--bottom" data-outcomes-parallax-item data-parallax-speed="16">
-                        <video class="expected-outcomes-panel__video" src="./assets/videos/outcomes-field-treatment.mp4" poster="./assets/images/problem-solution/outcomes-field-treatment-poster.webp" muted autoplay loop playsinline></video>
-                    </div>
-                </div>
-            </section>
-        </section>
-
-        <section class="role-benefits-section role-benefits-section--growers" id="growers" aria-labelledby="role-benefits-growers-title">
-            <div class="role-benefits-section__container">
-                <div class="role-benefits-section__topline">
-                    <span class="role-benefits-section__section-label" data-i18n="roleBenefits.growersTitle">
-                        Growers
-                    </span>
-                </div>
-
-                <div class="role-benefits-section__cards">
-                    <article class="role-benefits-card role-benefits-card--producer role-benefits-card--active">
-                        <div class="role-benefits-card__visual">
-                            <img class="role-benefits-card__image" src="./assets/images/segments/olive-producer-character.png" alt="Olive producer illustration" />
-                        </div>
-
-                        <div class="role-benefits-card__content">
-                            <h3 class="role-benefits-card__title" data-i18n="roleBenefits.producer.title">
-                                For Olive Producers
-                            </h3>
-
-                            <p class="role-benefits-card__note" data-i18n="roleBenefits.producer.note">
-                                Climate volatility and sudden pest outbreaks make olive production harder to predict. Viora turns field data into actionable insights, helping you detect risk earlier, protect yield, and respond faster with the right specialist when needed.
-                            </p>
-
-                            <ul class="role-benefits-card__pills">
-                                <li data-i18n="roleBenefits.producer.pill1">
-                                    Satellite, climate, and chill portion monitoring.
-                                </li>
-                                <li data-i18n="roleBenefits.producer.pill2">
-                                    Automated epidemiological pest alerts.
-                                </li>
-                                <li data-i18n="roleBenefits.producer.pill3">
-                                    Alternate bearing prediction and dynamic nutrition support.
-                                </li>
-                            </ul>
-
-                            <div class="role-benefits-card__actions">
-                                <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
-                                    <a class="role-benefits-card__button" href="#pricing" data-hover-sound data-wave-fill="#5A7A6A" data-i18n="roleBenefits.producer.cta">
-                                        View Pricing Plans
-                                    </a>
-                                </span>
-
-                                <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
-                                    <a class="role-benefits-card__icon-button" href="#pricing" data-hover-sound aria-label="View pricing plans">
-                                        →
-                                    </a>
-                                </span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
             </div>
         </section>
 
-        <section class="role-benefits-section role-benefits-section--specialists" id="specialists" aria-labelledby="role-benefits-specialists-title">
-            <div class="role-benefits-section__container">
-                <div class="role-benefits-section__topline">
-                    <span class="role-benefits-section__section-label" data-i18n="roleBenefits.specialistsTitle">
-                        Specialists
-                    </span>
+        <section class="expected-outcomes-panel" id="expected-outcomes" data-outcomes-parallax-section aria-labelledby="expected-outcomes-title">
+            <div class="expected-outcomes-panel__grid">
+                <div class="expected-outcomes-panel__media expected-outcomes-panel__media--top">
+                    <video class="expected-outcomes-panel__video" src="./assets/videos/outcomes-grower-field.mp4" poster="./assets/images/problem-solution/outcomes-grower-field-poster.webp" muted autoplay loop playsinline data-outcomes-parallax-video></video>
                 </div>
 
-                <div class="role-benefits-section__cards">
-                    <article class="role-benefits-card role-benefits-card--specialist role-benefits-card--active">
-                        <div class="role-benefits-card__visual">
-                            <img class="role-benefits-card__image" src="./assets/images/segments/phytosanitary-specialist-character.png" alt="Phytosanitary specialist illustration" />
+                <div class="expected-outcomes-panel__content expected-outcomes-panel__content--metrics">
+                    <p class="expected-outcomes-panel__eyebrow" data-i18n="expectedOutcomes.eyebrow"></p>
+
+                    <h2 class="expected-outcomes-panel__title" id="expected-outcomes-title" data-i18n="expectedOutcomes.title"></h2>
+
+                    <div class="expected-outcomes-panel__dotted-line" aria-hidden="true"></div>
+
+                    <div class="expected-outcomes-panel__metrics">
+                        <div class="expected-outcomes-panel__metric">
+                            <strong class="expected-outcomes-panel__metric-value" data-i18n="expectedOutcomes.metrics.delivery.value"></strong>
+                            <span class="expected-outcomes-panel__metric-label" data-i18n="expectedOutcomes.metrics.delivery.label"></span>
                         </div>
 
-                        <div class="role-benefits-card__content">
-                            <h3 class="role-benefits-card__title" data-i18n="roleBenefits.specialist.title">
-                                Phytosanitary specialists
-                            </h3>
-
-                            <p class="role-benefits-card__note" data-i18n="roleBenefits.specialist.note">
-                                Finding new clients and responding early to field risk is difficult without the right signals. Viora helps you discover service opportunities, review field context with satellite-based indicators, and deliver faster, more structured technical guidance.
-                            </p>
-
-                            <ul class="role-benefits-card__pills">
-                                <li data-i18n="roleBenefits.specialist.pill1">
-                                    Access new service opportunities through the specialist marketplace.
-                                </li>
-                                <li data-i18n="roleBenefits.specialist.pill2">
-                                    Review plot context, NDVI patterns, and reported field risk signals.
-                                </li>
-                                <li data-i18n="roleBenefits.specialist.pill3">
-                                    Digital prescriptions and field assessment tools.
-                                </li>
-                            </ul>
-
-                            <div class="role-benefits-card__actions">
-                                <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
-                                    <a class="role-benefits-card__button role-benefits-card__button--orange" href="#pricing" data-hover-sound data-wave-fill="#E8B08C" data-i18n="roleBenefits.specialist.cta">
-                                        Join the Marketplace
-                                    </a>
-                                </span>
-
-                                <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
-                                    <a class="role-benefits-card__icon-button role-benefits-card__icon-button--orange" href="#pricing" data-hover-sound aria-label="Join the marketplace">
-                                        →
-                                    </a>
-                                </span>
-                            </div>
+                        <div class="expected-outcomes-panel__metric">
+                            <strong class="expected-outcomes-panel__metric-value" data-i18n="expectedOutcomes.metrics.growers.value"></strong>
+                            <span class="expected-outcomes-panel__metric-label" data-i18n="expectedOutcomes.metrics.growers.label"></span>
                         </div>
-                    </article>
+
+                        <div class="expected-outcomes-panel__metric">
+                            <strong class="expected-outcomes-panel__metric-value" data-i18n="expectedOutcomes.metrics.specialists.value"></strong>
+                            <span class="expected-outcomes-panel__metric-label" data-i18n="expectedOutcomes.metrics.specialists.label"></span>
+                        </div>
+
+                        <div class="expected-outcomes-panel__metric">
+                            <strong class="expected-outcomes-panel__metric-value" data-i18n="expectedOutcomes.metrics.reduction.value"></strong>
+                            <span class="expected-outcomes-panel__metric-label" data-i18n="expectedOutcomes.metrics.reduction.label"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expected-outcomes-panel__content expected-outcomes-panel__content--recommendation">
+                    <p class="expected-outcomes-panel__eyebrow" data-i18n="expectedOutcomes.recommendation.eyebrow"></p>
+
+                    <h3 class="expected-outcomes-panel__recommendation-title" data-i18n="expectedOutcomes.recommendation.title"></h3>
+
+                    <div class="expected-outcomes-panel__dotted-line" aria-hidden="true"></div>
+
+                    <p class="expected-outcomes-panel__recommendation-text" data-i18n="expectedOutcomes.recommendation.description"></p>
+
+                    <landing-button variant="green" href="https://viora-webapp.web.app" i18n-key="expectedOutcomes.recommendation.cta" magnetic-max="16"></landing-button>
+                </div>
+
+                <div class="expected-outcomes-panel__media expected-outcomes-panel__media--bottom">
+                    <video class="expected-outcomes-panel__video" src="./assets/videos/outcomes-field-treatment.mp4" poster="./assets/images/problem-solution/outcomes-field-treatment-poster.webp" muted autoplay loop playsinline data-outcomes-parallax-video></video>
                 </div>
             </div>
         </section>
+    </section>
 
-        <section class="plans-trial-affiliates-section" aria-label="Pricing plans section">
-            <section class="pricing-parallax-intro pricing-parallax-intro--static" id="pricing-intro" aria-labelledby="pricing-parallax-title">
+    <section class="feature-product-video-section" aria-labelledby="feature-product-video-title">
+        <div class="feature-product-video-section__container">
+            <article class="feature-product-video-card" data-feature-product-card>
+                <video class="feature-product-video-card__video" src="./assets/videos/viora-about-the-product-av2.mp4" muted loop playsinline preload="metadata" data-feature-product-video></video>
+
+                <div class="feature-product-video-card__shade" aria-hidden="true"></div>
+
+                <div class="feature-product-video-card__overlay" data-feature-product-overlay>
+                    <div class="feature-product-video-card__brand">
+                        <div class="feature-product-video-card__brand-copy">
+                            <strong class="feature-product-video-card__brand-name">
+                                <img class="feature-product-video-card__brand-icon" src="./assets/logos/viora-isotipo-white.png" alt="" aria-hidden="true" />
+                                <span data-i18n="featureProduct.brand"></span>
+                            </strong>
+                            <span data-i18n="featureProduct.tagline"></span>
+                        </div>
+                    </div>
+
+                    <div class="feature-product-video-card__headline">
+                        <p class="feature-product-video-card__eyebrow" data-i18n="featureProduct.eyebrow"></p>
+                        <h2 class="feature-product-video-card__title" id="feature-product-video-title" data-i18n="featureProduct.title"></h2>
+                    </div>
+                </div>
+
+                <div class="feature-product-video-card__more" data-feature-product-more aria-hidden="true">
+                    <div class="feature-product-video-card__more-visual" aria-hidden="true">
+                        <img class="feature-product-video-card__more-hero" src="./assets/images/segments/specialist_card_image_4.png" alt="" />
+                    </div>
+
+                    <div class="feature-product-video-card__more-stage">
+                        <div class="feature-product-video-card__more-content">
+                            <p class="feature-product-video-card__more-text" data-i18n="featureProduct.moreText"></p>
+
+                            <div class="feature-product-video-card__more-action">
+                                <landing-button variant="secondary" href="https://viora-webapp.web.app" i18n-key="featureProduct.cta" liquid-glass-color="green" trailing-icon-src="./assets/icons/chevron-forward.svg" magnetic-max="14"></landing-button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-product-video-card__carousel" aria-hidden="true">
+                        <div class="feature-product-video-card__carousel-row">
+                            <div class="feature-product-video-card__carousel-track">
+                                <img src="./assets/images/about-the-product/img1.png" alt="" />
+                                <img src="./assets/images/about-the-product/img2.png" alt="" />
+                                <img src="./assets/images/about-the-product/img3.png" alt="" />
+                                <img src="./assets/images/about-the-product/img4.png" alt="" />
+                                <img src="./assets/images/about-the-product/img5.png" alt="" />
+                                <img src="./assets/images/about-the-product/img6.png" alt="" />
+                                <img src="./assets/images/about-the-product/img7.png" alt="" />
+                                <img src="./assets/images/about-the-product/img8.png" alt="" />
+                                <img src="./assets/images/about-the-product/img9.png" alt="" />
+                                <img src="./assets/images/about-the-product/img1.png" alt="" />
+                                <img src="./assets/images/about-the-product/img2.png" alt="" />
+                                <img src="./assets/images/about-the-product/img3.png" alt="" />
+                                <img src="./assets/images/about-the-product/img4.png" alt="" />
+                                <img src="./assets/images/about-the-product/img5.png" alt="" />
+                                <img src="./assets/images/about-the-product/img6.png" alt="" />
+                                <img src="./assets/images/about-the-product/img7.png" alt="" />
+                                <img src="./assets/images/about-the-product/img8.png" alt="" />
+                                <img src="./assets/images/about-the-product/img9.png" alt="" />
+                            </div>
+                        </div>
+
+                        <div class="feature-product-video-card__carousel-row feature-product-video-card__carousel-row--offset">
+                            <div class="feature-product-video-card__carousel-track">
+                                <img src="./assets/images/about-the-product/img6.png" alt="" />
+                                <img src="./assets/images/about-the-product/img7.png" alt="" />
+                                <img src="./assets/images/about-the-product/img8.png" alt="" />
+                                <img src="./assets/images/about-the-product/img9.png" alt="" />
+                                <img src="./assets/images/about-the-product/img1.png" alt="" />
+                                <img src="./assets/images/about-the-product/img2.png" alt="" />
+                                <img src="./assets/images/about-the-product/img3.png" alt="" />
+                                <img src="./assets/images/about-the-product/img4.png" alt="" />
+                                <img src="./assets/images/about-the-product/img5.png" alt="" />
+                                <img src="./assets/images/about-the-product/img6.png" alt="" />
+                                <img src="./assets/images/about-the-product/img7.png" alt="" />
+                                <img src="./assets/images/about-the-product/img8.png" alt="" />
+                                <img src="./assets/images/about-the-product/img9.png" alt="" />
+                                <img src="./assets/images/about-the-product/img1.png" alt="" />
+                                <img src="./assets/images/about-the-product/img2.png" alt="" />
+                                <img src="./assets/images/about-the-product/img3.png" alt="" />
+                                <img src="./assets/images/about-the-product/img4.png" alt="" />
+                                <img src="./assets/images/about-the-product/img5.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-product-video-card__controls" aria-label="Product video controls">
+                    <div class="feature-product-video-card__media-controls" data-feature-product-media-controls aria-hidden="true">
+                        <input class="feature-product-video-card__progress" type="range" min="0" max="100" value="0" step="0.1" aria-label="Video progress" data-feature-product-progress disabled />
+
+                        <label class="feature-product-video-card__volume">
+                            <img class="feature-product-video-card__volume-icon" src="./assets/icons/volume-medium.svg" alt="" aria-hidden="true" />
+                            <input class="feature-product-video-card__volume-range" type="range" min="0" max="1" value="0.7" step="0.01" aria-label="Video volume" data-feature-product-volume disabled />
+                        </label>
+                    </div>
+
+                    <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="14">
+                        <a class="feature-product-video-card__button feature-product-video-card__button--youtube" href="https://youtu.be/hsNiK7cX_3k" target="_blank" rel="noopener noreferrer" data-hover-sound data-i18n-aria-label="featureProduct.youtubeAria">
+                            <img class="feature-product-video-card__button-icon" src="./assets/icons/youtube.svg" alt="" aria-hidden="true" />
+                        </a>
+                    </span>
+
+                    <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="14">
+                        <button class="feature-product-video-card__button feature-product-video-card__button--play liquid-glass liquid-glass--white" type="button" data-feature-product-play data-liquid-glass data-hover-sound data-i18n-aria-label="featureProduct.playAria">
+                            <img class="feature-product-video-card__button-icon" src="./assets/icons/play.svg" alt="" aria-hidden="true" data-feature-product-play-icon />
+                        </button>
+                    </span>
+
+                    <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="14">
+                        <button class="feature-product-video-card__button feature-product-video-card__button--more liquid-glass liquid-glass--green" type="button" data-feature-product-more-toggle data-liquid-glass data-hover-sound aria-expanded="false" data-i18n-aria-label="featureProduct.moreAria">
+                            <img class="feature-product-video-card__button-icon feature-product-video-card__button-icon--light" src="./assets/icons/add.svg" alt="" aria-hidden="true" />
+                        </button>
+                    </span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="segments-overview" aria-labelledby="segments-overview-title">
+        <div class="segments-overview__topline">
+            <span class="segments-overview__section-label" data-i18n="roleBenefits.sectionLabel"></span>
+        </div>
+
+        <div class="segments-overview__intro">
+            <h2 class="segments-overview__title" id="segments-overview-title" data-i18n="roleBenefits.title"></h2>
+            <p class="segments-overview__description" data-i18n="roleBenefits.description"></p>
+        </div>
+
+        <nav class="segments-overview__nav" data-i18n-aria-label="roleBenefits.navAria">
+            <a class="segments-overview__arrow segments-overview__arrow--prev" href="#growers" data-i18n-aria-label="roleBenefits.growersLinkAria" data-magnetic data-magnetic-strength="1" data-magnetic-max="14" data-hover-sound>
+                <img class="segments-overview__arrow-icon segments-overview__arrow-icon--prev" src="./assets/icons/arrow-white.svg" alt="" aria-hidden="true" />
+            </a>
+            <a class="segments-overview__option segments-overview__option--growers" href="#growers" data-i18n="roleBenefits.growersTitle" data-hover-sound></a>
+            <a class="segments-overview__option segments-overview__option--specialists" href="#specialists" data-i18n="roleBenefits.specialistsTitle" data-hover-sound></a>
+            <a class="segments-overview__arrow segments-overview__arrow--next" href="#specialists" data-i18n-aria-label="roleBenefits.specialistsLinkAria" data-magnetic data-magnetic-strength="1" data-magnetic-max="14" data-hover-sound>
+                <img class="segments-overview__arrow-icon" src="./assets/icons/arrow-white.svg" alt="" aria-hidden="true" />
+            </a>
+        </nav>
+    </section>
+
+    <section class="segment-story-group" data-i18n-aria-label="aria.segments">
+        <section class="segment-story segment-story--growers" id="growers" data-segment-story="growers" aria-labelledby="segment-story-growers-title">
+            <div class="segment-story__sticky">
+                <article class="segment-story__card">
+                    <div class="segment-story__content">
+                        <p class="segment-story__eyebrow" data-segment-eyebrow>Growers</p>
+                        <h2 class="segment-story__title" id="segment-story-growers-title" data-segment-title>Start with your olive plot</h2>
+                        <p class="segment-story__description" data-segment-description></p>
+                        <ul class="segment-story__bullets" data-segment-bullets></ul>
+                        <div class="segment-story__actions">
+                                <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
+                                    <a class="segment-story__mobile-button landing-button landing-button--green liquid-glass liquid-glass--green" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound data-segment-cta>Create grower account</a>
+                                </span>
+                        </div>
+                    </div>
+
+                    <div class="segment-story__visual-wrap" aria-hidden="true">
+                        <div class="segment-story__visual" data-segment-visual></div>
+                    </div>
+
+                    <div class="segment-story__progress" aria-hidden="true">
+                        <span data-segment-current>01</span>
+                        <span>/ 04</span>
+                    </div>
+                    <div class="segment-story__dots" data-segment-dots aria-hidden="true"></div>
+                </article>
+            </div>
+
+            <div class="segment-story__mobile-list" data-segment-mobile-list></div>
+        </section>
+
+        <section class="segment-story segment-story--specialists" id="specialists" data-segment-story="specialists" aria-labelledby="segment-story-specialists-title">
+            <div class="segment-story__sticky">
+                <article class="segment-story__card">
+                    <div class="segment-story__content">
+                        <p class="segment-story__eyebrow" data-segment-eyebrow>Specialists</p>
+                        <h2 class="segment-story__title" id="segment-story-specialists-title" data-segment-title>Be visible when growers need help</h2>
+                        <p class="segment-story__description" data-segment-description></p>
+                        <ul class="segment-story__bullets" data-segment-bullets></ul>
+                        <div class="segment-story__actions">
+                                <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
+                                    <a class="segment-story__mobile-button landing-button landing-button--orange liquid-glass liquid-glass--orange" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound data-segment-cta>Join specialist network</a>
+                                </span>
+                        </div>
+                    </div>
+
+                    <div class="segment-story__visual-wrap" aria-hidden="true">
+                        <div class="segment-story__visual" data-segment-visual></div>
+                    </div>
+
+                    <div class="segment-story__progress" aria-hidden="true">
+                        <span data-segment-current>01</span>
+                        <span>/ 04</span>
+                    </div>
+                    <div class="segment-story__dots" data-segment-dots aria-hidden="true"></div>
+                </article>
+            </div>
+
+            <div class="segment-story__mobile-list" data-segment-mobile-list></div>
+        </section>
+    </section>
+
+    <section class="plans-trial-affiliates-section" data-i18n-aria-label="aria.pricingSection">
+        <section class="pricing-parallax-intro" id="pricing-intro" data-pricing-parallax-intro aria-labelledby="pricing-parallax-title">
+            <div class="pricing-parallax-intro__sticky">
                 <div class="pricing-parallax-intro__container">
                     <div class="pricing-parallax-intro__copy">
                         <div class="pricing-parallax-intro__text-group pricing-parallax-intro__text-group--first">
-                            <h2 class="pricing-parallax-intro__title" id="pricing-parallax-title" data-i18n="pricingIntro.firstTitle">
-                                Stop paying for reactive farming
-                            </h2>
+                            <h2 class="pricing-parallax-intro__title" id="pricing-parallax-title" data-i18n="pricingIntro.firstTitle"></h2>
 
-                            <p class="pricing-parallax-intro__subtitle" data-i18n="pricingIntro.firstSubtitle">
-                                Waiting for pests, stress signals, or climate damage to appear often costs more than preventing them with real-time field intelligence.
-                            </p>
+                            <p class="pricing-parallax-intro__subtitle" data-i18n="pricingIntro.firstSubtitle"></p>
                         </div>
 
                         <div class="pricing-parallax-intro__text-group pricing-parallax-intro__text-group--second">
-                            <h2 class="pricing-parallax-intro__title" data-i18n="pricingIntro.secondTitle">
-                                And invest in a proactive plan
-                            </h2>
+                            <h2 class="pricing-parallax-intro__title" data-i18n="pricingIntro.secondTitle"></h2>
 
-                            <p class="pricing-parallax-intro__subtitle" data-i18n="pricingIntro.secondSubtitle">
-                                Select a Viora subscription that fits your orchard's needs. Stop waiting for pest damage to happen and start preventing it with real-time data.
-                            </p>
+                            <p class="pricing-parallax-intro__subtitle" data-i18n="pricingIntro.secondSubtitle"></p>
                         </div>
                     </div>
 
                     <div class="pricing-parallax-intro__image-stage" aria-hidden="true">
-                        <img class="pricing-parallax-intro__image pricing-parallax-intro__image--one" src="./assets/images/pricing/pricing-olive-field-01.png" alt="" />
-                        <img class="pricing-parallax-intro__image pricing-parallax-intro__image--two" src="./assets/images/pricing/pricing-olive-field-02.png" alt="" />
-                        <img class="pricing-parallax-intro__image pricing-parallax-intro__image--three" src="./assets/images/pricing/pricing-olive-field-03.png" alt="" />
+                        <img class="pricing-parallax-intro__image pricing-parallax-intro__image--one" src="./assets/images/pricing/pricing-olive-field-01.png" alt="" data-pricing-parallax-image />
+                        <img class="pricing-parallax-intro__image pricing-parallax-intro__image--two" src="./assets/images/pricing/pricing-olive-field-02.png" alt="" data-pricing-parallax-image />
+                        <img class="pricing-parallax-intro__image pricing-parallax-intro__image--three" src="./assets/images/pricing/pricing-olive-field-03.png" alt="" data-pricing-parallax-image />
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="pricing-plans-panel" id="pricing" data-pricing-plans-panel aria-labelledby="pricing-plans-title">
-                <div class="pricing-plans-panel__container">
-                    <div class="pricing-plans-panel__topline">
-                        <span class="pricing-plans-panel__section-label" data-i18n="pricingIntro.sectionLabel">
-                            Pricing Plans
-                        </span>
-                    </div>
+        <section class="pricing-plans-panel" id="pricing" data-pricing-plans-panel aria-labelledby="pricing-plans-title">
+            <div class="pricing-plans-panel__container">
+                <div class="pricing-plans-panel__topline">
+                    <span class="pricing-plans-panel__section-label" data-i18n="pricingIntro.sectionLabel"></span>
+                </div>
 
-                    <div class="pricing-plans-panel__controls">
+                <div class="pricing-plans-panel__controls">
                         <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
-                            <button class="pricing-plans-panel__arrow" type="button" data-pricing-prev data-hover-sound aria-label="Previous pricing plan">
+                            <button class="pricing-plans-panel__arrow" type="button" data-pricing-prev data-hover-sound data-i18n-aria-label="aria.prevPlan">
                                 <img src="./assets/icons/arrow-forward.svg" alt="" aria-hidden="true" />
                             </button>
                         </span>
 
-                        <span class="pricing-plans-panel__counter" data-pricing-counter>
+                    <span class="pricing-plans-panel__counter" data-pricing-counter>
                             1/2
                         </span>
 
-                        <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
-                            <button class="pricing-plans-panel__arrow pricing-plans-panel__arrow--next" type="button" data-pricing-next data-hover-sound aria-label="Next pricing plan">
+                    <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
+                            <button class="pricing-plans-panel__arrow pricing-plans-panel__arrow--next" type="button" data-pricing-next data-hover-sound data-i18n-aria-label="aria.nextPlan">
                                 <img src="./assets/icons/arrow-forward.svg" alt="" aria-hidden="true" />
                             </button>
                         </span>
-                    </div>
+                </div>
 
-                    <div class="pricing-plans-panel__billing-toggle" data-billing-toggle>
-                        <button class="pricing-plans-panel__billing-option pricing-plans-panel__billing-option--active" type="button" data-billing-option="monthly" data-hover-sound data-i18n="pricingPlans.billing.monthly">
-                            Monthly
-                        </button>
+                <div class="pricing-plans-panel__billing-toggle" data-billing-toggle>
+                    <button class="pricing-plans-panel__billing-option pricing-plans-panel__billing-option--active" type="button" data-billing-option="monthly" data-hover-sound data-i18n="pricingPlans.billing.monthly"></button>
 
-                        <button class="pricing-plans-panel__billing-option" type="button" data-billing-option="yearly" data-hover-sound data-i18n="pricingPlans.billing.yearly">
-                            yearly
-                        </button>
-                    </div>
+                    <button class="pricing-plans-panel__billing-option" type="button" data-billing-option="yearly" data-hover-sound data-i18n="pricingPlans.billing.yearly"></button>
+                </div>
 
-                    <div class="pricing-plans-panel__stage">
-                        <article class="pricing-plan pricing-plan--producer pricing-plan--active" data-pricing-plan="producer">
-                            <div class="pricing-plan__visual">
-                                <img class="pricing-plan__ticket" src="./assets/images/pricing/grower-referral-ticket.png" alt="Viora referral ticket for olive producers" />
+                <div class="pricing-plans-panel__stage">
+                    <article class="pricing-plan pricing-plan--producer pricing-plan--active" data-pricing-plan="producer">
+                        <div class="pricing-plan__visual">
+                            <div class="pricing-plan__ticket" role="img" data-i18n-aria-label="aria.producerTicket">
+                                <img class="pricing-plan__ticket-part pricing-plan__ticket-part--left" src="./assets/images/pricing/new-ticket/viora-ticket-left-part-grower.png" alt="" aria-hidden="true" />
+                                <img class="pricing-plan__ticket-part pricing-plan__ticket-part--right" src="./assets/images/pricing/new-ticket/viora-ticket-right-part-grower.png" alt="" aria-hidden="true" />
                             </div>
+                        </div>
 
-                            <div class="pricing-plan__content">
-                                <h2 class="pricing-plan__title" id="pricing-plans-title" data-i18n="pricingPlans.producer.title">
-                                    For Olive Producers
-                                </h2>
+                        <div class="pricing-plan__content">
+                            <h2 class="pricing-plan__title" id="pricing-plans-title" data-i18n="pricingPlans.producer.title"></h2>
 
-                                <div class="pricing-plan__access">
+                            <div class="pricing-plan__access">
                                     <span class="pricing-plan__access-icon" aria-hidden="true">
                                         <img src="./assets/icons/star.svg" alt="" />
                                     </span>
-                                    <span class="pricing-plan__access-label" data-i18n="pricingPlans.producer.planName">
-                                        Grower Access
-                                    </span>
-                                </div>
+                                <span class="pricing-plan__access-label" data-i18n="pricingPlans.producer.planName"></span>
+                            </div>
 
-                                <ul class="pricing-plan__details">
-                                    <li data-i18n="pricingPlans.producer.detail1">NDVI monitoring and plot health visibility</li>
-                                    <li data-i18n="pricingPlans.producer.detail2">Chill portion tracking and phenological risk detection</li>
-                                    <li data-i18n="pricingPlans.producer.detail3">Automated epidemiological alerts</li>
-                                    <li data-i18n="pricingPlans.producer.detail4">Dynamic nutrition recommendations</li>
-                                    <li data-i18n="pricingPlans.producer.detail5">Access to crop protection specialists when risk rises</li>
-                                </ul>
+                            <ul class="pricing-plan__details">
+                                <li data-i18n="pricingPlans.producer.detail1"></li>
+                                <li data-i18n="pricingPlans.producer.detail2"></li>
+                                <li data-i18n="pricingPlans.producer.detail3"></li>
+                                <li data-i18n="pricingPlans.producer.detail4"></li>
+                                <li data-i18n="pricingPlans.producer.detail5"></li>
+                            </ul>
 
-                                <strong class="pricing-plan__price" data-pricing-price>
-                                    $149.00
-                                </strong>
+                            <strong class="pricing-plan__price" data-pricing-price-producer></strong>
 
-                                <div class="pricing-plan__actions">
+                            <div class="pricing-plan__actions">
                                     <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
-                                        <a class="landing-button landing-button--green liquid-glass liquid-glass--green" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound data-wave-fill="#5A7A6A">
-                                            <span data-i18n="pricingPlans.producer.cta">
-                                                Sign Up
-                                            </span>
+                                        <a class="landing-button landing-button--green liquid-glass liquid-glass--green" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound>
+                                            <span data-i18n="pricingPlans.producer.cta"></span>
                                         </a>
                                     </span>
 
-                                    <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
-                                        <a class="landing-button landing-button--icon landing-button--green liquid-glass liquid-glass--green" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound aria-label="Start risk-free trial">
+                                <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
+                                        <a class="landing-button landing-button--icon landing-button--green liquid-glass liquid-glass--green" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound data-i18n-aria-label="aria.startTrial">
                                             <img class="landing-button__icon-img" src="./assets/icons/arrow-white.svg" alt="" aria-hidden="true" />
                                         </a>
                                     </span>
-                                </div>
                             </div>
-                        </article>
+                        </div>
+                    </article>
 
-                        <article class="pricing-plan pricing-plan--specialist" data-pricing-plan="specialist">
-                            <div class="pricing-plan__visual">
-                                <img class="pricing-plan__ticket" src="./assets/images/pricing/specialist-referral-ticket.png" alt="Viora referral ticket for phytosanitary specialists" />
+                    <article class="pricing-plan pricing-plan--specialist" data-pricing-plan="specialist">
+                        <div class="pricing-plan__visual">
+                            <div class="pricing-plan__ticket" role="img" data-i18n-aria-label="aria.specialistTicket">
+                                <img class="pricing-plan__ticket-part pricing-plan__ticket-part--left" src="./assets/images/pricing/new-ticket/viora-ticket-left-part-specialist.png" alt="" aria-hidden="true" />
+                                <img class="pricing-plan__ticket-part pricing-plan__ticket-part--right" src="./assets/images/pricing/new-ticket/viora-ticket-right-part-specialist.png" alt="" aria-hidden="true" />
                             </div>
+                        </div>
 
-                            <div class="pricing-plan__content">
-                                <h2 class="pricing-plan__title" data-i18n="pricingPlans.specialist.title">
-                                    Phytosanitary specialists
-                                </h2>
+                        <div class="pricing-plan__content">
+                            <h2 class="pricing-plan__title" data-i18n="pricingPlans.specialist.title"></h2>
 
-                                <div class="pricing-plan__access pricing-plan__access--orange">
+                            <div class="pricing-plan__access pricing-plan__access--orange">
                                     <span class="pricing-plan__access-icon" aria-hidden="true">
                                         <img src="./assets/icons/rocket.svg" alt="" />
                                     </span>
-                                    <span class="pricing-plan__access-label" data-i18n="pricingPlans.specialist.planName">
-                                        Specialist Access
-                                    </span>
-                                </div>
+                                <span class="pricing-plan__access-label" data-i18n="pricingPlans.specialist.planName"></span>
+                            </div>
 
-                                <ul class="pricing-plan__details pricing-plan__details--orange">
-                                    <li data-i18n="pricingPlans.specialist.detail1">Prospecting radar for new service opportunities</li>
-                                    <li data-i18n="pricingPlans.specialist.detail2">Digital prescriptions and field assessment tools</li>
-                                    <li data-i18n="pricingPlans.specialist.detail3">Visibility inside the Viora ecosystem</li>
-                                    <li data-i18n="pricingPlans.specialist.detail4">Access to field context and satellite-based risk indicators</li>
-                                    <li data-i18n="pricingPlans.specialist.detail5">Faster connection with producers who need intervention</li>
-                                </ul>
+                            <ul class="pricing-plan__details pricing-plan__details--orange">
+                                <li data-i18n="pricingPlans.specialist.detail1"></li>
+                                <li data-i18n="pricingPlans.specialist.detail2"></li>
+                                <li data-i18n="pricingPlans.specialist.detail3"></li>
+                                <li data-i18n="pricingPlans.specialist.detail4"></li>
+                                <li data-i18n="pricingPlans.specialist.detail5"></li>
+                            </ul>
 
-                                <strong class="pricing-plan__price" data-pricing-price-specialist>
-                                    $149.00
-                                </strong>
+                            <strong class="pricing-plan__price" data-pricing-price-specialist></strong>
 
-                                <div class="pricing-plan__actions">
+                            <div class="pricing-plan__actions">
                                     <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
-                                        <a class="landing-button landing-button--orange liquid-glass liquid-glass--orange" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound data-wave-fill="#E8B08C">
-                                            <span data-i18n="pricingPlans.specialist.cta">
-                                                Sign Up
-                                            </span>
+                                        <a class="landing-button landing-button--orange liquid-glass liquid-glass--orange" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound>
+                                            <span data-i18n="pricingPlans.specialist.cta"></span>
                                         </a>
                                     </span>
 
-                                    <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
-                                        <a class="landing-button landing-button--icon landing-button--orange liquid-glass liquid-glass--orange" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound aria-label="Start risk-free trial">
+                                <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
+                                        <a class="landing-button landing-button--icon landing-button--orange liquid-glass liquid-glass--orange" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound data-i18n-aria-label="aria.startTrial">
                                             <img class="landing-button__icon-img" src="./assets/icons/arrow-white.svg" alt="" aria-hidden="true" />
                                         </a>
                                     </span>
-                                </div>
                             </div>
-                        </article>
-                    </div>
-                </div>
-            </section>
-
-            <section class="referrals-info" id="referrals" data-referrals-info aria-labelledby="referrals-info-title">
-                <div class="referrals-info__container">
-                    <div class="referrals-info__header">
-                        <div class="referrals-info__title-group">
-                            <span class="referrals-info__tag" data-i18n="referralsInfo.tag">
-                                Referrals
-                            </span>
-
-                            <h2 class="referrals-info__title" id="referrals-info-title" data-i18n="referralsInfo.title">
-                                Invite others to Viora. Grow the ecosystem together.
-                            </h2>
                         </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-                        <div class="referrals-info__content">
-                            <p class="referrals-info__description" data-i18n="referralsInfo.description">
-                                Share your unique referral link with olive growers and crop protection specialists.
-                                When invited users join Viora and complete their first key action, you unlock
-                                predefined rewards inside the ecosystem.
-                            </p>
+        <section class="referrals-info" id="referrals" data-referrals-info aria-labelledby="referrals-info-title">
+            <div class="referrals-info__container">
+                <div class="referrals-info__header">
+                    <div class="referrals-info__title-group">
+                        <span class="referrals-info__tag" data-i18n="referralsInfo.tag"></span>
 
-                            <div class="referrals-info__actions">
+                        <h2 class="referrals-info__title" id="referrals-info-title" data-i18n="referralsInfo.title"></h2>
+                    </div>
+
+                    <div class="referrals-info__content">
+                        <p class="referrals-info__description" data-i18n="referralsInfo.description"></p>
+
+                        <div class="referrals-info__actions">
                                 <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
-                                    <a class="landing-button landing-button--green liquid-glass liquid-glass--green" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound data-wave-fill="#5A7A6A">
-                                        <span data-i18n="referralsInfo.cta">
-                                            Get My Referral Link
-                                        </span>
+                                    <a class="landing-button landing-button--green liquid-glass liquid-glass--green" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound>
+                                        <span data-i18n="referralsInfo.cta"></span>
                                     </a>
                                 </span>
 
-                                <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
-                                    <a class="landing-button landing-button--icon landing-button--green liquid-glass liquid-glass--green" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound aria-label="Get my referral link" data-i18n-aria-label="referralsInfo.ctaAria">
+                            <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
+                                    <a class="landing-button landing-button--icon landing-button--green liquid-glass liquid-glass--green" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound data-i18n-aria-label="referralsInfo.ctaAria">
                                         <img class="landing-button__icon-img" src="./assets/icons/arrow-white.svg" alt="" aria-hidden="true" />
                                     </a>
                                 </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="referrals-info__carousel" data-referrals-carousel>
-                        <div class="referrals-info__track" data-referrals-track>
-                            <article class="referral-card" data-referral-card>
-                                <img class="referral-card__icon" src="./assets/icons/arrow-redo-white.svg" alt="" aria-hidden="true" />
-                                <h3 class="referral-card__title" data-i18n="referralsInfo.cards.share.title">Share Your Link</h3>
-                                <p class="referral-card__description" data-i18n="referralsInfo.cards.share.description">
-                                    Generate a unique referral link and invite new users into the Viora ecosystem.
-                                </p>
-                            </article>
-
-                            <article class="referral-card" data-referral-card>
-                                <img class="referral-card__icon" src="./assets/icons/people-white.svg" alt="" aria-hidden="true" />
-                                <h3 class="referral-card__title" data-i18n="referralsInfo.cards.track.title">Track New Sign-Ups</h3>
-                                <p class="referral-card__description" data-i18n="referralsInfo.cards.track.description">
-                                    See when invited growers or specialists join through your referral.
-                                </p>
-                            </article>
-
-                            <article class="referral-card" data-referral-card>
-                                <img class="referral-card__icon" src="./assets/icons/star-white.svg" alt="" aria-hidden="true" />
-                                <h3 class="referral-card__title" data-i18n="referralsInfo.cards.rewards.title">Unlock Rewards</h3>
-                                <p class="referral-card__description" data-i18n="referralsInfo.cards.rewards.description">
-                                    Earn predefined benefits when your referrals complete their first key action.
-                                </p>
-                            </article>
-
-                            <article class="referral-card" data-referral-card>
-                                <img class="referral-card__icon" src="./assets/icons/happy-white.svg" alt="" aria-hidden="true" />
-                                <h3 class="referral-card__title" data-i18n="referralsInfo.cards.grow.title">Grow Together</h3>
-                                <p class="referral-card__description" data-i18n="referralsInfo.cards.grow.description">
-                                    Help expand a smarter olive ecosystem while increasing the value of your own account.
-                                </p>
-                            </article>
                         </div>
                     </div>
                 </div>
-            </section>
+
+                <div class="referrals-info__carousel" data-referrals-carousel>
+                    <div class="referrals-info__track" data-referrals-track>
+                        <article class="referral-card" data-referral-card>
+                            <img class="referral-card__icon" src="./assets/icons/arrow-redo-white.svg" alt="" aria-hidden="true" />
+                            <h3 class="referral-card__title" data-i18n="referralsInfo.cards.share.title"></h3>
+                            <p class="referral-card__description" data-i18n="referralsInfo.cards.share.description"></p>
+                        </article>
+
+                        <article class="referral-card" data-referral-card>
+                            <img class="referral-card__icon" src="./assets/icons/people-white.svg" alt="" aria-hidden="true" />
+                            <h3 class="referral-card__title" data-i18n="referralsInfo.cards.track.title"></h3>
+                            <p class="referral-card__description" data-i18n="referralsInfo.cards.track.description"></p>
+                        </article>
+
+                        <article class="referral-card" data-referral-card>
+                            <img class="referral-card__icon" src="./assets/icons/star-white.svg" alt="" aria-hidden="true" />
+                            <h3 class="referral-card__title" data-i18n="referralsInfo.cards.rewards.title"></h3>
+                            <p class="referral-card__description" data-i18n="referralsInfo.cards.rewards.description"></p>
+                        </article>
+
+                        <article class="referral-card" data-referral-card>
+                            <img class="referral-card__icon" src="./assets/icons/happy-white.svg" alt="" aria-hidden="true" />
+                            <h3 class="referral-card__title" data-i18n="referralsInfo.cards.grow.title"></h3>
+                            <p class="referral-card__description" data-i18n="referralsInfo.cards.grow.description"></p>
+                        </article>
+                    </div>
+                </div>
+            </div>
         </section>
+    </section>
 
-        <section class="about-section" id="about" aria-label="About Viora and ArcadiaDevs">
-            <section class="about-mission-panel" data-about-mission-panel aria-labelledby="about-mission-title">
-                <div class="about-mission-panel__container">
-                    <div class="about-mission-panel__topline">
-                        <span class="about-mission-panel__section-label" data-i18n="aboutMission.sectionLabel">
-                            About Us
-                        </span>
-                    </div>
+    <section class="about-section" id="about" data-i18n-aria-label="aria.aboutSection">
+        <section class="about-mission-panel" data-about-mission-panel aria-labelledby="about-mission-title">
+            <div class="about-mission-panel__container">
+                <div class="about-mission-panel__topline">
+                    <span class="about-mission-panel__section-label" data-i18n="aboutMission.sectionLabel"></span>
+                </div>
 
-                    <div class="about-mission-panel__hero">
-                        <span class="about-mission-panel__tag" data-i18n="aboutMission.tag">
-                            THE TEAM
-                        </span>
+                <div class="about-mission-panel__hero">
+                    <span class="about-mission-panel__tag" data-i18n="aboutMission.tag"></span>
 
-                        <h2 class="about-mission-panel__title" id="about-mission-title" data-i18n="aboutMission.title">
-                            Our Mission
-                        </h2>
+                    <h2 class="about-mission-panel__title" id="about-mission-title" data-i18n="aboutMission.title"></h2>
 
-                        <p class="about-mission-panel__subtitle" data-i18n="aboutMission.subtitle">
-                            Rooted in agriculture, driven by precision.
-                        </p>
-                    </div>
+                    <p class="about-mission-panel__subtitle" data-i18n="aboutMission.subtitle"></p>
+                </div>
 
-                    <div class="about-mission-panel__connector" aria-hidden="true">
-                        <span></span>
-                    </div>
+                <div class="about-mission-panel__connector" aria-hidden="true">
+                    <span></span>
+                </div>
 
-                    <div class="about-mission-panel__content">
-                        <div class="about-mission-panel__floating-card about-mission-panel__floating-card--left" data-about-parallax-item data-parallax-speed="-44">
-                            <img class="about-mission-panel__photo" src="./assets/images/about/about-mission-presentation.png" alt="ArcadiaDevs presentation" />
+                <div class="about-mission-panel__content">
+                    <div class="about-mission-panel__floating-card about-mission-panel__floating-card--left" data-about-parallax-item data-parallax-speed="-44">
+                        <img class="about-mission-panel__photo" src="./assets/images/about/about-mission-presentation.png" alt="ArcadiaDevs presentation" />
 
-                            <div class="about-mission-panel__mini-card about-mission-panel__mini-card--arcadia">
-                                <img class="about-mission-panel__mini-logo" src="./assets/logos/arcadia-dark-green.png" alt="ArcadiaDevs logo" />
-                                <span data-i18n="aboutMission.builtBy">Built by ArcadiaDevs</span>
-                            </div>
+                        <div class="about-mission-panel__mini-card about-mission-panel__mini-card--arcadia">
+                            <img class="about-mission-panel__mini-logo" src="./assets/logos/arcadia-dark-green.png" alt="ArcadiaDevs logo" />
+                            <span data-i18n="aboutMission.builtBy"></span>
                         </div>
+                    </div>
 
-                        <div class="about-mission-panel__main-copy">
-                            <h3 class="about-mission-panel__statement" data-i18n="aboutMission.statement">
-                                Helping olive growers and crop protection specialists make earlier, smarter decisions.
-                            </h3>
+                    <div class="about-mission-panel__main-copy">
+                        <h3 class="about-mission-panel__statement" data-i18n="aboutMission.statement"></h3>
 
-                            <p class="about-mission-panel__description" data-i18n="aboutMission.description">
-                                We are ArcadiaDevs, a software and design team building Viora: a SaaS platform focused on the intelligent management of olive production. We combine environmental data, early phytosanitary alerts, and specialist connection to help the olive sector respond with greater clarity and confidence.
-                            </p>
-                        </div>
+                        <p class="about-mission-panel__description" data-i18n="aboutMission.description"></p>
+                    </div>
 
-                        <div class="about-mission-panel__floating-card about-mission-panel__floating-card--right" data-about-parallax-item data-parallax-speed="-58">
-                            <img class="about-mission-panel__photo" src="./assets/images/about/about-mission-team.png" alt="Viora team in the field" />
+                    <div class="about-mission-panel__floating-card about-mission-panel__floating-card--right" data-about-parallax-item data-parallax-speed="-58">
+                        <img class="about-mission-panel__photo" src="./assets/images/about/about-mission-team.png" alt="Viora team in the field" />
 
-                            <div class="about-mission-panel__mini-card about-mission-panel__mini-card--focus">
+                        <div class="about-mission-panel__mini-card about-mission-panel__mini-card--focus">
                                 <span class="about-mission-panel__thumb">
                                     <img src="./assets/icons/thumbs-up.svg" alt="" aria-hidden="true" />
                                 </span>
 
-                                <strong>100%</strong>
-                                <span data-i18n="aboutMission.focusedOn">
-                                    Focused on Olive Production
-                                </span>
-                            </div>
+                            <strong>100%</strong>
+                            <span data-i18n="aboutMission.focusedOn"></span>
                         </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="team-members-panel" data-team-members-panel aria-labelledby="team-members-title">
-                <div class="team-members-panel__container">
-                    <div class="team-members-panel__left">
-                        <h2 class="team-members-panel__title" id="team-members-title" data-i18n="teamMembers.title">
-                            Meet<br>our team
-                        </h2>
-
-                        <div class="team-members-panel__cta">
-                            <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
-                                <a class="landing-button landing-button--green liquid-glass liquid-glass--green" href="#contact" data-liquid-glass data-hover-sound data-wave-fill="#5A7A6A">
-                                    <span data-i18n="teamMembers.cta">
-                                        View more members
-                                    </span>
-                                </a>
-                            </span>
-
-                            <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
-                                <a class="landing-button landing-button--icon landing-button--green liquid-glass liquid-glass--green" href="#contact" data-liquid-glass data-hover-sound aria-label="View more members">
-                                    <img class="landing-button__icon-img" src="./assets/icons/arrow-white.svg" alt="" aria-hidden="true" />
-                                </a>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="team-members-panel__center">
-                        <div class="team-members-panel__stack" data-team-members-stack>
-                            <!-- Cards injected by JS -->
-                        </div>
-
-                        <div class="team-members-panel__badge" data-team-members-badge>
-                            <img src="./assets/logos/arcadia-dark-green.png" alt="Team badge" data-team-members-badge-img />
-                        </div>
-                    </div>
-
-                    <div class="team-members-panel__right">
-                        <div class="team-members-panel__controls">
-                            <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="25">
-                                <button class="team-members-panel__nav-btn liquid-glass liquid-glass--deep" type="button" data-team-members-prev data-liquid-glass data-hover-sound aria-label="Previous member">
-                                    <img class="team-members-panel__nav-icon team-members-panel__nav-icon--flip" src="./assets/icons/arrow-white.svg" alt="" aria-hidden="true" />
-                                </button>
-                            </span>
-
-                            <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="25">
-                                <button class="team-members-panel__nav-btn liquid-glass liquid-glass--deep" type="button" data-team-members-next data-liquid-glass data-hover-sound aria-label="Next member">
-                                    <img class="team-members-panel__nav-icon" src="./assets/icons/arrow-white.svg" alt="" aria-hidden="true" />
-                                </button>
-                            </span>
-                        </div>
-
-                        <div class="team-members-panel__cta-mobile">
-                            <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
-                                <a class="landing-button landing-button--green liquid-glass liquid-glass--green" href="#contact" data-liquid-glass data-hover-sound data-wave-fill="#5A7A6A">
-                                    <span data-i18n="teamMembers.cta">View more members</span>
-                                </a>
-                            </span>
-                        </div>
-
-                        <div class="team-members-panel__info">
-                            <div class="team-members-panel__name-wrapper">
-                                <h3 class="team-members-panel__member-name" data-team-members-name>
-                                    <span class="team-members-panel__first-name"></span>
-                                    <span class="team-members-panel__last-name"></span>
-                                </h3>
-                            </div>
-
-                            <div class="team-members-panel__role-wrapper">
-                                <p class="team-members-panel__member-role" data-team-members-role></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="learning-from-best-panel" data-learning-from-best-panel aria-labelledby="learning-from-best-title">
-                <div class="learning-from-best-panel__center">
-                    <div class="learning-from-best-panel__text-glow" aria-hidden="true"></div>
-
-                    <h2 class="learning-from-best-panel__title" id="learning-from-best-title" data-i18n="learningFromBest.title">
-                        Learning from the best
-                    </h2>
-                </div>
-
-                <div class="learning-from-best-panel__bubbles" aria-hidden="true">
-                    <div class="learning-from-best-panel__bubble" data-learning-bubble>
-                        <div class="learning-from-best-panel__bubble-glow"></div>
-                        <div class="learning-from-best-panel__bubble-content">
-                            <img src="./assets/images/inspo/upc.png" alt="" />
-                        </div>
-                    </div>
-
-                    <div class="learning-from-best-panel__bubble" data-learning-bubble>
-                        <div class="learning-from-best-panel__bubble-glow"></div>
-                        <div class="learning-from-best-panel__bubble-content">
-                            <img src="./assets/images/inspo/elon.png" alt="" />
-                        </div>
-                    </div>
-
-                    <div class="learning-from-best-panel__bubble" data-learning-bubble>
-                        <div class="learning-from-best-panel__bubble-glow"></div>
-                        <div class="learning-from-best-panel__bubble-content">
-                            <img src="./assets/images/inspo/awwwards.png" alt="" />
-                        </div>
-                    </div>
-
-                    <div class="learning-from-best-panel__bubble" data-learning-bubble>
-                        <div class="learning-from-best-panel__bubble-glow"></div>
-                        <div class="learning-from-best-panel__bubble-content">
-                            <img src="./assets/images/inspo/cesarsalas.png" alt="" />
-                        </div>
-                    </div>
-
-                    <div class="learning-from-best-panel__bubble" data-learning-bubble>
-                        <div class="learning-from-best-panel__bubble-glow"></div>
-                        <div class="learning-from-best-panel__bubble-content">
-                            <img src="./assets/images/inspo/mit.png" alt="" />
-                        </div>
-                    </div>
-
-                    <div class="learning-from-best-panel__bubble" data-learning-bubble>
-                        <div class="learning-from-best-panel__bubble-glow"></div>
-                        <div class="learning-from-best-panel__bubble-content">
-                            <img src="./assets/images/inspo/tito.png" alt="" />
-                        </div>
-                    </div>
-
-                    <div class="learning-from-best-panel__bubble" data-learning-bubble>
-                        <div class="learning-from-best-panel__bubble-glow"></div>
-                        <div class="learning-from-best-panel__bubble-content">
-                            <img src="./assets/images/inspo/cssawards.png" alt="" />
-                        </div>
-                    </div>
-
-                    <div class="learning-from-best-panel__bubble" data-learning-bubble>
-                        <div class="learning-from-best-panel__bubble-glow"></div>
-                        <div class="learning-from-best-panel__bubble-content">
-                            <img src="./assets/images/inspo/pucp.png" alt="" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </section>
-
-        <section class="contact-section" id="contact" aria-labelledby="contact-title">
-            <div class="contact-section__container">
-                <div class="contact-section__row contact-section__row--header">
-                    <div class="contact-section__col contact-section__col--label">
-                        <span class="contact-section__bullet"></span>
-                        <span class="contact-section__label" data-i18n="contact.sectionLabel">Contact</span>
-                    </div>
-                    <div class="contact-section__col contact-section__col--title">
-                        <h2 class="contact-section__title" id="contact-title" data-i18n="contact.title">Talk to the team behind Viora</h2>
-                    </div>
-                    <div class="contact-section__col contact-section__col--logo">
-                        <img src="./assets/logos/viora-isologotipo-white.png" alt="Viora Logo" class="contact-section__logo" />
-                    </div>
-                </div>
-
-                <div class="contact-section__row">
-                    <div class="contact-section__col contact-section__col--label">
-                        <span class="contact-section__bullet"></span>
-                        <span class="contact-section__label" data-i18n="contact.getInTouch.label">Get In Touch</span>
-                    </div>
-                    <div class="contact-section__col contact-section__col--info">
-                        <span class="contact-section__info-label" data-i18n="contact.getInTouch.talkToUs">Talk to us</span>
-                        <a href="tel:+51933855712" class="contact-section__link" data-i18n="contact.getInTouch.phone">+51 933 855 712</a>
-                    </div>
-                    <div class="contact-section__col contact-section__col--info">
-                        <span class="contact-section__info-label" data-i18n="contact.getInTouch.writeUs">Write us</span>
-                        <a href="mailto:daroncameloftdev@gmail.com" class="contact-section__link" data-i18n="contact.getInTouch.email">daroncameloftdev@gmail.com</a>
-                    </div>
-                </div>
-
-                <div class="contact-section__row">
-                    <div class="contact-section__col contact-section__col--label">
-                        <span class="contact-section__bullet"></span>
-                        <span class="contact-section__label" data-i18n="contact.address.label">Address</span>
-                    </div>
-                    <div class="contact-section__col contact-section__col--info">
-                        <span class="contact-section__info-value" data-i18n="contact.address.location">Av Alameda San Marcos 11,<br />Chorrillos 15067</span>
-                        <a href="#" class="contact-section__link contact-section__link--map" data-i18n="contact.address.googleMaps">Google Maps</a>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
 
-    <footer class="footer-section" data-footer-section aria-labelledby="footer-title">
-        <div class="footer-section__matter" data-footer-matter></div>
-
-        <div class="footer-section__content">
-            <div class="footer-section__left">
-                <nav class="footer-section__big-links" aria-label="Footer main navigation">
-                    <a href="#features" data-hover-sound data-i18n="footer.bigLinks.features">FEATURES</a>
-                    <a href="#growers" data-hover-sound data-i18n="footer.bigLinks.growers">GROWERS</a>
-                    <a href="#specialists" data-hover-sound data-i18n="footer.bigLinks.specialists">SPECIALISTS</a>
-                    <a href="#pricing" data-hover-sound data-i18n="footer.bigLinks.pricing">PRICING</a>
-                </nav>
-
-                <a class="footer-section__credit" href="https://victor-paredes-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" data-hover-sound data-i18n="footer.credit">
-                    WEBSITE DESIGNED BY DARONCAMELOFT
-                </a>
-            </div>
-
-            <div class="footer-section__middle">
-                <nav class="footer-section__small-links" aria-label="Footer secondary navigation">
-                    <a href="#home" data-hover-sound data-i18n="footer.links.home">Home</a>
-                    <a href="#about" data-hover-sound data-i18n="footer.links.about">About Us</a>
-                    <a href="#contact" data-hover-sound data-i18n="footer.links.contact">Contact</a>
-                    <a href="#" data-hover-sound data-i18n="footer.links.terms">Terms of Service</a>
-                    <a href="#" data-hover-sound data-i18n="footer.links.privacy">Privacy Policy</a>
-                </nav>
-            </div>
-
-            <div class="footer-section__right">
-                <p class="footer-section__newsletter-text" data-i18n="footer.newsletterText">
-                    Get the latest updates on precision farming, new Viora features, and expert agronomist tips, straight to your inbox.
-                </p>
-
-                <form class="footer-section__newsletter-form" data-footer-newsletter-form>
-                    <label class="sr-only" for="footer-email" data-i18n="footer.emailLabel">Email address</label>
-                    <input class="footer-section__email-input" id="footer-email" type="email" name="email" placeholder="Email address" data-i18n-placeholder="footer.emailPlaceholder" autocomplete="email" />
-                    <button class="footer-section__subscribe-button liquid-glass liquid-glass--green" type="submit" data-liquid-glass data-hover-sound data-i18n="footer.subscribe">subscribe</button>
-                </form>
-
-                <div class="footer-section__social">
-                    <span data-i18n="footer.followUs">FOLLOW US:</span>
-                    <a href="#" aria-label="YouTube" data-hover-sound><img src="./assets/icons/youtube.svg" alt="" aria-hidden="true" /></a>
-                    <a href="#" aria-label="Facebook" data-hover-sound><img src="./assets/icons/facebook.svg" alt="" aria-hidden="true" /></a>
-                    <a href="#" aria-label="Twitter" data-hover-sound><img src="./assets/icons/twitter.svg" alt="" aria-hidden="true" /></a>
-                    <a href="#" aria-label="Instagram" data-hover-sound><img src="./assets/icons/instagram.svg" alt="" aria-hidden="true" /></a>
-                    <a href="#" aria-label="LinkedIn" data-hover-sound><img src="./assets/icons/linkedin.svg" alt="" aria-hidden="true" /></a>
+        <section class="team-members-panel" data-team-members-panel aria-labelledby="team-members-title">
+            <div class="team-members-panel__container">
+                <div class="team-members-panel__header">
+                    <h2 class="team-members-panel__title" id="team-members-title" data-i18n="teamMembers.title"></h2>
                 </div>
+
+                <div class="team-members-slider__viewport" data-team-slider-viewport>
+                    <div class="team-members-slider__track" data-team-slider-track>
+                    </div>
+                </div>
+
+                <div class="team-members-slider__progress-container">
+                    <div class="team-members-slider__progress-track">
+                        <div class="team-members-slider__progress-bar" data-team-slider-progress-bar></div>
+                    </div>
+                </div>
+
+                <div class="about-presentation">
+
+                    <div class="about-presentation__toggle liquid-glass liquid-glass--deep" data-presentation-toggle data-liquid-glass>
+                        <button class="about-presentation__toggle-btn about-presentation__toggle-btn--active" type="button" data-pres-switch="video" data-hover-sound data-i18n="teamMembers.toggleVideo"></button>
+                        <button class="about-presentation__toggle-btn" type="button" data-pres-switch="image" data-hover-sound data-i18n="teamMembers.toggleImage"></button>
+                        <div class="about-presentation__toggle-slider"></div>
+                    </div>
+
+
+                    <div class="about-presentation__stage" data-presentation-stage>
+
+                        <video class="about-presentation__video about-presentation__video--active" data-presentation-video autoplay loop muted playsinline>
+                            <source src="./assets/videos/arcadiadevs-about-the-team-av2.mp4" type="video/mp4" />
+                        </video>
+
+                        <div class="about-presentation__carousel" data-presentation-carousel>
+                            <div class="about-presentation__slide about-presentation__slide--active" style="background-image: url('./assets/images/about/carrusel/grupal-organizacion-1.png');"></div>
+                            <div class="about-presentation__slide" style="background-image: url('./assets/images/about/carrusel/grupal-organizacion-2.jpeg');"></div>
+                            <div class="about-presentation__slide" style="background-image: url('./assets/images/about/carrusel/grupal-organizacion-3.jpeg');"></div>
+                            <div class="about-presentation__slide" style="background-image: url('./assets/images/about/carrusel/grupal-organizacion-4.jpeg');"></div>
+                        </div>
+
+                        <div class="about-presentation__controls" data-about-video-controls aria-label="About video controls">
+                            <div class="about-presentation__media-controls" data-about-media-controls aria-hidden="true">
+                                <input class="about-presentation__progress" type="range" min="0" max="100" value="0" step="0.1" aria-label="Video progress" data-about-progress disabled />
+
+                                <label class="about-presentation__volume">
+                                    <img class="about-presentation__volume-icon" src="./assets/icons/volume-medium.svg" alt="" aria-hidden="true" />
+                                    <input class="about-presentation__volume-range" type="range" min="0" max="1" value="0.7" step="0.01" aria-label="Video volume" data-about-volume disabled />
+                                </label>
+                            </div>
+
+                            <span class="magnetic-target about-presentation__youtube-wrap" data-magnetic data-magnetic-strength="1" data-magnetic-max="12">
+                                <a class="about-presentation__video-button about-presentation__video-button--youtube" href="https://youtu.be/pn0-Jb5yjbc" target="_blank" rel="noopener noreferrer" data-hover-sound data-i18n-aria-label="teamMembers.videoYoutubeAria">
+                                    <img class="about-presentation__video-button-icon" src="./assets/icons/youtube.svg" alt="" aria-hidden="true" />
+                                </a>
+                            </span>
+
+                            <span class="magnetic-target about-presentation__video-play-wrap" data-magnetic data-magnetic-strength="1" data-magnetic-max="12">
+                                <button class="about-presentation__video-button about-presentation__video-button--play liquid-glass liquid-glass--white" type="button" data-about-video-play data-liquid-glass data-hover-sound data-i18n-aria-label="teamMembers.videoPlayAria">
+                                    <img class="about-presentation__video-button-icon" src="./assets/icons/play.svg" alt="" aria-hidden="true" data-about-video-play-icon />
+                                </button>
+                            </span>
+
+                            <span class="magnetic-target about-presentation__video-close-wrap" data-magnetic data-magnetic-strength="1" data-magnetic-max="12">
+                                <button class="about-presentation__video-button about-presentation__video-button--close liquid-glass liquid-glass--deep" type="button" data-about-video-close data-liquid-glass data-hover-sound data-i18n-aria-label="teamMembers.videoCloseAria">
+                                    <svg class="about-presentation__video-close-icon" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                        <path d="M2 2L14 14M14 2L2 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+
+                    <p class="about-presentation__footer-text" data-scroll-text-reveal data-i18n="teamMembers.footerText"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="learning-from-best-panel" data-learning-from-best-panel aria-labelledby="learning-from-best-title">
+            <div class="learning-from-best-panel__center">
+                <div class="learning-from-best-panel__text-glow" aria-hidden="true"></div>
+
+                <h2 class="learning-from-best-panel__title" id="learning-from-best-title" data-i18n="learningFromBest.title"></h2>
+            </div>
+
+            <div class="learning-from-best-panel__bubbles" aria-hidden="true">
+                <div class="learning-from-best-panel__bubble" data-learning-bubble>
+                    <div class="learning-from-best-panel__bubble-glow"></div>
+                    <div class="learning-from-best-panel__bubble-content">
+                        <img src="./assets/images/inspo/upc.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="learning-from-best-panel__bubble" data-learning-bubble>
+                    <div class="learning-from-best-panel__bubble-glow"></div>
+                    <div class="learning-from-best-panel__bubble-content">
+                        <img src="./assets/images/inspo/angel.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="learning-from-best-panel__bubble" data-learning-bubble>
+                    <div class="learning-from-best-panel__bubble-glow"></div>
+                    <div class="learning-from-best-panel__bubble-content">
+                        <img src="./assets/images/inspo/awwwards.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="learning-from-best-panel__bubble" data-learning-bubble>
+                    <div class="learning-from-best-panel__bubble-glow"></div>
+                    <div class="learning-from-best-panel__bubble-content">
+                        <img src="./assets/images/inspo/cesarsalas.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="learning-from-best-panel__bubble" data-learning-bubble>
+                    <div class="learning-from-best-panel__bubble-glow"></div>
+                    <div class="learning-from-best-panel__bubble-content">
+                        <img src="./assets/images/inspo/mit.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="learning-from-best-panel__bubble" data-learning-bubble>
+                    <div class="learning-from-best-panel__bubble-glow"></div>
+                    <div class="learning-from-best-panel__bubble-content">
+                        <img src="./assets/images/inspo/tito.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="learning-from-best-panel__bubble" data-learning-bubble>
+                    <div class="learning-from-best-panel__bubble-glow"></div>
+                    <div class="learning-from-best-panel__bubble-content">
+                        <img src="./assets/images/inspo/cssawards.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="learning-from-best-panel__bubble" data-learning-bubble>
+                    <div class="learning-from-best-panel__bubble-glow"></div>
+                    <div class="learning-from-best-panel__bubble-content">
+                        <img src="./assets/images/inspo/pucp.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="segment-summary-section" data-segment-summary-section aria-labelledby="segment-summary-title">
+        <div class="segment-summary-section__header">
+            <h2 class="segment-summary-section__title" id="segment-summary-title" data-i18n="segmentSummary.title"></h2>
+        </div>
+
+        <div class="segment-summary-section__viewport" data-segment-summary-viewport data-i18n-aria-label="segmentSummary.aria">
+            <div class="segment-summary-section__track" data-segment-summary-track></div>
+        </div>
+    </section>
+
+    <section class="final-cta-section" data-final-cta-section aria-labelledby="final-cta-title">
+        <div class="final-cta-section__container">
+            <h2 class="final-cta-section__title" id="final-cta-title" data-final-cta-reveal="finalCta.title" data-i18n="finalCta.title"></h2>
+
+            <p class="final-cta-section__subtitle" data-final-cta-reveal="finalCta.subtitle" data-i18n="finalCta.subtitle"></p>
+
+            <div class="final-cta-section__actions">
+                    <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
+                        <a class="landing-button landing-button--green liquid-glass liquid-glass--green" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound>
+                            <span data-i18n="finalCta.button"></span>
+                        </a>
+                    </span>
+
+                <span class="magnetic-target" data-magnetic data-magnetic-strength="1" data-magnetic-max="16">
+                        <a class="landing-button landing-button--icon landing-button--green liquid-glass liquid-glass--green" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound data-i18n-aria-label="navbar.getStarted">
+                            <img class="landing-button__icon-img" src="./assets/icons/arrow-white.svg" alt="" aria-hidden="true" />
+                        </a>
+                    </span>
             </div>
         </div>
-    </footer>
+    </section>
 
-    <script type="module" src="./js/main.js"></script>
+
+</main>
+
+<footer class="footer-section" data-footer-section aria-labelledby="footer-title">
+    <div class="footer-section__matter" data-footer-matter></div>
+
+    <div class="footer-section__content">
+        <div class="footer-section__left">
+            <nav class="footer-section__big-links" aria-label="Footer main navigation">
+                <a href="#features" data-hover-sound data-i18n="footer.bigLinks.features"></a>
+                <a href="#growers" data-hover-sound data-i18n="footer.bigLinks.growers"></a>
+                <a href="#specialists" data-hover-sound data-i18n="footer.bigLinks.specialists"></a>
+                <a href="#pricing" data-hover-sound data-i18n="footer.bigLinks.pricing"></a>
+            </nav>
+
+            <a class="footer-section__credit" href="#about" rel="noopener noreferrer" data-hover-sound data-i18n="footer.credit"></a>
+        </div>
+
+        <div class="footer-section__middle">
+            <nav class="footer-section__small-links" aria-label="Footer secondary navigation">
+                <a href="#home" data-hover-sound data-i18n="footer.links.home"></a>
+                <a href="#about" data-hover-sound data-i18n="footer.links.about"></a>
+
+                <a href="#" data-legal-drawer-open="terms" data-hover-sound data-i18n="footer.links.terms"></a>
+                <a href="#" data-legal-drawer-open="privacy" data-hover-sound data-i18n="footer.links.privacy"></a>
+            </nav>
+        </div>
+
+        <div class="footer-section__right">
+            <div class="footer-section__characters" aria-hidden="true">
+                    <span class="footer-section__character footer-section__character--specialist">
+                        <img class="footer-section__character-img footer-section__character-img--default" src="./assets/images/footer/image1.png" alt="" />
+                        <img class="footer-section__character-img footer-section__character-img--hover" src="./assets/images/footer/hover_image1.png" alt="" />
+                    </span>
+                <span class="footer-section__character footer-section__character--grower">
+                        <img class="footer-section__character-img footer-section__character-img--default" src="./assets/images/footer/image2.png" alt="" />
+                        <img class="footer-section__character-img footer-section__character-img--hover" src="./assets/images/footer/hover_image2.png" alt="" />
+                    </span>
+            </div>
+
+            <p class="footer-section__newsletter-text" data-i18n="footer.newsletterText"></p>
+
+            <a class="footer-section__cta liquid-glass liquid-glass--green" href="https://viora-webapp.web.app" data-liquid-glass data-hover-sound>
+                <span data-i18n="footer.tryViora"></span>
+            </a>
+
+            <div class="footer-section__social">
+                <span data-i18n="footer.followUs"></span>
+                <a href="#" data-i18n-aria-label="aria.youtube" data-hover-sound><img src="./assets/icons/youtube.svg" alt="" aria-hidden="true" /></a>
+                <a href="#" data-i18n-aria-label="aria.facebook" data-hover-sound><img src="./assets/icons/facebook.svg" alt="" aria-hidden="true" /></a>
+                <a href="#" data-i18n-aria-label="aria.twitter" data-hover-sound><img src="./assets/icons/twitter.svg" alt="" aria-hidden="true" /></a>
+                <a href="#" data-i18n-aria-label="aria.instagram" data-hover-sound><img src="./assets/icons/instagram.svg" alt="" aria-hidden="true" /></a>
+                <a href="#" data-i18n-aria-label="aria.linkedin" data-hover-sound><img src="./assets/icons/linkedin.svg" alt="" aria-hidden="true" /></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="legal-drawer" data-legal-drawer hidden>
+        <div class="legal-drawer__backdrop" data-legal-drawer-close></div>
+        <aside class="legal-drawer__panel" role="dialog" aria-modal="true" aria-labelledby="legal-drawer-title" tabindex="-1">
+            <button class="legal-drawer__close" type="button" data-i18n-aria-label="aria.closeLegal" data-legal-drawer-close>
+                &times;
+            </button>
+
+            <div class="legal-drawer__scroll">
+                
+                <article class="legal-drawer__content" data-legal-drawer-content="terms"></article>
+                <article class="legal-drawer__content" data-legal-drawer-content="privacy" hidden></article>
+            </div>
+        </aside>
+    </div>
+</footer>
+
+<script type="module" src="./js/main.js"></script>
 </body>
 </html>

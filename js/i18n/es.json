@@ -10,7 +10,7 @@
     "getStarted": "Comenzar"
   },
   "hero": {
-    "title": "Máxima Rentabilidad para el Olivar,\nPrecisión Total para el Especialista.",
+    "title": "Máxima Rentabilidad\npara el Olivar, Precisión Total\npara el Especialista.",
     "subtitle": "Brindamos a los agricultores el control absoluto de su cosecha y a los expertos fitosanitarios herramientas de diagnóstico avanzadas. Una solución integral que transforma datos satelitales y climáticos en decisiones críticas.",
     "cta": "¡Comienza hoy mismo!",
     "seePlans": "Ver Planes",
@@ -25,7 +25,28 @@
     "getStarted": "Comenzar con Viora",
     "heroActions": "Acciones principales del Hero",
     "languageToggle": "Cambiar idioma",
-    "soundToggle": "Activar o desactivar sonido"
+    "soundToggle": "Activar o desactivar sonido",
+    "mobileNav": "Navegación móvil",
+    "closeMenu": "Cerrar menú",
+    "problemCards": "Tarjetas de problemas",
+    "problemSolution": "Sección de problema y solución",
+    "solutionCarousel": "Carrusel de capacidades de la solución Viora",
+    "prevSolution": "Tarjeta de solución anterior",
+    "nextSolution": "Tarjeta de solución siguiente",
+    "segments": "Viajes de usuario para Productores y Especialistas",
+    "pricingSection": "Sección de planes de precios",
+    "prevPlan": "Plan de precios anterior",
+    "nextPlan": "Plan de precios siguiente",
+    "producerTicket": "Ticket de Viora para productores de olivos",
+    "specialistTicket": "Ticket de Viora para especialistas fitosanitarios",
+    "startTrial": "Comenzar prueba sin riesgo",
+    "aboutSection": "Acerca de Viora y ArcadiaDevs",
+    "youtube": "YouTube",
+    "facebook": "Facebook",
+    "twitter": "Twitter",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "closeLegal": "Cerrar panel legal"
   },
   "aboutIntro": {
     "eyebrow": "Creado para el ecosistema olivarero moderno",
@@ -128,29 +149,127 @@
       "ctaAria": "Explorar el marketplace"
     }
   },
+  "featureProduct": {
+    "brand": "Viora",
+    "tagline": "Tierra que habla.\nProducci\u00f3n que crece.",
+    "eyebrow": "Monitoreo inteligente",
+    "title": "Tu campo habla.\n\u00bfEst\u00e1s escuchando?",
+    "playAria": "Reproducir video del producto",
+    "moreAria": "Mostrar contenido adicional del producto",
+    "youtubeAria": "Ver en YouTube",
+    "cta": "Prueba Viora gratis",
+    "moreText": "Accede a datos de tu campo en tiempo real con monitoreo IoT a fondo. Gestiona tus cosechas con las herramientas de Viora Harvest. Mantente un paso adelante con alertas epidemiol\u00f3gicas localizadas y precisas para tu olivar. Y conecta con los mejores especialistas agr\u00f3nomos cuando tu campo m\u00e1s lo necesite."
+  },
   "roleBenefits": {
     "sectionLabel": "Segmentos",
     "growersTitle": "Productores",
     "specialistsTitle": "Especialistas",
     "title": "Una plataforma. Dos experiencias poderosas.",
     "description": "Ya sea que gestiones producción olivarera o brindes servicios de protección de cultivos, Viora te ofrece herramientas y conexiones para actuar antes y decidir mejor.",
-    "producer": {
-      "tab": "Productores olivareros",
-      "title": "Para Productores Olivareros",
-      "pill1": "Monitoreo satelital, climático y de porciones de frío.",
-      "pill2": "Alertas epidemiológicas automatizadas ante plagas.",
-      "pill3": "Predicción de vecería y soporte de nutrición dinámica.",
-      "cta": "Ver Planes",
-      "note": "La volatilidad climática y los brotes repentinos de plagas hacen que la producción olivarera sea más difícil de predecir. Viora convierte datos de campo en información accionable para detectar riesgos antes, proteger el rendimiento y responder más rápido con el especialista adecuado."
+    "navAria": "Cards de segmentos",
+    "growersLinkAria": "Ir al segmento de productores",
+    "specialistsLinkAria": "Ir al segmento de especialistas",
+    "story": {
+      "growers": {
+        "eyebrow": "Productores",
+        "steps": [
+          {
+            "title": "Empieza con tu parcela de olivos",
+            "description": "Convierte tu campo en una unidad productiva monitoreada registrando sus límites y su historial agronómico.",
+            "bullets": [
+              "Delimita tu área productiva con límites georreferenciados.",
+              "Conecta tu parcela con monitoreo climático y satelital.",
+              "Construye un historial agronómico con podas, fertilización y registros de campo."
+            ],
+            "cta": "Crear cuenta de productor"
+          },
+          {
+            "title": "Monitorea clima y vigor del cultivo",
+            "description": "Viora consolida clima, porciones de frío, salud vegetal y proyecciones de rendimiento en un panel de decisión.",
+            "bullets": [
+              "Sigue la acumulación de frío y el comportamiento climático local.",
+              "Detecta zonas de bajo vigor con NDVI e imágenes satelitales.",
+              "Anticipa riesgo de vecería y variaciones proyectadas de cosecha."
+            ],
+            "cta": "Abrir panel productor"
+          },
+          {
+            "title": "Actúa antes de perder producción",
+            "description": "Cuando Viora detecta estrés fenológico, convierte el riesgo en una ruta clara de acción para el productor.",
+            "bullets": [
+              "Recibe alertas automáticas por déficit de frío y riesgo fenológico.",
+              "Revisa recomendaciones nutricionales dinámicas vinculadas a alertas activas.",
+              "Prioriza decisiones de campo antes de afectar la productividad."
+            ],
+            "cta": "Iniciar monitoreo preventivo"
+          },
+          {
+            "title": "Conecta con soporte experto",
+            "description": "Cuando el riesgo se vuelve crítico, Viora te ayuda a pasar de la detección a la intervención profesional.",
+            "bullets": [
+              "Solicita apoyo de especialistas fitosanitarios.",
+              "Revisa propuestas técnicas para tus riesgos activos de campo.",
+              "Mantén trazable el ciclo de intervención desde la alerta hasta la resolución."
+            ],
+            "cta": "Obtener soporte experto"
+          }
+        ]
+      },
+      "specialists": {
+        "eyebrow": "Especialistas",
+        "steps": [
+          {
+            "title": "Publica tu perfil profesional",
+            "description": "Crea una presencia profesional que haga visible tu experiencia técnica dentro del ecosistema olivícola.",
+            "bullets": [
+              "Muestra tu experiencia fitosanitaria, credenciales y cobertura de servicio.",
+              "Mantén actualizada tu información profesional y de contacto.",
+              "Controla tu disponibilidad según tu capacidad operativa."
+            ],
+            "cta": "Crear perfil especialista"
+          },
+          {
+            "title": "Recibe oportunidades por riesgo",
+            "description": "Viora conecta especialistas con productores que necesitan soporte técnico oportuno basado en señales activas de campo.",
+            "bullets": [
+              "Descubre productores con riesgo climático o fitosanitario.",
+              "Prioriza oportunidades por severidad, ubicación y contexto del campo.",
+              "Responde antes, cuando la intervención aún puede evitar pérdidas mayores."
+            ],
+            "cta": "Unirme como especialista"
+          },
+          {
+            "title": "Evalúa cada caso con contexto",
+            "description": "Revisa el historial técnico de cada parcela antes de preparar tu propuesta de intervención.",
+            "bullets": [
+              "Analiza historial de parcela, síntomas reportados y severidad de alerta.",
+              "Usa NDVI, indicadores climáticos y registros agronómicos como soporte.",
+              "Prepara propuestas técnicas y económicas más claras."
+            ],
+            "cta": "Abrir espacio especialista"
+          },
+          {
+            "title": "Entrega prescripciones y confianza",
+            "description": "Cierra cada servicio con trazabilidad técnica, prescripciones de campo y feedback que fortalece tu reputación.",
+            "bullets": [
+              "Registra hallazgos de campo y recomendaciones técnicas.",
+              "Apoya una ejecución trazable de intervenciones fitosanitarias.",
+              "Construye confianza con feedback de servicio y visibilidad profesional."
+            ],
+            "cta": "Unirme al marketplace"
+          }
+        ]
+      }
     },
-    "specialist": {
-      "tab": "Especialistas fitosanitarios",
-      "title": "Especialistas fitosanitarios",
-      "pill1": "Accede a nuevas oportunidades de servicio mediante el marketplace de especialistas.",
-      "pill2": "Revisa contexto de parcelas, patrones NDVI y señales de riesgo reportadas.",
-      "pill3": "Herramientas de prescripción digital y evaluación de campo.",
-      "cta": "Unirme al Marketplace",
-      "note": "Encontrar nuevos clientes y responder temprano ante riesgos de campo es difícil sin las señales adecuadas. Viora te ayuda a descubrir oportunidades de servicio, revisar contexto de campo con indicadores satelitales y entregar orientación técnica más rápida y estructurada."
+    "visuals": {
+      "plot": { "title": "Límites de parcela", "note": "Configuración georreferenciada con historial agronómico.", "metric": "3.8 ha mapeadas" },
+      "dashboard": { "title": "Panel de decisión", "note": "Clima, NDVI, porciones de frío y señales de rendimiento.", "metric": "NDVI +12%" },
+      "alerts": { "title": "Alertas preventivas", "note": "Las señales de estrés se convierten en acciones priorizadas.", "metric": "Riesgo detectado" },
+      "support": { "title": "Soporte experto", "note": "Solicitudes trazables desde la alerta hasta la resolución.", "metric": "Propuesta lista" },
+      "profile": { "title": "Perfil especialista", "note": "Credenciales, cobertura y disponibilidad en un solo lugar.", "metric": "Verificado" },
+      "opportunities": { "title": "Oportunidades por riesgo", "note": "Casos priorizados por severidad y ubicación.", "metric": "4 casos activos" },
+      "case": { "title": "Contexto del caso", "note": "Historial, NDVI, clima y síntomas reportados.", "metric": "Contexto completo" },
+      "prescription": { "title": "Prescripción de campo", "note": "Recomendaciones técnicas con trazabilidad del servicio.", "metric": "Confianza +" }
     }
   },
   "pricingIntro": {
@@ -173,6 +292,8 @@
       "detail3": "Alertas epidemiológicas automatizadas",
       "detail4": "Recomendaciones de nutrición dinámica",
       "detail5": "Acceso a especialistas en protección de cultivos cuando el riesgo aumenta",
+      "priceMonthly": "$149.00",
+      "priceYearly": "$1,490.00",
       "cta": "Registrarse"
     },
     "specialist": {
@@ -183,6 +304,8 @@
       "detail3": "Visibilidad dentro del ecosistema Viora",
       "detail4": "Acceso al contexto de campo e indicadores de riesgo satelitales",
       "detail5": "Conexión más rápida con productores que necesitan intervención",
+      "priceMonthly": "$149.00",
+      "priceYearly": "$1,490.00",
       "cta": "Registrarse"
     }
   },
@@ -224,12 +347,115 @@
     "ctaAria": "Contáctanos"
   },
   "teamMembers": {
-    "title": "Conoce a<br>nuestro equipo",
+    "title": "Conoce al equipo Arcadia",
     "cta": "Ver más miembros",
-    "role": "Grupo ArcadiaDevs"
+    "role": "Grupo ArcadiaDevs",
+    "toggleVideo": "Video",
+    "toggleImage": "Imagen",
+    "videoPlayAria": "Reproducir video del equipo",
+    "videoCloseAria": "Salir de la reproducción",
+    "videoYoutubeAria": "Ver en YouTube",
+    "footerText": "Nuestro equipo entiende ambos lados del campo. Desde agrónomos e ingenieros de datos hasta visionarios de producto, todos en Viora estamos unidos para cerrar la brecha entre los productores que cultivan y los especialistas que protegen — convirtiendo el conocimiento compartido en cosechas más inteligentes y productivas."
+  },
+  "finalCta": {
+    "title": "Campos inteligentes.\nCosechas más fuertes.\nHecho para quienes cultivan.",
+    "subtitle": "La tierra siempre ha tenido respuestas.\nViora te ayuda a escucharlas.",
+    "button": "Comenzar",
+    "buttonAria": "Comenzar con Viora"
   },
   "learningFromBest": {
     "title": "Aprendiendo de los mejores"
+  },
+  "segmentSummary": {
+    "title": "Cada olivar merece las herramientas correctas.",
+    "aria": "Tarjetas de resumen por segmento",
+    "button": "Unirse",
+    "cards": [
+      {
+        "audience": "Para productores olivareros",
+        "title": "MONITOR",
+        "price": "$149",
+        "priceUnit": "/ mes",
+        "description": "Monitoreo de campo en tiempo real para productores que quieren visibilidad completa de la salud de su olivar.",
+        "bullets": [
+          "Panel de datos de sensores IoT",
+          "Alertas de humedad y temperatura del suelo",
+          "Reportes semanales de salud del campo",
+          "Hasta 2 olivares incluidos"
+        ],
+        "color": "#2E4A3A"
+      },
+      {
+        "audience": "Para productores olivareros",
+        "title": "HARVEST",
+        "price": "$149",
+        "priceUnit": "/ mes",
+        "description": "Planificacion de cosecha basada en datos para maximizar rendimientos y reducir perdidas antes de que ocurran.",
+        "bullets": [
+          "Predicciones del momento optimo de cosecha",
+          "Pronostico de rendimiento por bloque",
+          "Reportes de desempeno postcosecha",
+          "Exportacion de datos a CSV / PDF"
+        ],
+        "color": "#E8B923"
+      },
+      {
+        "audience": "Para productores olivareros",
+        "title": "PROTECT",
+        "price": "$149",
+        "priceUnit": "/ mes",
+        "description": "Proteccion proactiva contra plagas con alertas epidemiologicas adaptadas a tus olivares.",
+        "bullets": [
+          "Alertas de riesgo de plagas en tiempo real",
+          "Acceso directo a especialistas de campo",
+          "Historial de intervenciones",
+          "Olivares ilimitados"
+        ],
+        "color": "#1F2C26"
+      },
+      {
+        "audience": "Para especialistas de campo",
+        "title": "Alerts",
+        "price": "$149",
+        "priceUnit": "/ mes",
+        "description": "Recibe alertas epidemiologicas de plagas y actua rapido para proteger los campos que gestionas.",
+        "bullets": [
+          "Notificaciones de brotes geolocalizadas",
+          "Sistema de clasificacion por severidad",
+          "Colabora con hasta 5 productores",
+          "Notificaciones push moviles"
+        ],
+        "color": "#F8F4ED"
+      },
+      {
+        "audience": "Para especialistas de campo",
+        "title": "Harvest",
+        "price": "$149",
+        "priceUnit": "/ mes",
+        "description": "Accede a datos historicos de campo y entrega recomendaciones precisas respaldadas por evidencia real.",
+        "bullets": [
+          "Historial completo de reportes de campo",
+          "Mapas de calor y deteccion de anomalias",
+          "Plantillas de recomendacion personalizadas",
+          "Acceso API para exportacion de datos"
+        ],
+        "color": "#C15A2E"
+      },
+      {
+        "audience": "Para especialistas de campo",
+        "title": "Network",
+        "price": "$149",
+        "priceUnit": "/ mes",
+        "description": "Conecta con productores olivareros a escala y gestiona todos los campos de tus clientes desde un solo lugar.",
+        "bullets": [
+          "Conexiones ilimitadas con productores",
+          "Panel centralizado multi-campo",
+          "Herramientas de colaboracion en equipo",
+          "Soporte prioritario y onboarding"
+        ],
+        "color": "#2E4A3A"
+      }
+    ]
   },
   "contact": {
     "sectionLabel": "Contacto",
@@ -262,10 +488,12 @@
       "terms": "Términos de Servicio",
       "privacy": "Política de Privacidad"
     },
-    "newsletterText": "Recibe las últimas novedades sobre agricultura de precisión, nuevas funciones de Viora y consejos de especialistas directamente en tu correo.",
+    "newsletterText": "Cosechas más inteligentes comienzan aquí. Únete a los productores y especialistas que ya están creciendo con Viora.",
     "emailLabel": "Correo electrónico",
     "emailPlaceholder": "Correo electrónico",
     "subscribe": "suscribirse",
+    "tryViora": "Prueba Viora ahora :D",
     "followUs": "SÍGUENOS:"
+    
   }
 }

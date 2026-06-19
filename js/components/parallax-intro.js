@@ -41,76 +41,62 @@ function mixState(start, end, progress) {
 function getResponsiveLayouts() {
     const viewportWidth = window.innerWidth;
     const viewportHeight = window.innerHeight;
-
-    // All y values are offsets from the image anchor (top: 50% = vertical center).
-    // Positive y moves the image DOWN. We keep every card within the bottom half
-    // of the viewport so nothing clips against overflow: hidden.
-    // Max bottom = (viewportHeight / 2) - some padding (40px safe zone)
     const maxBottomOffset = viewportHeight / 2 - 40;
-
     const sideX = Math.min(viewportWidth * 0.34, 420);
 
-    const smallWidth  = Math.min(viewportWidth * 0.17, 190);
-    const smallHeight = Math.min(viewportHeight * 0.32, 270);
+    const smallWidth = Math.min(viewportWidth * 0.18, 205);
+    const smallHeight = Math.min(viewportHeight * 0.34, 285);
+    const centerWidth = Math.min(viewportWidth * 0.3, 330);
+    const centerHeight = Math.min(viewportHeight * 0.48, 410);
 
-    const centerWidth  = Math.min(viewportWidth * 0.26, 290);
-    const centerHeight = Math.min(viewportHeight * 0.44, 380);
-
-    // Stack: all cards clustered near center, slightly below anchor
-
-    const stackY   = Math.min(viewportHeight * 0.30, 250);
-
-    // Raised: cards rise up toward center during first scroll phase
-    const raisedY  = Math.min(viewportHeight * 0.06, 55);
-
-    // Spread: side cards Y offset from anchor — ← sube para bajarlas al final del parallax
-    const sideY    = Math.min(viewportHeight * 0.18, 155);
-    // Center card Y — está limitado por maxBottomOffset para no clipear el borde inferior
-    const centerY  = Math.min(viewportHeight * 0.22, maxBottomOffset - centerHeight / 2);
+    const stackY = Math.min(viewportHeight * 0.22, 175);
+    const raisedY = Math.min(viewportHeight * 0.02, 24);
+    const sideY = Math.min(viewportHeight * 0.17, 145);
+    const centerY = Math.min(viewportHeight * 0.22, maxBottomOffset - centerHeight / 2);
 
     return {
         stack: [
             {
-                x: -16,
-                y: stackY,
+                x: -18,
+                y: stackY + 30,
                 width: smallWidth,
                 height: smallHeight,
-                scale: 0.9,
-                rotate: -5,
-                opacity: 0.96,
+                scale: 0.86,
+                rotate: -4,
+                opacity: 0,
             },
             {
                 x: 0,
-                y: stackY + 14,
+                y: stackY,
                 width: centerWidth,
                 height: centerHeight,
-                scale: 0.95,
+                scale: 0.98,
                 rotate: 0,
                 opacity: 1,
             },
             {
-                x: 16,
-                y: stackY + 6,
+                x: 18,
+                y: stackY + 24,
                 width: smallWidth,
                 height: smallHeight,
-                scale: 0.9,
-                rotate: 5,
-                opacity: 0.96,
+                scale: 0.86,
+                rotate: 4,
+                opacity: 0,
             },
         ],
         raised: [
             {
-                x: -14,
-                y: raisedY,
+                x: -42,
+                y: raisedY + 28,
                 width: smallWidth,
                 height: smallHeight,
-                scale: 0.94,
-                rotate: -4,
-                opacity: 1,
+                scale: 0.92,
+                rotate: -3,
+                opacity: 0.2,
             },
             {
                 x: 0,
-                y: raisedY + 12,
+                y: raisedY,
                 width: centerWidth,
                 height: centerHeight,
                 scale: 1,
@@ -118,13 +104,13 @@ function getResponsiveLayouts() {
                 opacity: 1,
             },
             {
-                x: 14,
-                y: raisedY + 4,
+                x: 42,
+                y: raisedY + 20,
                 width: smallWidth,
                 height: smallHeight,
-                scale: 0.94,
-                rotate: 4,
-                opacity: 1,
+                scale: 0.92,
+                rotate: 3,
+                opacity: 0.2,
             },
         ],
         spread: [
@@ -159,31 +145,44 @@ function getResponsiveLayouts() {
     };
 }
 
+function getReducedMotionLayouts() {
+    const layouts = getResponsiveLayouts();
+    return layouts.spread;
+}
+
 function attachPricingParallaxIntro(section) {
     if (section.dataset.pricingParallaxInitialized === 'true') return;
 
     const images = Array.from(section.querySelectorAll('[data-pricing-parallax-image]'));
-
     if (images.length === 0) return;
 
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     let ticking = false;
 
     function update() {
         const rect = section.getBoundingClientRect();
         const viewportHeight = window.innerHeight;
-        const scrollableDistance = section.offsetHeight - viewportHeight;
-
+        const scrollableDistance = Math.max(section.offsetHeight - viewportHeight, 1);
         const rawProgress = clamp(-rect.top / scrollableDistance, 0, 1);
 
-        const riseProgress = easeOutCubic(clamp(rawProgress / 0.40, 0, 1));
-        const spreadProgress = easeInOutCubic(clamp((rawProgress - 0.32) / 0.50, 0, 1));
+        if (reducedMotion.matches) {
+            const finalLayouts = getReducedMotionLayouts();
+            section.style.setProperty('--pricing-text-first-opacity', '0');
+            section.style.setProperty('--pricing-text-first-y', '-16px');
+            section.style.setProperty('--pricing-text-second-opacity', '1');
+            section.style.setProperty('--pricing-text-second-y', '0px');
+            images.forEach((image, index) => setImageState(image, finalLayouts[index]));
+            ticking = false;
+            return;
+        }
 
-        const firstTextFade = clamp((rawProgress - 0.14) / 0.20, 0, 1);
-        const secondTextFade = clamp((rawProgress - 0.32) / 0.22, 0, 1);
+        const riseProgress = easeOutCubic(clamp(rawProgress / 0.46, 0, 1));
+        const spreadProgress = easeInOutCubic(clamp((rawProgress - 0.36) / 0.48, 0, 1));
+        const firstTextFade = clamp((rawProgress - 0.2) / 0.18, 0, 1);
+        const secondTextFade = clamp((rawProgress - 0.36) / 0.18, 0, 1);
 
         section.style.setProperty('--pricing-text-first-opacity', String(1 - firstTextFade));
         section.style.setProperty('--pricing-text-first-y', `${lerp(0, -28, firstTextFade)}px`);
-
         section.style.setProperty('--pricing-text-second-opacity', String(secondTextFade));
         section.style.setProperty('--pricing-text-second-y', `${lerp(28, 0, secondTextFade)}px`);
 
@@ -192,7 +191,6 @@ function attachPricingParallaxIntro(section) {
         images.forEach((image, index) => {
             const risingState = mixState(layouts.stack[index], layouts.raised[index], riseProgress);
             const finalState = mixState(risingState, layouts.spread[index], spreadProgress);
-
             setImageState(image, finalState);
         });
 
@@ -200,23 +198,21 @@ function attachPricingParallaxIntro(section) {
     }
 
     function requestUpdate() {
-        if (!ticking) {
-            ticking = true;
-            requestAnimationFrame(update);
-        }
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(update);
     }
 
     window.addEventListener('scroll', requestUpdate, { passive: true });
     window.addEventListener('resize', requestUpdate);
+    reducedMotion.addEventListener?.('change', requestUpdate);
 
     update();
-
     section.dataset.pricingParallaxInitialized = 'true';
 }
 
 export function initializePricingParallaxIntro(root = document) {
     const section = root.querySelector('[data-pricing-parallax-intro]');
-
     if (!section) return;
 
     attachPricingParallaxIntro(section);

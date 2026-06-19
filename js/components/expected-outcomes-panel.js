@@ -2,10 +2,12 @@ function clamp(value, min, max) {
     return Math.max(min, Math.min(max, value));
 }
 
+const VIDEO_PARALLAX_STRENGTH = 2.4;
+
 function attachOutcomesParallax(section) {
     if (section.dataset.outcomesParallaxInitialized === 'true') return;
 
-    const items = section.querySelectorAll('[data-outcomes-parallax-item]');
+    const videos = section.querySelectorAll('[data-outcomes-parallax-video]');
     let ticking = false;
 
     function updateParallax() {
@@ -20,11 +22,13 @@ function attachOutcomesParallax(section) {
 
         const centeredProgress = progress - 0.5;
 
-        items.forEach((item) => {
-            const speed = Number(item.dataset.parallaxSpeed || 0);
-            const translateY = centeredProgress * speed;
+        videos.forEach((video) => {
+            const media = video.closest('.expected-outcomes-panel__media');
+            const direction = media?.classList.contains('expected-outcomes-panel__media--bottom') ? 1 : -1;
+            const maxTravel = Math.max((video.offsetHeight - (media?.clientHeight || 0)) / 2, 0);
+            const translateY = centeredProgress * maxTravel * VIDEO_PARALLAX_STRENGTH * direction;
 
-            item.style.setProperty('--outcomes-parallax-y', `${translateY}vh`);
+            video.style.setProperty('--outcomes-parallax-y', `${translateY.toFixed(2)}px`);
         });
 
         ticking = false;

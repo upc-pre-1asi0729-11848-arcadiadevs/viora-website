@@ -37,54 +37,34 @@ export class I18nService {
     applyTranslations() {
         if (!this.translations) return;
 
-        const getNestedValue = (keysString) => {
-            if (!keysString) return null;
-            const keys = keysString.split('.');
-            let value = this.translations;
-            for (const key of keys) {
-                if (value) value = value[key];
-            }
-            return (value && typeof value === 'string') ? value : null;
-        };
-
+        document.documentElement.lang = this.currentLang;
 
         document.querySelectorAll('[data-i18n]').forEach(el => {
-            const val = getNestedValue(el.getAttribute('data-i18n'));
-            if (val) el.innerHTML = val.replace(/\n/g, '<br />'); // Solo aplica <br /> al contenido HTML
+            const value = this.getTranslationValue(el.getAttribute('data-i18n'));
+            if (typeof value === 'string') {
+                el.innerHTML = value.replace(/\n/g, '<br />');
+            }
         });
 
-        // 2. Atributos ARIA Label (data-i18n-aria)
-        document.querySelectorAll('[data-i18n-aria]').forEach(el => {
-            const val = getNestedValue(el.getAttribute('data-i18n-aria'));
-            if (val) el.setAttribute('aria-label', val);
-        });
-
-        // 3. Atributos Placeholders (data-i18n-placeholder)
-        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-            const val = getNestedValue(el.getAttribute('data-i18n-placeholder'));
-            if (val) el.setAttribute('placeholder', val);
-        });
-
-        // 4. Atributos Titles y Tooltips nátivos (data-i18n-title)
-        document.querySelectorAll('[data-i18n-title]').forEach(el => {
-            const val = getNestedValue(el.getAttribute('data-i18n-title'));
-            if (val) el.setAttribute('title', val);
-        });
-
-        // aria-label
         document.querySelectorAll('[data-i18n-aria-label], [data-i18n-aria]').forEach(el => {
             const attr = el.hasAttribute('data-i18n-aria-label') ? 'data-i18n-aria-label' : 'data-i18n-aria';
             const value = this.getTranslationValue(el.getAttribute(attr));
-            if (value && typeof value === 'string') {
+            if (typeof value === 'string') {
                 el.setAttribute('aria-label', value);
             }
         });
 
-        // placeholder
         document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
             const value = this.getTranslationValue(el.getAttribute('data-i18n-placeholder'));
-            if (value && typeof value === 'string') {
+            if (typeof value === 'string') {
                 el.setAttribute('placeholder', value);
+            }
+        });
+
+        document.querySelectorAll('[data-i18n-title]').forEach(el => {
+            const value = this.getTranslationValue(el.getAttribute('data-i18n-title'));
+            if (typeof value === 'string') {
+                el.setAttribute('title', value);
             }
         });
     }

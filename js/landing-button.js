@@ -9,6 +9,7 @@ export class LandingButton extends HTMLElement {
         const liquidGlassColor = this.getAttribute('liquid-glass-color');
         const isIcon = this.hasAttribute('is-icon');
         const iconSrc = this.getAttribute('icon-src');
+        const trailingIconSrc = this.getAttribute('trailing-icon-src');
         
         const magneticMax = this.getAttribute('magnetic-max') || '18';
         const magneticFollow = this.getAttribute('magnetic-follow') || '0.18';
@@ -31,7 +32,7 @@ export class LandingButton extends HTMLElement {
         a.href = href;
         a.setAttribute('data-hover-sound', '');
         
-        if (i18nKey) {
+        if (i18nKey && !trailingIconSrc) {
             if (isIcon || iconSrc) {
                 a.setAttribute('data-i18n-aria-label', i18nKey);
             } else {
@@ -46,6 +47,23 @@ export class LandingButton extends HTMLElement {
 
         if (iconSrc) {
             a.innerHTML = `<img src="${iconSrc}" class="landing-button__icon-img" alt="" aria-hidden="true" />`;
+        } else if (trailingIconSrc) {
+            const label = document.createElement('span');
+            label.className = 'landing-button__label';
+
+            if (i18nKey) {
+                label.setAttribute('data-i18n', i18nKey);
+            } else {
+                label.innerHTML = content;
+            }
+
+            const icon = document.createElement('img');
+            icon.src = trailingIconSrc;
+            icon.className = 'landing-button__trailing-icon';
+            icon.alt = '';
+            icon.setAttribute('aria-hidden', 'true');
+
+            a.append(label, icon);
         } else {
             a.innerHTML = content;
         }
