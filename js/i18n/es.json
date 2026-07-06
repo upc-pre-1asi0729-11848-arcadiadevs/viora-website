@@ -292,8 +292,8 @@
       "detail3": "Alertas epidemiológicas automatizadas",
       "detail4": "Recomendaciones de nutrición dinámica",
       "detail5": "Acceso a especialistas en protección de cultivos cuando el riesgo aumenta",
-      "priceMonthly": "$149.00",
-      "priceYearly": "$1,490.00",
+      "priceMonthly": "s/.149.00",
+      "priceYearly": "s/.1,490.00",
       "cta": "Registrarse"
     },
     "specialist": {
@@ -304,8 +304,8 @@
       "detail3": "Visibilidad dentro del ecosistema Viora",
       "detail4": "Acceso al contexto de campo e indicadores de riesgo satelitales",
       "detail5": "Conexión más rápida con productores que necesitan intervención",
-      "priceMonthly": "$79.00",
-      "priceYearly": "$790.00",
+      "priceMonthly": "s/.79.00",
+      "priceYearly": "s/.790.00",
       "cta": "Registrarse"
     }
   },
@@ -374,7 +374,7 @@
       {
         "audience": "Para productores olivareros",
         "title": "MONITOR",
-        "price": "$149",
+        "price": "s/.149",
         "priceUnit": "/ mes",
         "description": "Monitoreo de campo en tiempo real para productores que quieren visibilidad completa de la salud de su olivar.",
         "bullets": [
@@ -388,7 +388,7 @@
       {
         "audience": "Para productores olivareros",
         "title": "HARVEST",
-        "price": "$149",
+        "price": "s/.149",
         "priceUnit": "/ mes",
         "description": "Planificacion de cosecha basada en datos para maximizar rendimientos y reducir perdidas antes de que ocurran.",
         "bullets": [
@@ -402,7 +402,7 @@
       {
         "audience": "Para productores olivareros",
         "title": "PROTECT",
-        "price": "$149",
+        "price": "s/.149",
         "priceUnit": "/ mes",
         "description": "Proteccion proactiva contra plagas con alertas epidemiologicas adaptadas a tus olivares.",
         "bullets": [
@@ -416,7 +416,7 @@
       {
         "audience": "Para especialistas de campo",
         "title": "Alerts",
-        "price": "$149",
+        "price": "s/.79",
         "priceUnit": "/ mes",
         "description": "Recibe alertas epidemiologicas de plagas y actua rapido para proteger los campos que gestionas.",
         "bullets": [
@@ -430,7 +430,7 @@
       {
         "audience": "Para especialistas de campo",
         "title": "Harvest",
-        "price": "$149",
+        "price": "s/.79",
         "priceUnit": "/ mes",
         "description": "Accede a datos historicos de campo y entrega recomendaciones precisas respaldadas por evidencia real.",
         "bullets": [
@@ -444,7 +444,7 @@
       {
         "audience": "Para especialistas de campo",
         "title": "Network",
-        "price": "$149",
+        "price": "s/.79",
         "priceUnit": "/ mes",
         "description": "Conecta con productores olivareros a escala y gestiona todos los campos de tus clientes desde un solo lugar.",
         "bullets": [
