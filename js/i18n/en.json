@@ -292,8 +292,8 @@
       "detail3": "Automated epidemiological alerts",
       "detail4": "Dynamic nutrition recommendations",
       "detail5": "Access to crop protection specialists when risk rises",
-      "priceMonthly": "$149.00",
-      "priceYearly": "$1,490.00",
+      "priceMonthly": "s/.149.00",
+      "priceYearly": "s/.1,490.00",
       "cta": "Sign Up"
     },
     "specialist": {
@@ -304,8 +304,8 @@
       "detail3": "Visibility inside the Viora ecosystem",
       "detail4": "Access to field context and satellite-based risk indicators",
       "detail5": "Faster connection with producers who need intervention",
-      "priceMonthly": "$79.00",
-      "priceYearly": "$790.00",
+      "priceMonthly": "s/.79.00",
+      "priceYearly": "s/.790.00",
       "cta": "Sign Up"
     }
   },
@@ -374,7 +374,7 @@
       {
         "audience": "For olive producers",
         "title": "MONITOR",
-        "price": "$149",
+        "price": "s/.149",
         "priceUnit": "/ month",
         "description": "Real-time field monitoring for olive producers who want full visibility of their orchard health.",
         "bullets": [
@@ -388,7 +388,7 @@
       {
         "audience": "For olive producers",
         "title": "HARVEST",
-        "price": "$149",
+        "price": "s/.149",
         "priceUnit": "/ month",
         "description": "Data-driven harvest planning to maximize yields and reduce losses before they happen.",
         "bullets": [
@@ -402,7 +402,7 @@
       {
         "audience": "For olive producers",
         "title": "PROTECT",
-        "price": "$149",
+        "price": "s/.149",
         "priceUnit": "/ month",
         "description": "Proactive pest protection with epidemiological alerts tailored to your olive groves.",
         "bullets": [
@@ -416,7 +416,7 @@
       {
         "audience": "For field specialists",
         "title": "Alerts",
-        "price": "$149",
+        "price": "s/.79",
         "priceUnit": "/ month",
         "description": "Receive epidemiological pest alerts and act fast to protect the fields you manage.",
         "bullets": [
@@ -430,7 +430,7 @@
       {
         "audience": "For field specialists",
         "title": "Harvest",
-        "price": "$149",
+        "price": "s/.79",
         "priceUnit": "/ month",
         "description": "Access historical field data and deliver precise recommendations backed by real evidence.",
         "bullets": [
@@ -444,7 +444,7 @@
       {
         "audience": "For field specialists",
         "title": "Network",
-        "price": "$149",
+        "price": "s/.79",
         "priceUnit": "/ month",
         "description": "Connect with olive producers at scale and manage all your client fields from one place.",
         "bullets": [
